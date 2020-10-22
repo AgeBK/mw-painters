@@ -1,0 +1,93 @@
+.cont {
+  /* max-width: 1112px; */
+
+  /* background-color: #f6f6f6; */
+}
+
+.innerCont {
+  /* max-width: 1112px; */
+  /* max-width: 912px;
+  margin: 0 auto 90px;
+  overflow: hidden; */
+  /* background-color: #f6f6f6; */
+}
+
+.header {
+  /* position: relative;
+  z-index: 1020;
+  margin: 0 0 60px; */
+  border: 1px solid #f3f3f3;
+}
+
+.headerUpper {
+  /* height: 42px;
+  background-color: #f6f6f6; */
+}
+
+.headerMiddle {
+  /* background-color: red; */
+  padding: 20px 0;
+  display: flex;
+  max-width: 1012px;
+  margin: 0 auto 90px;
+  overflow: hidden;
+}
+
+.heading {
+  font-weight: normal;
+  color: #286c93;
+}
+
+.heading span {
+  font-weight: bold;
+  color: #000;
+}
+
+.header .center {
+  width: 980px;
+  margin: auto;
+}
+
+/* .logo {
+  flex-grow: 1;
+}
+
+.logo a {
+  display: flex;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 0.5rem;
+} */
+
+/* GLOBAL STYLES */
+.centre {
+  text-align: center;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Lato, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+/* @media screen and (min-width: 576px) {
+  h1 {
+    font-size: 54px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  .logo img {
+    width: 70px;
+  }
+} */

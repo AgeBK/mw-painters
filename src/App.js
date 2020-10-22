@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import products from './data/products.json';
+// import Nav from "./components/Nav";
+import MainContainer from "./containers/MainContainer";
 
-function App() {
+import Home from "./components/Home";
+import Aboutus from "./components/Aboutus";
+import Services from "./components/Services";
+// import FilteredCats from "./components/FilteredCats";
+// import Product from "./components/Product";
+// import Test from "./components/Test";
+import styles from "./App.module.css";
+
+// let categories = {};
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <div className={styles.appHeader}>{path !== '/' && <Nav />}</div> */}
+      {/* {loading ? (
+          <div className={styles.centerScreen}>
+            <img src={require("./img/loader.gif")} alt="loader" />
+          </div>
+        ) : ( */}
+      <div className={styles.container}>
+        <Switch>
+          <Route exact path="/" render={() => <Home />} />
+          <Route exact path="/about-us" render={() => <Aboutus />} />
+          <Route exact path="/services" render={() => <Services />} />
+          {/* <Route
+            exact
+            path="/test"
+            render={() => <Test products={["apple", "cherry", "banana"]} />}
+          />
+          <Route
+            exact
+            path="/:id"
+            render={(props) => <FilteredCats {...props} />}
+          />
+          <Route
+            exact
+            path="/:id/:id"
+            render={(props) => <Product {...props} />}
+          /> */}
+        </Switch>
+      </div>
     </div>
   );
 }
-
-export default App;
+export default MainContainer(App);
