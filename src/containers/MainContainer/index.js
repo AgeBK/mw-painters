@@ -2,8 +2,8 @@
 import React from "react";
 import styles from "./MainContainer.module.css";
 import Nav from "../../components/Nav";
-// import Cart from '../../components/Cart';
-// import Search from '../../components/Search';
+
+// TODO: ADD FLOW TESTS?
 
 // const MainContainer = WrappedComponent => (props: Props) => (
 const MainContainer = (WrappedComponent) => () => (
@@ -12,8 +12,6 @@ const MainContainer = (WrappedComponent) => () => (
       <Nav />
     </div>
     <div>
-      {" "}
-      {/* <hr /> */}
       {/* App component is passed into MainContainer as WrappedComponent */}
       <WrappedComponent />
     </div>

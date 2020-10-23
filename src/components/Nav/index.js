@@ -45,6 +45,7 @@ const Nav = () => {
       </header>
       <div className={styles.container}>
         <p>A responsive hamburger menu with flexbox.</p>
+        <div>https://react-slideshow.herokuapp.com/</div>
         <p>
           Works well. Only known issue is that the list is centered within it's
           flexbox. So, if "NAME" is 200px wide and the hamburger menu is 100px
@@ -57,7 +58,7 @@ const Nav = () => {
       </div>
       <div className={styles.imgCont}>
         <img
-          src={require("../../img/img_b5.jpg")}
+          src={require("../../img/img_1.jpg")}
           className={styles.img}
           alt="TODO"
         />
