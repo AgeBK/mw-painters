@@ -8,19 +8,14 @@ import Nav from "../../components/Nav";
 // const MainContainer = WrappedComponent => (props: Props) => (
 const MainContainer = (WrappedComponent) => () => (
   <div className={styles.cont}>
-    <div className={styles.innerCont}>
-      <div className={styles.header}>
-        <Nav />
-        <div className={styles.headerUpper}></div>
-        <div className={styles.headerMiddle}></div>
-        <div className={styles.headerLower}>{/* <Search /> */}</div>
-      </div>
-      <div>
-        {" "}
-        {/* <hr /> */}
-        {/* App component is passed into MainContainer as WrappedComponent */}
-        <WrappedComponent />
-      </div>
+    <div className={styles.header}>
+      <Nav />
+    </div>
+    <div>
+      {" "}
+      {/* <hr /> */}
+      {/* App component is passed into MainContainer as WrappedComponent */}
+      <WrappedComponent />
     </div>
   </div>
 );

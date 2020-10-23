@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
 // import { sortByName, saleItemsFirst, sortByPrice } from '../../utils';
 
-const arr = [
+const navArr = [
   { name: "HOME", link: "/" },
   { name: "ABOUT US", link: "about-us" },
   { name: "SERVICES", link: "services" },
@@ -12,23 +12,22 @@ const arr = [
 ];
 
 const Nav = () => {
-  const [isActive, setActive] = useState(false);
+  // const [isActive, setActive] = useState(false);
+  const [open, setOpen] = useState("");
 
-  const handleToggle = (val) => setActive(!isActive);
+  // const handleToggle = (val) => setActive(!isActive);
+
+  const handleOpen = (val) => setOpen(open.length ? "" : styles.open);
 
   return (
     <div className={styles.header}>
       <header>
-        <h1 className={`${styles.heading}  ${isActive ? styles.open : ""}`}>
+        <h1 className={`${styles.heading}  ${open}`}>
           <span>MANLY WARRINGAH</span> PAINTERS
         </h1>
-        <nav
-          id="menu"
-          role="navigation"
-          className={isActive ? `${styles.open}` : ""}
-        >
+        <nav id="menu" role="navigation" className={`${open}`}>
           <ul className={styles.main}>
-            {arr.map((val, i) => (
+            {navArr.map((val, i) => (
               <li key={i} className={styles.listItem}>
                 <Link to={val.link} className={styles.productLink}>
                   {val.name}
@@ -38,8 +37,8 @@ const Nav = () => {
           </ul>
         </nav>
         <div
-          onClick={handleToggle}
-          className={`${styles.menuLink}  ${isActive ? styles.open : ""}`} // TODO, have this twice
+          onClick={handleOpen}
+          className={`${styles.menuLink}  ${open}`} // TODO, have this twice
         >
           <div className={styles.icon}></div>
         </div>
@@ -55,7 +54,7 @@ const Nav = () => {
           codes a 50px offset, but if you had a large header then it would need
           adjusting.
         </p>
-      </div>{" "}
+      </div>
       <div className={styles.imgCont}>
         <img
           src={require("../../img/img_b5.jpg")}
