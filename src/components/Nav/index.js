@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+// import Slideshow from "../../components/Slideshow";
+import Test from "../../components/Test";
+
 import styles from "./Nav.module.css";
 // import { sortByName, saleItemsFirst, sortByPrice } from '../../utils';
 
@@ -56,13 +59,14 @@ const Nav = () => {
           adjusting.
         </p>
       </div>
-      <div className={styles.imgCont}>
+      <Test />
+      {/* <div className={styles.imgCont}>
         <img
           src={require("../../img/img_1.jpg")}
           className={styles.img}
           alt="TODO"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
