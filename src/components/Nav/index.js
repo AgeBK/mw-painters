@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import Slideshow from "../../components/Slideshow";
 import Test from "../../components/Test";
+import Slideshow from "../Slideshow";
 
 import styles from "./Nav.module.css";
 // import { sortByName, saleItemsFirst, sortByPrice } from '../../utils';
@@ -59,7 +60,7 @@ const Nav = () => {
           adjusting.
         </p>
       </div>
-      <Test />
+      <Slideshow />
       {/* <div className={styles.imgCont}>
         <img
           src={require("../../img/img_1.jpg")}

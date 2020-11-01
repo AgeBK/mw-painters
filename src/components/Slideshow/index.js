@@ -12,18 +12,11 @@ const Slideshow = () => {
     "https://northernbeachespainting.com.au/wp-content/uploads/2017/06/Tina-Wild-_DSC9977.jpg",
   ];
 
-  useEffect(() => {
-    console.log("useEffect");
+    let slideIndex = 1;
 
-    const slideIndex = 1;
+    let myTimer = 0;
 
-    const myTimer = 0;
-
-    const slideshowContainer = {};
-
-    const funcName = val =>{
-        
-    })
+    let slideshowContainer = {};
 
     // NEXT AND PREVIOUS CONTROL
     const handleChange = (n) => {
@@ -60,24 +53,29 @@ const Slideshow = () => {
 
       //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
       // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+      if(slideshowContainer){
+        slideshowContainer.addEventListener("mouseenter", pause);
+        slideshowContainer.addEventListener("mouseleave", resume);
+      }
 
-      slideshowContainer.addEventListener("mouseenter", pause);
-      slideshowContainer.addEventListener("mouseleave", resume);
     });
 
     //Controls the current slide and resets interval if needed
-    function currentSlide(n) {
+     const currentSlide = (n)=> {
       clearInterval(myTimer);
       myTimer = setInterval(function () {
         handleChange(n + 1);
-      }, 4000);
+      }, 4000); 
       showSlides((slideIndex = n));
     }
 
     function showSlides(n) {
-      const i = 0;
-      const slides = document.getElementsByClassName("mySlides");
+      console.log('s')
+      let i = 0;
+      let slides = document.getElementsByClassName("mySlides");
       if (slides.length) {
+        console.log('sss')
+
         const dots = document.getElementsByClassName("dot");
         if (n > slides.length) {
           slideIndex = 1;
@@ -106,20 +104,26 @@ const Slideshow = () => {
         handleChange(slideIndex);
       }, 4000);
     };
-  });
+  ;
 
   return (
     <div className={styles.slideshowContainer}>
       <div>TEST</div>
 
       <div className={styles.slideshowInner}>
-        <div class="mySlides fade">
+        <div className={`${styles.mySlides} ${styles.fade} mySlides`}>
           <img
             src="https://northernbeachespainting.com.au/wp-content/uploads/2016/12/12quinton_09_wq.jpg"
-            style="width: 100%;"
+            // style="width: 100%;"
             alt="sally lightfoot crab"
           />
-          <div class="text">Sally Lightfoot Crab</div>
+          <div>Sally Lightfoot Crab</div>
+        </div>
+        <div className={`${styles.mySlides} ${styles.fade} mySlides`}>
+        <img  src='https://northernbeachespainting.com.au/wp-content/uploads/2014/04/11serpentine_PQ_06.jpg'
+                  alt="sally lightfoot crab"
+          />
+          <div>Sally Lightfoot Crab</div>
         </div>
 
         <a className={styles.prev} onClick={handleChange(-1)}>
@@ -131,11 +135,11 @@ const Slideshow = () => {
       </div>
       <br />
 
-      <div styles="text-align: center;">
-        <span className={styles.dot} onClick="currentSlide(1)"></span>
-        <span className={styles.dot} onClick="currentSlide(2)"></span>
-        <span className={styles.dot} onClick="currentSlide(3)"></span>
-        <span className={styles.dot} onClick="currentSlide(4)"></span>
+      <div>
+        <span className={`${styles.dot} dot`} onClick={currentSlide(1)}></span>
+        <span className={`${styles.dot} dot`} onClick={currentSlide(2)}></span>
+        <span className={`${styles.dot} dot`} onClick={currentSlide(3)}></span>
+        <span className={`${styles.dot} dot`} onClick={currentSlide(4)}></span>
       </div>
     </div>
   );

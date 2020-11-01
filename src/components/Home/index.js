@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.home} Home>
+      <div className={styles.home}>
         <Link to={`/`}>
           <div className={styles.imgCont}>
             Home
