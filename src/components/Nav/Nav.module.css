@@ -7,6 +7,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  font-family: cursive;
 }
 
 /* h1 {
@@ -18,7 +19,8 @@ header {
 .heading {
   width: 100%;
   color: red;
-  line-height: 2rem;
+  line-height: 2.3rem;
+  margin:0;
 }
 
 .heading span {
@@ -84,8 +86,16 @@ nav[role="navigation"] li a {
 }
 
 nav[role="navigation"] li a:hover {
-  color: blue;
+      color: blue;
+
   text-decoration: underline;
+}
+
+.phone {
+  background: url("../../img/phone.png") 0 13px/20px no-repeat;
+  padding-left: 30px !important;
+  /* background-size: contain;   MAKES THE SIZE OF THE LI */
+  /* color: #fff; */
 }
 
 /* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
@@ -119,8 +129,8 @@ nav[role="navigation"] li a:hover {
 /* Credit: https://codepen.io/mblode/pen/evjfn */
 div.menuLink {
   width: 30px;
-  top: 100px;
-  left: 120px;
+  /* top: 100px;
+  left: 120px; */
   transition-duration: 0.5s;
 }
 div.menuLink .icon {
@@ -129,14 +139,15 @@ div.menuLink .icon {
   height: 4px;
   width: 2rem;
   top: 2rem;
-  background-color: #efefef;
+  right: 2rem;   /* TODO: THIS MIGHT BE CAUSING ISSUE WITH HAMBURGER */
+  background-color: #bbb;
 }
 div.menuLink .icon:before {
   transition-duration: 0.5s;
   position: absolute;
   width: 2rem;
   height: 4px;
-  background-color: #efefef;
+  background-color: #bbb;
   content: "";
   top: -10px;
 }
@@ -145,7 +156,7 @@ div.menuLink .icon:after {
   position: absolute;
   width: 2rem;
   height: 4px;
-  background-color: #efefef;
+  background-color: #bbb;
   content: "";
   top: 10px;
 }

@@ -9,7 +9,7 @@ const Services = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.Services} Services>
+      <div className={styles.Services}>
         <Link to={`/`}>
           <div className={styles.imgCont}>
             Services

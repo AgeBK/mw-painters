@@ -7,11 +7,12 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>,
+  // <React.StrictMode> TODO: CAUSES RERENDER (IN DEV MODE) ?? https://medium.com/@andreasheissenberger/react-components-render-twice-any-way-to-fix-this-91cf23961625
+  <Router>
+    <App />
+  </Router>
+  // </React.StrictMode>,
+  ,
   document.getElementById("root")
 );
 

@@ -19,15 +19,15 @@ const Nav = () => {
   // const [isActive, setActive] = useState(false);
   const [open, setOpen] = useState("");
 
-  // const handleToggle = (val) => setActive(!isActive);
-
-  const handleOpen = (val) => setOpen(open.length ? "" : styles.open);
+  const handleToggle = (val) => setOpen(open.length ? "" : styles.open);
 
   return (
     <div className={styles.header}>
       <header>
         <h1 className={`${styles.heading}  ${open}`}>
-          <span>MANLY WARRINGAH</span> PAINTERS
+          <Link to="/">
+            <span>MANLY WARRINGAH</span> PAINTERS
+          </Link>
         </h1>
         <nav id="menu" role="navigation" className={`${open}`}>
           <ul className={styles.main}>
@@ -38,16 +38,20 @@ const Nav = () => {
                 </Link>
               </li>
             ))}
+            <li className={styles.listItem}>
+              <a href="tel:0400 000 000" className={styles.phone}>
+                0400 000 000</a>
+            </li>
           </ul>
         </nav>
         <div
-          onClick={handleOpen}
+          onClick={handleToggle}
           className={`${styles.menuLink}  ${open}`} // TODO, have this twice
         >
           <div className={styles.icon}></div>
         </div>
       </header>
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <p>A responsive hamburger menu with flexbox.</p>
         <div>https://react-slideshow.herokuapp.com/</div>
         <p>
@@ -59,15 +63,8 @@ const Nav = () => {
           codes a 50px offset, but if you had a large header then it would need
           adjusting.
         </p>
-      </div>
-      <Slideshow />
-      {/* <div className={styles.imgCont}>
-        <img
-          src={require("../../img/img_1.jpg")}
-          className={styles.img}
-          alt="TODO"
-        />
       </div> */}
+      <Slideshow />
     </div>
   );
 };

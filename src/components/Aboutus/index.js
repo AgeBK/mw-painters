@@ -9,7 +9,7 @@ const Aboutus = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.Aboutus} Aboutus>
+      <div className={styles.Aboutus}>
         <Link to={`/`}>
           <div className={styles.imgCont}>
             ABOUT US

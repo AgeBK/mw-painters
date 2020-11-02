@@ -25,9 +25,19 @@ function App(props) {
         ) : ( */}
       <div className={styles.container}>
         <Switch>
-          <Route exact path="/" render={() => <Home />} />
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about-us">
+            <Aboutus />
+          </Route>
+          <Route exact path="/services">
+            <Services />
+          </Route>
+
+          {/* <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about-us" render={() => <Aboutus />} />
-          <Route exact path="/services" render={() => <Services />} />
+          <Route exact path="/services" render={() => <Services />} /> */}
           {/* <Route
             exact
             path="/test"
