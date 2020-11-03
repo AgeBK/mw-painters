@@ -1,8 +1,11 @@
 .slideshowContainer {
   max-width: 1000px;
-  position: relative;
   margin: auto;
   overflow: hidden;   /* TODO: why is this overflowing */
+}
+
+.slideshowInner{
+  position: relative; 
 }
 
 .slide {
@@ -18,23 +21,27 @@
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
-  color: #222428;
+  padding: 5px 13px;
+  color: #fff;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   transition: 0.6s ease;
   /* border-radius: 0 3px 3px 0; */
   border: 0;    /* TODO: WHERES THIS COMING FROM */
+  background: rgba(0,0,0,0.5);
+  width: 40px;
+  height: 40px;
+  /* display: block; */
+  z-index: 100;
+  border-radius: 50%;
 }
 
 .next {
-  right: -50px;
-  border-radius: 3px 3px 3px 3px;
+  right: 10px;
 }
 
 .prev {
-  left: -50px;
-  border-radius: 3px 3px 3px 3px;
+  left: 10px;
 }
 
 .prev:hover,

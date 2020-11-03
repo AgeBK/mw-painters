@@ -18,9 +18,12 @@ header {
 
 .heading {
   width: 100%;
-  color: red;
   line-height: 2.3rem;
   margin:0;
+}
+
+.heading a {
+  color: red;
 }
 
 .heading span {
@@ -93,7 +96,7 @@ nav[role="navigation"] li a:hover {
 
 .phone {
   background: url("../../img/phone.png") 0 13px/20px no-repeat;
-  padding-left: 30px !important;
+  padding-left: 27px !important;
   /* background-size: contain;   MAKES THE SIZE OF THE LI */
   /* color: #fff; */
 }

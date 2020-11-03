@@ -92,6 +92,7 @@ const Slideshow = () => {
 
       //?
       if (n < 1) {
+        alert(' n is less than 1')
         slideIndex = slides.length;
       }
 
@@ -107,7 +108,6 @@ const Slideshow = () => {
 
       // show current slide and dot
       slides[slideIndex - 1].style.display = "block";
-      let x = styles.active;
       dots[slideIndex - 1].className += ` ${styles.active}`;
     }
   }
@@ -126,10 +126,10 @@ const Slideshow = () => {
 
   return (
     <div className={styles.slideshowContainer}>
-      <div className="slideshowInner">
+      <div className={styles.slideshowInner}>
         {arr.map((val, i) =>
-          <div key={i} className={`${styles.slide} slide`}>  tesdt
-          <img
+          <div key={i} className={`${styles.slide} slide`}>
+            <img
               src={val}
               // style="width: 100%;"
               alt="TODO: ADD SOMETHING HERE"
@@ -145,11 +145,11 @@ const Slideshow = () => {
         </button>
       </div>
       <br />
-      <div>
+      <>
         {arr.map((val, i) =>
           <span key={i} className={`${styles.dot} dot`} onClick={() => currentSlide(i + 1)}></span>
         )}
-      </div>
+      </>
     </div>
   );
 };
