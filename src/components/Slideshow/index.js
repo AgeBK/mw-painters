@@ -1,18 +1,23 @@
 import React, { useEffect } from "react";
 import styles from "./Slideshow.module.css";
+const iconPath = process.env.PUBLIC_URL + '/assets/img/';
+console.log(iconPath)
 // import { Link } from "react-router-dom";
 
 /* eslint-disable */
+// https://www.mojohomes.com.au/new-home-designs/harmony#home-design-galleries
 
 const Slideshow = () => {
   console.log("slideshow");
 
-  const arr = [
-    "https://northernbeachespainting.com.au/wp-content/uploads/2016/12/12quinton_09_wq.jpg",
-    "https://northernbeachespainting.com.au/wp-content/uploads/2014/04/11serpentine_PQ_06.jpg",
-    "https://northernbeachespainting.com.au/wp-content/uploads/2016/12/12quinton_30_wq.jpg",
-    "https://northernbeachespainting.com.au/wp-content/uploads/2017/06/Tina-Wild-_DSC9977.jpg",
-  ];
+  // const imgArr = [
+  //   "https://northernbeachespainting.com.au/wp-content/uploads/2016/12/12quinton_09_wq.jpg",
+  //   "https://northernbeachespainting.com.au/wp-content/uploads/2014/04/11serpentine_PQ_06.jpg",
+  //   "https://northernbeachespainting.com.au/wp-content/uploads/2016/12/12quinton_30_wq.jpg",
+  //   "https://northernbeachespainting.com.au/wp-content/uploads/2017/06/Tina-Wild-_DSC9977.jpg",
+  // ];
+
+  const imgArr = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg', 'img_4.jpg', 'img_5.jpg']
 
   let slideIndex = 1;
 
@@ -127,12 +132,14 @@ const Slideshow = () => {
   return (
     <div className={styles.slideshowContainer}>
       <div className={styles.slideshowInner}>
-        {arr.map((val, i) =>
+        {imgArr.map((val, i) =>
           <div key={i} className={`${styles.slide} slide`}>
             <img
-              src={val}
+              src={require("../../img/" + val)}
+
+              // src={val}
               // style="width: 100%;"
-              alt="TODO: ADD SOMETHING HERE"
+              alt="Manly Warringah Painting"
             />
             <div>image {i + 1}</div>
           </div>
@@ -146,7 +153,7 @@ const Slideshow = () => {
       </div>
       <br />
       <>
-        {arr.map((val, i) =>
+        {imgArr.map((val, i) =>
           <span key={i} className={`${styles.dot} dot`} onClick={() => currentSlide(i + 1)}></span>
         )}
       </>

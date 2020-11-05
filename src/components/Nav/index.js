@@ -23,6 +23,11 @@ const Nav = () => {
 
   return (
     <div className={styles.header}>
+      <div className={styles.topBar}>
+        <a href="tel:0400 000 000" className={styles.phone}>
+          0400 000 000</a>
+      </div>
+
       <header>
         <h1 className={`${styles.heading}  ${open}`}>
           <Link to="/">
@@ -38,10 +43,10 @@ const Nav = () => {
                 </Link>
               </li>
             ))}
-            <li className={styles.listItem}>
+            {/* <li className={styles.listItem}>
               <a href="tel:0400 000 000" className={styles.phone}>
                 0400 000 000</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div

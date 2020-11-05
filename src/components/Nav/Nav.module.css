@@ -10,6 +10,15 @@ header {
   font-family: cursive;
 }
 
+.topBar{
+  background-color: blue;
+  text-align: center;
+  padding: 15px;
+}
+
+.topBar a{
+  color: #fff;
+}
 /* h1 {
   color: #fff;
   margin: 5px;
@@ -66,11 +75,11 @@ nav[role="navigation"].open {
   /* margin-top: 50px; */
 }
 
-nav[role="navigation"].xx {
+/* nav[role="navigation"].xx {
   max-height: 15rem;
   margin-bottom: 10px;
   margin-top: 50px;
-}
+} */
 
 /* When in small screen, center the list */
 nav[role="navigation"] ul {
@@ -95,10 +104,10 @@ nav[role="navigation"] li a:hover {
 }
 
 .phone {
-  background: url("../../img/phone.png") 0 13px/20px no-repeat;
+  background: url("../../img/phne.png") 0 13px/20px no-repeat;
   padding-left: 27px !important;
   /* background-size: contain;   MAKES THE SIZE OF THE LI */
-  /* color: #fff; */
+  color: #fff;
 }
 
 /* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
@@ -141,7 +150,7 @@ div.menuLink .icon {
   position: absolute;
   height: 4px;
   width: 2rem;
-  top: 2rem;
+  top: 1.5rem;
   right: 2rem;   /* TODO: THIS MIGHT BE CAUSING ISSUE WITH HAMBURGER */
   background-color: #bbb;
 }
