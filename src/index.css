@@ -7,8 +7,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size:1.2rem;
-  color: rgb(58,58,58)
+  font-size: 1.2rem;
+  color: rgb(58, 58, 58);
+}
+
+@font-face {
+  font-family: "DancingScript";
+  src: local("DancingScript"),
+    url(./fonts/DancingScript-VariableFont_wght.ttf) format("truetype");
+}
+
+h1 {
+  font-family: "DancingScript";
 }
 
 code {

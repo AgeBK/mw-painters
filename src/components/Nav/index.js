@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBeer, FaPhoneVolume } from "react-icons/fa";
+
 // import Slideshow from "../../components/Slideshow";
 import Test from "../../components/Test";
 import Slideshow from "../Slideshow";
@@ -24,8 +26,10 @@ const Nav = () => {
   return (
     <div className={styles.header}>
       <div className={styles.topBar}>
+        <FaPhoneVolume color="white" />
         <a href="tel:0400 000 000" className={styles.phone}>
-          0400 000 000</a>
+          0400 000 000
+        </a>
       </div>
 
       <header>

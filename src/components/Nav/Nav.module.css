@@ -10,13 +10,13 @@ header {
   font-family: cursive;
 }
 
-.topBar{
+.topBar {
   background-color: blue;
   text-align: center;
   padding: 15px;
 }
 
-.topBar a{
+.topBar a {
   color: #fff;
 }
 /* h1 {
@@ -28,7 +28,7 @@ header {
 .heading {
   width: 100%;
   line-height: 2.3rem;
-  margin:0;
+  margin: 0;
 }
 
 .heading a {
@@ -98,13 +98,12 @@ nav[role="navigation"] li a {
 }
 
 nav[role="navigation"] li a:hover {
-      color: blue;
-
+  color: blue;
   text-decoration: underline;
 }
 
 .phone {
-  background: url("../../img/phne.png") 0 13px/20px no-repeat;
+  background: url("../../img/phne2.png") 0 3px/20px no-repeat;
   padding-left: 27px !important;
   /* background-size: contain;   MAKES THE SIZE OF THE LI */
   color: #fff;
@@ -151,7 +150,7 @@ div.menuLink .icon {
   height: 4px;
   width: 2rem;
   top: 1.5rem;
-  right: 2rem;   /* TODO: THIS MIGHT BE CAUSING ISSUE WITH HAMBURGER */
+  right: 2rem; /* TODO: THIS MIGHT BE CAUSING ISSUE WITH HAMBURGER */
   background-color: #bbb;
 }
 div.menuLink .icon:before {
