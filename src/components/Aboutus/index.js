@@ -18,6 +18,38 @@ const Aboutus = () => {
               alt="TODO"
               className={styles.img}
             /> */}
+                    <aside>
+          <h2>Request a Painting Quote</h2>
+          <div>
+            <ul>
+              <li>
+                <a href="tel:0280743898">
+                  Call Now…
+                  <strong>
+                    <i></i> (02) 8074 3898
+                  </strong>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:northernbeachespainting@gmail.com">
+                  todo@gmail.com{" "}
+                </a>
+              </li>
+              <li>
+                <a href="https://housepaintersnorthernbeaches.com.au/contact/">
+                  Email and we’ll call you back
+                </a>
+              </li>
+              <li>
+    
+              </li>
+              <li>
+                http://www.manlywarringahpainters.com.au/ 0412 128 847
+                alantaylor16@bigpond.com
+              </li>
+            </ul>
+          </div>
+        </aside>
           </div>
         </Link>
       </div>
