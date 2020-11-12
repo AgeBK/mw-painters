@@ -1,18 +1,23 @@
 import React from "react";
 // import products from '../../data/products.json';
 import styles from "./Services.module.css";
+import { services } from "../../data/data.json";
 import { Link } from "react-router-dom";
 
-const Services = () => {
-  //   const [category, setProduct] = useState([]);
-  //   const [categories, setCategories] = useState({});
+console.log(services);
 
+const Services = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.Services}>
+      <div className={styles.services}>
         <Link to={`/`}>
           <div className={styles.imgCont}>
-            Services
+            <h2>Services</h2>
+            <ul>
+              {services.map((val, i) => (
+                <li key={i}>{val}</li>
+              ))}
+            </ul>
             {/* <img
               src={require("../../img/")}
               alt="TODO"
@@ -22,27 +27,6 @@ const Services = () => {
         </Link>
       </div>
     </div>
-    // <div className={styles.container}>
-    //   {Object.entries(categories).map(([key, value]) => {
-    //     const category = key.toLowerCase().replace(/ /gi, "-");
-    //     return (
-    //       <div key={category} className={styles.category}>
-    //         <Link to={`/${category}`}>
-    //           <div className={styles.imgCont}>
-    //             <img
-    //               src={require("../../img/" + value)}
-    //               alt={category}
-    //               className={styles.img}
-    //             />
-    //           </div>
-    //         </Link>
-    //         <Link to={`/${category}`} className={styles.link}>
-    //           {key}
-    //         </Link>
-    //       </div>
-    //     );
-    //   })}
-    // </div>
   );
 };
 

@@ -1,4 +1,5 @@
 header {
+to  /* TODO: CHECK THIS */
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -13,7 +14,8 @@ header {
 .topBar {
   background-color: blue;
   text-align: center;
-  padding: 15px;
+  padding: 12px;
+  position: relative;
 }
 
 .topBar a {
@@ -26,9 +28,11 @@ header {
 } */
 
 .heading {
-  width: 100%;
+  /* width: 100%; */
+  flex-grow: 1;
   line-height: 2.3rem;
   margin: 0;
+  text-align: center;
 }
 
 .heading a {
@@ -52,6 +56,13 @@ header {
 /* --- Hamburger Functionality --- */
 div.menuLink {
   padding: 1rem;
+  right: 0;
+  width: 30px;
+  position: absolute;
+  transition-duration: 0.5s;
+  /* left: 0; */
+  top: 0;
+  cursor: pointer;
 }
 
 /* When screen is small, center content and animate transitions. */
@@ -59,12 +70,13 @@ nav[role="navigation"] {
   clear: both;
   overflow: hidden;
   max-height: 0;
+  display: none;
   /* -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; */
-  width: 100%;
+  /* width: 100%; */
   /* margin: 0px 0px 0px -50px; */
 }
 
@@ -72,6 +84,8 @@ nav[role="navigation"] {
 nav[role="navigation"].open {
   max-height: 100%; /*TODO: was 15rem ?? */
   margin-bottom: 10px;
+  display: block;
+
   /* margin-top: 50px; */
 }
 
@@ -102,12 +116,12 @@ nav[role="navigation"] li a:hover {
   text-decoration: underline;
 }
 
-.phone {
+/* .phone {
   background: url("../../img/phne2.png") 0 3px/20px no-repeat;
   padding-left: 27px !important;
-  /* background-size: contain;   MAKES THE SIZE OF THE LI */
+  /* background-size: contain;   MAKES THE SIZE OF THE LI
   color: #fff;
-}
+} */
 
 /* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
 /* Credit: https://codepen.io/bradfrost/pen/sHvaz */
@@ -119,6 +133,7 @@ nav[role="navigation"] li a:hover {
   nav[role="navigation"] {
     max-height: none;
     margin: 0px;
+    display: block;
   }
 
   nav[role="navigation"] ul {
@@ -149,7 +164,7 @@ div.menuLink .icon {
   position: absolute;
   height: 4px;
   width: 2rem;
-  top: 1.5rem;
+  top: 1.3rem;
   right: 2rem; /* TODO: THIS MIGHT BE CAUSING ISSUE WITH HAMBURGER */
   background-color: #bbb;
 }
@@ -161,6 +176,7 @@ div.menuLink .icon:before {
   background-color: #bbb;
   content: "";
   top: -10px;
+  left: 0;
 }
 div.menuLink .icon:after {
   transition-duration: 0.5s;
@@ -170,6 +186,7 @@ div.menuLink .icon:after {
   background-color: #bbb;
   content: "";
   top: 10px;
+  left: 0;
 }
 div.menuLink.open .icon {
   transition-duration: 0.5s;
@@ -181,7 +198,7 @@ div.menuLink.open .icon:before {
 div.menuLink.open .icon:after {
   transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
 }
-div.menuLink:hover {
+div.icon:hover {
   cursor: pointer;
 }
 

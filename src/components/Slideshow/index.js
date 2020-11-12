@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./Slideshow.module.css";
-const iconPath = process.env.PUBLIC_URL + '/assets/img/';
-console.log(iconPath)
+const iconPath = process.env.PUBLIC_URL + "/assets/img/";
+console.log(iconPath);
 // import { Link } from "react-router-dom";
 
 /* eslint-disable */
@@ -17,7 +17,23 @@ const Slideshow = () => {
   //   "https://northernbeachespainting.com.au/wp-content/uploads/2017/06/Tina-Wild-_DSC9977.jpg",
   // ];
 
-  const imgArr = ['img_1.jpg', 'img_2.jpg', 'img_3.jpg', 'img_4.jpg', 'img_5.jpg']
+  // const imgArr = [
+  //   "img_1.jpg",
+  //   "img_2.jpg",
+  //   "img_3.jpg",
+  //   "img_4.jpg",
+  //   "img_5.jpg",
+  //   "img_6.jpg",
+  // ];
+
+  const imgArr = [
+    "img_6.jpg",
+    "img_7a.jpg",
+    "img_8a.jpg",
+    "img_9a.jpg",
+    "img_10a.jpg",
+    "img_11a.jpg",
+  ];
 
   let slideIndex = 1;
 
@@ -27,7 +43,7 @@ const Slideshow = () => {
 
   // NEXT AND PREVIOUS CONTROL
   const handleChange = (n) => {
-    console.log('handleChange');
+    //console.log("handleChange");
     clearInterval(myTimer);
     if (n < 0) {
       showSlides((slideIndex -= 1));
@@ -49,18 +65,16 @@ const Slideshow = () => {
   };
 
   window.addEventListener("load", function () {
-    console.log('load');
+    //console.log("load");
     showSlides(slideIndex);
     myTimer = setInterval(function () {
       handleChange(1);
     }, 4000);
 
     //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    slideshowContainer = document.getElementsByClassName(
-      "slideshowInner"
-    )[0];
+    slideshowContainer = document.getElementsByClassName("slideshowInner")[0];
 
-    console.log(slideshowContainer)
+    //console.log(slideshowContainer);
 
     //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
@@ -68,27 +82,26 @@ const Slideshow = () => {
       slideshowContainer.addEventListener("mouseenter", pause);
       slideshowContainer.addEventListener("mouseleave", resume);
     }
-
   });
 
   //Controls the current slide and resets interval if needed
   const currentSlide = (n) => {
-    console.log('currentSlide');
+    //console.log("currentSlide");
     clearInterval(myTimer);
     myTimer = setInterval(function () {
       handleChange(n + 1);
     }, 4000);
     showSlides((slideIndex = n));
-  }
+  };
 
   const showSlides = (n) => {
     // console.log('showSlides')
-    let i = 0;  // TODO: IS THIS BEING USED?
+    let i = 0; // TODO: IS THIS BEING USED?
     let slides = document.getElementsByClassName("slide");
     if (slides.length) {
       const dots = document.getElementsByClassName("dot");
 
-      console.log(n)
+      //console.log(n);
 
       // if slide 4, go back to 1
       if (n > slides.length) {
@@ -97,7 +110,7 @@ const Slideshow = () => {
 
       //?
       if (n < 1) {
-        alert(' n is less than 1')
+        alert(" n is less than 1");
         slideIndex = slides.length;
       }
 
@@ -115,14 +128,14 @@ const Slideshow = () => {
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += ` ${styles.active}`;
     }
-  }
+  };
 
   const pause = () => {
     clearInterval(myTimer);
   };
 
   const resume = () => {
-    console.log('resume')
+    console.log("resume");
     clearInterval(myTimer);
     myTimer = setInterval(function () {
       handleChange(slideIndex);
@@ -132,18 +145,17 @@ const Slideshow = () => {
   return (
     <div className={styles.slideshowContainer}>
       <div className={styles.slideshowInner}>
-        {imgArr.map((val, i) =>
+        {imgArr.map((val, i) => (
           <div key={i} className={`${styles.slide} slide`}>
             <img
               src={require("../../img/" + val)}
-
               // src={val}
               // style="width: 100%;"
               alt="Manly Warringah Painting"
             />
             <div>image {i + 1}</div>
           </div>
-        )}
+        ))}
         <button className={styles.prev} onClick={() => handleChange(-1)}>
           &#10094;
         </button>
@@ -153,9 +165,13 @@ const Slideshow = () => {
       </div>
       <br />
       <>
-        {imgArr.map((val, i) =>
-          <span key={i} className={`${styles.dot} dot`} onClick={() => currentSlide(i + 1)}></span>
-        )}
+        {imgArr.map((val, i) => (
+          <span
+            key={i}
+            className={`${styles.dot} dot`}
+            onClick={() => currentSlide(i + 1)}
+          ></span>
+        ))}
       </>
     </div>
   );

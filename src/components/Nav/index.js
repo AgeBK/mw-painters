@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBeer, FaPhoneVolume } from "react-icons/fa";
+import { nav } from "../../data/data.json";
 
 // import Slideshow from "../../components/Slideshow";
 import Test from "../../components/Test";
@@ -27,9 +28,17 @@ const Nav = () => {
     <div className={styles.header}>
       <div className={styles.topBar}>
         <FaPhoneVolume color="white" />
-        <a href="tel:0400 000 000" className={styles.phone}>
-          0400 000 000
+        <a href="tel:0412 128 847" className={styles.phone}>
+          0412 128 847
         </a>
+        <div
+          onClick={handleToggle}
+          className={`${styles.menuLink}  ${open}`} // TODO, have this twice
+        >
+          <div className={styles.iconCont}>
+            <div className={styles.icon}></div>
+          </div>
+        </div>
       </div>
 
       <header>
@@ -40,7 +49,7 @@ const Nav = () => {
         </h1>
         <nav id="menu" role="navigation" className={`${open}`}>
           <ul className={styles.main}>
-            {navArr.map((val, i) => (
+            {nav.map((val, i) => (
               <li key={i} className={styles.listItem}>
                 <Link to={val.link} className={styles.productLink}>
                   {val.name}
@@ -53,12 +62,6 @@ const Nav = () => {
             </li> */}
           </ul>
         </nav>
-        <div
-          onClick={handleToggle}
-          className={`${styles.menuLink}  ${open}`} // TODO, have this twice
-        >
-          <div className={styles.icon}></div>
-        </div>
       </header>
       {/* <div className={styles.container}>
         <p>A responsive hamburger menu with flexbox.</p>
