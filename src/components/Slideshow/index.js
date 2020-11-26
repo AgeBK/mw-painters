@@ -56,11 +56,11 @@ const Slideshow = () => {
     if (n === -1) {
       myTimer = setInterval(function () {
         handleChange(n + 2);
-      }, 4000);
+      }, 6000);
     } else {
       myTimer = setInterval(function () {
         handleChange(n + 1);
-      }, 4000);
+      }, 6000);
     }
   };
 
@@ -69,7 +69,7 @@ const Slideshow = () => {
     showSlides(slideIndex);
     myTimer = setInterval(function () {
       handleChange(1);
-    }, 4000);
+    }, 6000);
 
     //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
     slideshowContainer = document.getElementsByClassName("slideshowInner")[0];
@@ -90,7 +90,7 @@ const Slideshow = () => {
     clearInterval(myTimer);
     myTimer = setInterval(function () {
       handleChange(n + 1);
-    }, 4000);
+    }, 6000);
     showSlides((slideIndex = n));
   };
 
@@ -139,7 +139,7 @@ const Slideshow = () => {
     clearInterval(myTimer);
     myTimer = setInterval(function () {
       handleChange(slideIndex);
-    }, 4000);
+    }, 6000);
   };
 
   return (
