@@ -11,7 +11,7 @@ body {
   color: rgb(58, 58, 58);
 }
 
-@font-face {
+/* @font-face {
   font-family: "DancingScript";
   src: local("DancingScript"),
     url(./fonts/DancingScript-VariableFont_wght.ttf) format("truetype");
@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-family: "DancingScript";
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

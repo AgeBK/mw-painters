@@ -25,15 +25,27 @@ const Nav = () => {
   const handleToggle = (val) => setOpen(open.length ? "" : styles.open);
 
   return (
-    <div className={styles.header}>
+    <header>
+      {/* <div className={styles.header}> */}
       <div className={styles.topBar}>
+        <div className={styles.logoCont}>
+          <a href="/">
+            <img
+              src={require("../../img/mwpLogoNoPhneSml.jpg")}
+              // src={require("../../img/mwpLogoNoPhneSml.jpg")}
+              className={styles.logo}
+              alt="Manly Warringah Painters"
+            />
+          </a>
+        </div>
+
         <FaPhoneVolume color="white" />
         <a href="tel:0412 128 847" className={styles.phone}>
           0412 128 847
         </a>
         <div
           onClick={handleToggle}
-          className={`${styles.menuLink}  ${open}`} // TODO, have this twice
+          className={`${styles.menuLink}  ${open}`} // TODO, have this twice, check semantics
         >
           <div className={styles.iconCont}>
             <div className={styles.icon}></div>
@@ -41,28 +53,26 @@ const Nav = () => {
         </div>
       </div>
 
-      <header>
-        <h1 className={`${styles.heading}  ${open}`}>
+      {/* <h1 className={`${styles.heading}  ${open}`}>
           <Link to="/">
             <span>MANLY WARRINGAH</span> PAINTERS
           </Link>
-        </h1>
-        <nav id="menu" role="navigation" className={`${open}`}>
-          <ul className={styles.main}>
-            {nav.map((val, i) => (
-              <li key={i} className={styles.listItem}>
-                <Link to={val.link} className={styles.productLink}>
-                  {val.name}
-                </Link>
-              </li>
-            ))}
-            {/* <li className={styles.listItem}>
+        </h1> */}
+      <nav id="menu" role="navigation" className={`${open}`}>
+        <ul className={styles.main}>
+          {nav.map((val, i) => (
+            <li key={i} className={styles.listItem}>
+              <Link to={val.link} className={styles.productLink}>
+                {val.name}
+              </Link>
+            </li>
+          ))}
+          {/* <li className={styles.listItem}>
               <a href="tel:0400 000 000" className={styles.phone}>
                 0400 000 000</a>
             </li> */}
-          </ul>
-        </nav>
-      </header>
+        </ul>
+      </nav>
       {/* <div className={styles.container}>
         <p>A responsive hamburger menu with flexbox.</p>
         <div>https://react-slideshow.herokuapp.com/</div>
@@ -77,7 +87,8 @@ const Nav = () => {
         </p>
       </div> */}
       <Slideshow />
-    </div>
+      {/* </div> */}
+    </header>
   );
 };
 
