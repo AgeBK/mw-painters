@@ -9,6 +9,7 @@ header {
   margin: 0 auto;
   padding: 1rem;
   font-family: cursive; */
+  position: relative;
 }
 
 .topBar {
@@ -16,10 +17,13 @@ header {
   text-align: center;
   padding: 12px;
   position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .topBar a {
   color: #8b8686;
+  display: flex;
 }
 /* h1 {
   color: #fff;
@@ -33,6 +37,11 @@ header {
 
 .logo {
   width: auto;
+  margin-right: 50px;
+}
+
+.phone {
+  display: inline-block;
 }
 
 .heading {
@@ -133,7 +142,7 @@ nav[role="navigation"] li a:hover {
 
 /* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
 /* Credit: https://codepen.io/bradfrost/pen/sHvaz */
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 55rem) {
   div.menuLink {
     display: none;
   }
@@ -143,6 +152,9 @@ nav[role="navigation"] li a:hover {
     margin: 0px;
     display: block;
     border: 1px solid red;
+    position: absolute;
+    top: 10px;
+    right: 15%;
   }
 
   nav[role="navigation"] ul {
@@ -175,14 +187,14 @@ div.menuLink .icon {
   width: 2rem;
   top: 1.3rem;
   right: 2rem; /* TODO: THIS MIGHT BE CAUSING ISSUE WITH HAMBURGER */
-  background-color: #bbb;
+  background-color: #100b71;
 }
 div.menuLink .icon:before {
   transition-duration: 0.5s;
   position: absolute;
   width: 2rem;
   height: 4px;
-  background-color: #bbb;
+  background-color: #100b71;
   content: "";
   top: -10px;
   left: 0;
@@ -192,7 +204,7 @@ div.menuLink .icon:after {
   position: absolute;
   width: 2rem;
   height: 4px;
-  background-color: #bbb;
+  background-color: #100b71;
   content: "";
   top: 10px;
   left: 0;

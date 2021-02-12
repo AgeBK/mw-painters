@@ -4,7 +4,7 @@
     "Residential Homes, Units & Body Corporate",
     "Drywall And Plaster Repairs",
     "Architrave & Skirting Board Painting",
-    " Feature Wall Painting",
+    "Feature Wall Painting",
     "Plastering & Cornice Work",
     "Wall & Ceiling Painting",
     "New Properties, Restorations & Renovations",
@@ -14,7 +14,6 @@
     { "name": "HOME", "link": "/" },
     { "name": "ABOUT US", "link": "about-us" },
     { "name": "SERVICES", "link": "services" },
-    { "name": "PROJECTS", "link": "projects" },
     { "name": "CONTACT US", "link": "contact-us" }
   ]
 }

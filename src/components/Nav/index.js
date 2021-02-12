@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBeer, FaPhoneVolume } from "react-icons/fa";
 import { nav } from "../../data/data.json";
 
 // import Slideshow from "../../components/Slideshow";
@@ -10,13 +9,13 @@ import Slideshow from "../Slideshow";
 import styles from "./Nav.module.css";
 // import { sortByName, saleItemsFirst, sortByPrice } from '../../utils';
 
-const navArr = [
-  { name: "HOME", link: "/" },
-  { name: "ABOUT US", link: "about-us" },
-  { name: "SERVICES", link: "services" },
-  { name: "PROJECTS", link: "projects" },
-  { name: "CONTACT US", link: "contact-us" },
-];
+// const navArr = [
+//   { name: "HOME", link: "/" },
+//   { name: "ABOUT US", link: "about-us" },
+//   { name: "SERVICES", link: "services" },
+//   { name: "PROJECTS", link: "projects" },
+//   { name: "CONTACT US", link: "contact-us" },
+// ];
 
 const Nav = () => {
   // const [isActive, setActive] = useState(false);
@@ -32,17 +31,33 @@ const Nav = () => {
           <a href="/">
             <img
               src={require("../../img/mwpLogoNoPhneSml.jpg")}
-              // src={require("../../img/mwpLogoNoPhneSml.jpg")}
+              // src={require("../../img/mwpLogoSml.jpg")}
               className={styles.logo}
               alt="Manly Warringah Painters"
+              usemap="#imgmap"
             />
+            <map name="imgmap">
+              <area
+                shape="rect"
+                coords="10,10,30,30"
+                href="tel:0412 128 847"
+                alt="xx"
+              />
+            </map>{" "}
+            <span className={styles.phone}>
+              <img
+                src={require("../../img/mwpLogoPhne.jpg")}
+                className={styles.logo}
+                alt="Manly Warringah Painters"
+              />
+            </span>
           </a>
         </div>
 
-        <FaPhoneVolume color="white" />
-        <a href="tel:0412 128 847" className={styles.phone}>
+        {/* <FaPhoneVolume color="white" /> */}
+        {/* <a href="tel:0412 128 847" className={styles.phone}>
           0412 128 847
-        </a>
+        </a> */}
         <div
           onClick={handleToggle}
           className={`${styles.menuLink}  ${open}`} // TODO, have this twice, check semantics

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./Slideshow.module.css";
 const iconPath = process.env.PUBLIC_URL + "/assets/img/";
-console.log(iconPath);  
+console.log(iconPath);
 // import { Link } from "react-router-dom";
 
 /* eslint-disable */
@@ -150,7 +150,7 @@ const Slideshow = () => {
             <img
               src={require("../../img/" + val)}
               // src={val}
-              
+              alt="Manly Warringah Painting"
             />
             <div>image {i + 1}</div>
           </div>
