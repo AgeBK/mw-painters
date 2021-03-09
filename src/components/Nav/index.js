@@ -30,28 +30,29 @@ const Nav = () => {
         <div className={styles.logoCont}>
           <a href="/">
             <img
-              src={require("../../img/mwpLogoNoPhneSml.jpg")}
+              src={require("../../img/mwpLogoNoPhne.jpg")}
               // src={require("../../img/mwpLogoSml.jpg")}
+              // src={require("../../img/mwpLogoPhneRght2.jpg")}
               className={styles.logo}
               alt="Manly Warringah Painters"
               usemap="#imgmap"
             />
-            <map name="imgmap">
-              <area
-                shape="rect"
-                coords="10,10,30,30"
-                href="tel:0412 128 847"
-                alt="xx"
-              />
-            </map>{" "}
-            <span className={styles.phone}>
-              <img
-                src={require("../../img/mwpLogoPhne.jpg")}
-                className={styles.logo}
-                alt="Manly Warringah Painters"
-              />
-            </span>
           </a>
+          <map name="imgmap">
+            <area
+              shape="rect"
+              coords="10,10,30,30"
+              href="tel:0412 128 847"
+              alt="Manly Warringah Painters"
+            />
+          </map>
+          <span className={styles.phone}>
+            <img
+              src={require("../../img/mwpLogoPhne.jpg")}
+              className={styles.phoneImg}
+              alt="Manly Warringah Painters"
+            />
+          </span>
         </div>
 
         {/* <FaPhoneVolume color="white" /> */}

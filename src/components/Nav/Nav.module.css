@@ -23,7 +23,6 @@ header {
 
 .topBar a {
   color: #8b8686;
-  display: flex;
 }
 /* h1 {
   color: #fff;
@@ -33,6 +32,7 @@ header {
 
 .logoCont {
   text-align: left;
+  display: flex;
 }
 
 .logo {
@@ -142,6 +142,19 @@ nav[role="navigation"] li a:hover {
 
 /* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
 /* Credit: https://codepen.io/bradfrost/pen/sHvaz */
+
+/* .logoCont img {
+  width: 60%;
+  border: 1px solid yellow;
+} */
+
+@media screen and (min-width: 40rem) {
+  /* .logoCont img {
+    width: 80%;
+    border: 1px solid blue;
+  } */
+}
+
 @media screen and (min-width: 55rem) {
   div.menuLink {
     display: none;
@@ -153,7 +166,7 @@ nav[role="navigation"] li a:hover {
     display: block;
     border: 1px solid red;
     position: absolute;
-    top: 10px;
+    top: 80px;
     right: 15%;
   }
 
@@ -171,7 +184,21 @@ nav[role="navigation"] li a:hover {
   nav[role="navigation"] li a {
     border: 0;
   }
+
+  /* .logoCont img {
+    width: auto;
+    border: 1px solid purple;
+  } */
 }
+
+@media screen and (min-width: 80rem) {
+  nav[role="navigation"] {
+    border: 1px solid green;
+    top: 10px;
+    right: 15%;
+  }
+}
+
 /* --- Hamburger Appearance & Animation --- */
 /* Credit: https://codepen.io/mblode/pen/evjfn */
 div.menuLink {

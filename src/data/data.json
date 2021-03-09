@@ -1,5 +1,6 @@
 {
   "services": [
+    "TODO: CHECK THE TOP FEW, THINK ITS A LOCAL RIP OFF",
     "Interior & Exterior Painting",
     "Residential Homes, Units & Body Corporate",
     "Drywall And Plaster Repairs",
@@ -8,12 +9,29 @@
     "Plastering & Cornice Work",
     "Wall & Ceiling Painting",
     "New Properties, Restorations & Renovations",
-    "Repainting gutters, fascia and downpipes"
+    "Repainting gutters, fascia and downpipes",
+    "Rendered exteriors",
+    "Exposed brickwork",
+    "Roofing including colorbond, iron and tiles",
+    "Weatherboards",
+    "Fences",
+    "Steel",
+    "Plasterboard",
+    "Textured painting",
+    "Spray painting",
+    "Doors and trims",
+    "Restoration jobs",
+    "Wood staining",
+    "And much more."
   ],
   "nav": [
     { "name": "HOME", "link": "/" },
     { "name": "ABOUT US", "link": "about-us" },
     { "name": "SERVICES", "link": "services" },
     { "name": "CONTACT US", "link": "contact-us" }
-  ]
+  ],
+"icons": [
+  { "title": "Experience", "icon": "faGem" },
+  { "title": "Courteous", "icon": "faThumbs" },
+  { "title": "Fancy", "icon": "faFancy" }  ]
 }

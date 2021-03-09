@@ -10,37 +10,19 @@ const Services = () => {
   return (
     <div className={styles.container}>
       <div className={styles.services}>
-        <Link to={`/`}>
-          <div className={styles.imgCont}>
-            <h2>Services</h2>
-            <ul>
-              {services.map((val, i) => (
-                <li key={i}>{val}</li>
-              ))}
-            </ul>
-            {/* <img
-              src={require("../../img/")}
-              alt="TODO"
-              className={styles.img}
-            /> */}
-          </div>
-        </Link>
         <div>
           <div>
             <div>
-              <div class="mk-text-block responsive-align-center   page_title">
+              <div>
                 <h1>The experienced domestic painters in Melbourne</h1>
-                <div class="clearboth"></div>
               </div>
-              <div class="mk-text-block responsive-align-center  ">
+              <div>
                 <p>
                   <img
-                    class="alignnone size-full wp-image-25390"
-                    title="Domestic"
+                    className=""
+                    title="TODO: CHECK IMAGE TITLE AND SIZES"
                     src="/wp-content/uploads/2014/12/Domestic.jpg"
                     alt="Manly Warringah Painters"
-                    width="758"
-                    height="261"
                     srcset="https://mcleanpainting.com.au/wp-content/uploads/2014/12/Domestic.jpg 758w, https://mcleanpainting.com.au/wp-content/uploads/2014/12/Domestic-300x103.jpg 300w"
                     sizes="(max-width: 758px) 100vw, 758px"
                   />
@@ -61,26 +43,16 @@ const Services = () => {
                   painters who can take on any job in any home. Some of our
                   previous work includes:
                 </p>
+                <h2>Services</h2>
                 <ul>
-                  <li>Rendered exteriors</li>
-                  <li>Exposed brickwork</li>
-                  <li>Roofing including colorbond, iron and tiles</li>
-                  <li>Weatherboards</li>
-                  <li>Fences</li>
-                  <li>Steel</li>
-                  <li>Plasterboard</li>
-                  <li>Textured painting</li>
-                  <li>Spray painting</li>
-                  <li>Doors and trims</li>
-                  <li>Restoration jobs</li>
-                  <li>Wood staining</li>
-                  <li>And much more.</li>
+                  {services.map((val, i) => (
+                    <li key={i}>{val}</li>
+                  ))}
                 </ul>
                 <p>
                   If you’re after something not listed here, get in touch to
                   find out what we can do for you.
                 </p>
-                <p>&nbsp;</p>
                 <h2>
                   What makes us the finest domestic painters Melbourne wide?
                 </h2>
@@ -118,11 +90,9 @@ const Services = () => {
                   For your free quote, call our domestic painters in Melbourne
                   today on <strong>0408 676 390</strong>.
                 </p>
-                <div></div>
               </div>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
     </div>

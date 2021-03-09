@@ -1,5 +1,5 @@
 import React from "react";
-// import products from '../../data/products.json';
+import { icons } from "../../data/data.json";
 import styles from "./Aboutus.module.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +8,8 @@ import {
   faPhoneVolume,
   faGem,
 } from "@fortawesome/free-solid-svg-icons";
+
+console.log(icons);
 
 const Aboutus = () => {
   //   const [category, setProduct] = useState([]);
@@ -26,10 +28,13 @@ const Aboutus = () => {
             /> */}
           <aside>
             <h2>Request a Painting Quote</h2>
-            <div className={styles.icon}>
-              {" "}
-              <FontAwesomeIcon icon={faGem} />
-            </div>
+
+            <ul className={styles.icons}>
+              {/* <li className={styles.listItem}>
+              <a href="tel:0400 000 000" className={styles.phone}>
+                0400 000 000</a>
+            </li> */}
+            </ul>
 
             <p>
               Don't worry, we have never used subcontracters, so you can be
@@ -41,6 +46,12 @@ const Aboutus = () => {
             </p>
             <p>
               <div>
+                <p>
+                  Talk To A Professional Painter, Not A Salesperson -{" "}
+                  <span>
+                    <a href="tel:+61401635451">0401 635 451</a>
+                  </span>
+                </p>
                 <p>
                   If it’s a friendly and professional painting and decorating
                   service that you’re in need of, then look no further! At Manly
