@@ -1,0 +1,42 @@
+/* .contactForm {
+
+} */
+
+.row {
+  width: 100%;
+}
+
+.tb {
+}
+
+.formInput {
+  width: 100%;
+  padding: 15px;
+  /* font-size: 18px; */
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.submit {
+  background-color: blue;
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  /* border: 1px solid gray; */
+}
+
+@media screen and (min-width: 50rem) {
+  form {
+    display: flex;
+  }
+
+  .tb {
+    margin-right: 30px;
+  }
+
+  /* .formInput {
+    border: 1px solid red;
+  } */
+}
