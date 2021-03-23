@@ -1,0 +1,92 @@
+.contactNav .contactNo {
+  display: flex;
+}
+
+.contactNav .contactNo a {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 1px solid blue;
+}
+
+.contactNav .contactNo .icon {
+  /* display: inline-block; */
+  margin-right: 8px;
+}
+
+.contactNav .contactNo a:first-child {
+  background-color: blue;
+  color: #fff;
+}
+
+.contactNav .contactNo a:nth-of-type(3) {
+  display: none;
+}
+
+@media screen and (min-width: 60rem) {
+  .contactNav {
+    display: none;
+  }
+}
+
+/* Contact form section */
+.contactForm .contactNo {
+  display: block;
+}
+
+.contactForm .contactNo a {
+  /* ;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+   */
+  display: flex;
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+
+  /* width: 50px; */
+}
+
+.contactForm .contactNo span {
+  /* width: 50px; */
+}
+
+.contactForm .contactNo a .icon {
+  /* ;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+   */
+
+  color: gray;
+  /* width: 50px; */
+  border-radius: 50px;
+  border: 1px solid gray;
+  font-size: 35px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.contactForm .contactNo a:nth-child(2) .icon {
+  padding: 20px 30px;
+  /* border: 1px solid red; */
+}
+
+@media screen and (min-width: 50rem) {
+  .contactForm .contactNo {
+    /* border: 1px solid green; */
+    display: flex;
+  }
+
+  .contactForm .contactNo a {
+    font-size: 20px;
+  }
+
+  .contactForm .contactNo a .icon {
+    font-size: 50px;
+  }
+}

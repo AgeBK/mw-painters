@@ -10,6 +10,7 @@
 
 .icons {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .icon {
@@ -18,7 +19,50 @@
   /* color: #fb0301; */
 }
 
+.icons li {
+  width: 100%;
+  max-width: 100%;
+}
+
 .iconText {
   display: inline-block;
   padding: 10px;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.brands img {
+  width: auto;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 35rem) {
+  .icons li {
+    max-width: 50%;
+  }
+
+  .brands img {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 52rem) {
+  .icons li {
+    max-width: 33%;
+  }
+
+  .brands img {
+    max-width: 18%;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  .icons li {
+    max-width: 25%;
+  }
 }
