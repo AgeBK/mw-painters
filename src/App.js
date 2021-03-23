@@ -7,7 +7,7 @@ import MainContainer from "./containers/MainContainer";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Services from "./components/Services";
-// import FilteredCats from "./components/FilteredCats";
+import ContactUs from "./pages/ContactUs";
 // import Product from "./components/Product";
 // import Test from "./components/Test";
 import styles from "./App.module.css";
@@ -34,7 +34,9 @@ function App(props) {
           <Route exact path="/services">
             <Services />
           </Route>
-
+          <Route exact path="/contact-us">
+            <ContactUs />
+          </Route>
           {/* <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about-us" render={() => <Aboutus />} />
           <Route exact path="/services" render={() => <Services />} /> */}

@@ -11,7 +11,7 @@ const MainContainer = (WrappedComponent) => () => (
     <div className={styles.header}>
       <Nav />
     </div>
-    <div className={styles.body}>
+    <div className={styles.content}>
       {/* App component is passed into MainContainer as WrappedComponent */}
       <WrappedComponent />
     </div>

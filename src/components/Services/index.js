@@ -16,6 +16,30 @@ const Services = () => {
               <div>
                 <h1>The experienced domestic painters in Melbourne</h1>
               </div>
+              <p>
+                <b>TODO throw some stars in</b> We were highly impressed with
+                Melbourne Painters Group from our first contact. It took them
+                only 24 hours to send us a written and a very detailed quote.
+                Their price was reasonable and they started the project and
+                finished with minimal interruptions to our business. Job was
+                completed in less than two weeks as promised. Thank you for the
+                great work done at our factory. D. White | Tullamarine
+              </p>
+              <p>
+                Melbourne Painters Group undertook painting of our house both
+                interior and exterior. Provided a quick and reasonable quote.
+                Always turned up on time they only used premium paints and
+                materials .Our house looks great! I highly recommended Shannon,
+                Frank and their team. K. Brown | Glen Waverley
+              </p>
+              <p>
+                We have been using Melbourne Painters Group for over 10 years
+                now they have carried out several painting jobs for us at our
+                home and investment properties. They have always been very
+                professional, highly reliable and trustworthy. I would highly
+                recommend Melbourne Painters Group with out any hesitation. J.
+                Kipouridis | Oakleigh
+              </p>
               <div>
                 <p>
                   <img

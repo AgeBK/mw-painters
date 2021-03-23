@@ -33,3 +33,21 @@ ul {
   margin: 0;
   text-align: left;
 }
+
+input,
+textarea,
+button {
+  box-sizing: border-box;
+  border: 0;
+  font: Arial;
+}
+
+button {
+  cursor: pointer;
+}
+
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}

@@ -30,8 +30,44 @@
     { "name": "SERVICES", "link": "services" },
     { "name": "CONTACT US", "link": "contact-us" }
   ],
-"icons": [
-  { "title": "Experience", "icon": "faGem" },
-  { "title": "Courteous", "icon": "faThumbs" },
-  { "title": "Fancy", "icon": "faFancy" }  ]
+  "iconsX": [
+    { "title": "Experience", "icon": "faGem" },
+    { "title": "Courteous", "icon": "faThumbsUp" },
+    { "title": "Fancy", "icon": "faPhoneVolume" }
+  ],
+  "brands": [
+    "dulux.png",
+    "britishPaints.jpg",
+    "cabots.jpg",
+    "taubmans.jpg",
+    "wattyl.png"
+  ],
+  "homeIntro": [
+    "<h1>Manly Warringah Painters</h1><strong>Delivering Strata, Commercial and Residential Painting Services for over 25 years</strong><p>Manly Warringah Painters were established on the Northern Beaches in 1995 by Alan Taylor and Frank Edwards and still going strong today. We are experienced in all types of painting and painted finishes. Alan and Frank provide a friendly, professional service at a very competitive price.</p><p>At Manly Warringah Painters, we feel it's essential to choose the best painters to achieve the best possible result and expert looking finish when painting your property. As professional painters, we strive for perfection no matter how big or small the job is. Call us today for an obligation free quote.</p><p>It is important making sure the company you go with will take care of your painting project with its own employees without using sub-contractors. It became more common recently even well known painting companies to sub-contract on the Northern Beaches. If the company is using sub-contractors, it means lower quality of service and increased cost</p>"
+  ],
+  "homeSpecialise": [
+    {
+      "image": "domestic.jpg",
+      "title": "Domestic Painting",
+      "text": "<p>When it comes to  interior painting, there is so much to think about when considering all the different painting & decorating options out there. Whether you’re thinking of residential interior painting, whether that be bedroom painting or kitchen painting, the best interior painting works to modernize and freshen your space from the inside out.</p><p>If you find yourself looking for home interior painting inspiration or guidance as far as house paint and painting interior walls is concerned, hiring professional house painters can really ease that pressure. Not only will the right professional house painters provide you with quality in home painting, but it frees up your time and energy to be thinking about your next interior room painting project!.</p>"
+    },
+    {
+      "image": "commercial.jpg",
+      "title": "Commercial Painting",
+      "text": "<p>Over the years, our work excellence, dedication, and commitment have made us stand at the top position among other painting Melbourne companies. Commercial projects that we’ve completed include cafes, restaurants, pubs, retail shops, hairdressers, warehouses and offices. Similar to our domestic work, we’ll happily take on a project of any size and can work on both interior and exterior walls.</p><p>We know running a business can be hard, and the last thing you want is a painter getting in the way. Our painting Melbourne&nbsp;are able to work with you to create a plan that suits your business hours and minimises the disruption. We do this by working after hours and on weekends.</p>"
+    },
+    {
+      "image": "interior.jpg",
+      "title": "Interior Painting",
+      "text": "<p>Interior Painting is about home maintenance and the protection of surfaces, Manly Warringah Painters have painted hundreds of homes and it seems to almost never be about maintenance. It is mostly about that new colour, the new trends, the new paint. It is all with good reason of course. You are painting anyway, why not explore all the possible colour choices out there. </p><p>There are many reasons to paint the interior of  you home, whether you want to cover up wear and tear, to change the look of a room or to protect your interior surfaces, Manly Warringah Painters has the solution for you.</p>"
+    },
+    {
+      "image": "exterior.jpg",
+      "title": "Exterior Painting",
+      "text": "<p>Manly Warringah Painters can cater to all your exterior painting needs. Whether you need to touch up a small area of your exterior paint job or repaint your project or home an entirely new colour, then Manly Warringah Painters are here to serve you.<p> We use only the best quality paints, brushes and rollers, and attention to detail is what we specialise in. We provide the best painting services thorough painting processes we have mastered over a 25-year period, we expertly clean and prepare all surfaces to ensure the finish coat will properly adhere and we are experts in covering all unpaintable areas.</p><p> Whether you want to remove marks and stains, protection against bad weather or increase home value, Manly Warringah Painters are the best in the business.</p></p>"
+    }
+  ],
+  "about": [
+    "<p><strong>Take the pain out of painting with Manly Warringah Painters</strong></p>At Manly Warringah Painters our goal is to deliver a painting service which upholds quality workmanship and respect for the client’s home, as well as delivering great customer service to make the process stress-free. We also aim to provide our customers with a professional painting service that offers superior customer satisfaction and quality results that look better....longer. We have over 25 years of experience in the painting industry and anyone can tell you we take pride in our work. No matter what scale of project we take on, from small residential painting touch ups to commercial interior painting jobs, our team of qualified, professional painters are dedicated to providing exceptional painting services to our customers around the Northern Beaches and Sydney area</p><p> Manly Warringah Painters have been leading the way on the Northern Beaches and sorrounding suburbs with their professional residential, commercial and industrial painting services. For houses, apartments, restaurants, offices, retail establishments, manufacturing facilities and more, we can offer you a professional personalized painting solutions</p><p>You don't have to worry about us using subcontractors, so you can be assured that the painters that arrive at your place will be the owner operators. This guarantees that the job is done properly, using the best materials in a timely fashion. All our work is guaranteed. When you go with Manly Warringah Painters, you can be assured top quality work in a timely fashion </p>"
+  ]
 }

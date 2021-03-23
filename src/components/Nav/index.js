@@ -5,17 +5,14 @@ import { nav } from "../../data/data.json";
 // import Slideshow from "../../components/Slideshow";
 import Test from "../../components/Test";
 import Slideshow from "../Slideshow";
+import ContactDetails from "../../components/ContactDetails";
 
 import styles from "./Nav.module.css";
-// import { sortByName, saleItemsFirst, sortByPrice } from '../../utils';
-
-// const navArr = [
-//   { name: "HOME", link: "/" },
-//   { name: "ABOUT US", link: "about-us" },
-//   { name: "SERVICES", link: "services" },
-//   { name: "PROJECTS", link: "projects" },
-//   { name: "CONTACT US", link: "contact-us" },
-// ];
+import LogoImg from "../../img/mwpLogo.jpg";
+import LogoNoPhne from "../../img/mwpLogoNoPhne.jpg";
+import LogoLong from "../../img/mwpLogoLong.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneAlt, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
   // const [isActive, setActive] = useState(false);
@@ -25,32 +22,54 @@ const Nav = () => {
 
   return (
     <header>
-      {/* <div className={styles.header}> */}
+      <div className={styles.headerBar}></div>
       <div className={styles.topBar}>
         <div className={styles.logoCont}>
           <a href="/">
-            <img
-              src={require("../../img/mwpLogoNoPhne.jpg")}
+            {/* // TODO look up picture/source */}
+            <picture>
+              <source srcSet={LogoNoPhne} media="(max-width: 45rem)" />
+              <img
+                className={styles.logo}
+                srcSet={LogoLong}
+                alt="Manly Warringah Painters"
+              />
+            </picture>
+            {/* <img
+              src={LogoImg}
+              // src={require("../../img/mwpLogoLong.jpg")}
+              // src={require("../../img/mwpLogoNoPhne.jpg")}
               // src={require("../../img/mwpLogoSml.jpg")}
               // src={require("../../img/mwpLogoPhneRght2.jpg")}
               className={styles.logo}
               alt="Manly Warringah Painters"
               usemap="#imgmap"
-            />
+            /> */}
           </a>
           <map name="imgmap">
             <area
-              shape="rect"
-              coords="10,10,30,30"
-              href="tel:0412 128 847"
+              target="_self"
               alt="Manly Warringah Painters"
-            />
+              title="Manly Warringah Painters"
+              href="tel:9972 0398"
+              coords="0,0,151,24"
+              shape="rect"
+            ></area>
+            <area
+              target="_self"
+              alt="Manly Warringah Painters"
+              title="Manly Warringah Painters"
+              href="tel:0412 128 847"
+              coords="0,24,151,52"
+              shape="rect"
+            ></area>
           </map>
           <span className={styles.phone}>
             <img
               src={require("../../img/mwpLogoPhne.jpg")}
               className={styles.phoneImg}
               alt="Manly Warringah Painters"
+              useMap="#imgmap"
             />
           </span>
         </div>
@@ -68,12 +87,13 @@ const Nav = () => {
           </div>
         </div>
       </div>
-
+      <ContactDetails class="contactNav" />
       {/* <h1 className={`${styles.heading}  ${open}`}>
           <Link to="/">
             <span>MANLY WARRINGAH</span> PAINTERS
           </Link>
         </h1> */}
+      <div className={styles.navBar}></div>
       <nav id="menu" role="navigation" className={`${open}`}>
         <ul className={styles.main}>
           {nav.map((val, i) => (

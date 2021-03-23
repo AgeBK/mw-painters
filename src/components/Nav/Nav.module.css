@@ -12,9 +12,18 @@ header {
   position: relative;
 }
 
+.headerBar {
+  background: darkblue;
+  padding: 5px;
+}
+
+.navBar {
+  background: red;
+  padding: 5px;
+}
+
 .topBar {
   /* background-color: blue; */
-  text-align: center;
   padding: 12px;
   position: relative;
   max-width: 1080px;
@@ -24,24 +33,18 @@ header {
 .topBar a {
   color: #8b8686;
 }
-/* h1 {
-  color: #fff;
-  margin: 5px;
-  padding: 0px;
-} */
 
 .logoCont {
-  text-align: left;
   display: flex;
 }
 
 .logo {
-  width: auto;
-  margin-right: 50px;
+  width: 80%;
+  margin-right: 0;
 }
 
 .phone {
-  display: inline-block;
+  display: none;
 }
 
 .heading {
@@ -133,41 +136,48 @@ nav[role="navigation"] li a:hover {
   text-decoration: underline;
 }
 
-/* .phone {
-  background: url("../../img/phne2.png") 0 3px/20px no-repeat;
-  padding-left: 27px !important;
-  /* background-size: contain;   MAKES THE SIZE OF THE LI
-  color: #fff;
-} */
-
 /* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
 /* Credit: https://codepen.io/bradfrost/pen/sHvaz */
 
-/* .logoCont img {
-  width: 60%;
-  border: 1px solid yellow;
-} */
+/* TODO: DevTools started crashing a lot when i added a lot of media queries?? */
 
-@media screen and (min-width: 40rem) {
-  /* .logoCont img {
-    width: 80%;
-    border: 1px solid blue;
-  } */
+@media screen and (min-width: 28rem) {
+  .logo {
+    width: auto;
+  }
 }
 
-@media screen and (min-width: 55rem) {
-  div.menuLink {
+@media screen and (min-width: 35rem) {
+  .topBar {
+    text-align: center;
+  }
+
+  .logoCont {
+    justify-content: center;
+  }
+
+  .logo {
+    width: auto;
+    border: 1px solid darkgreen;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  div.menuLink,
+  .contactNo {
     display: none;
   }
 
   nav[role="navigation"] {
     max-height: none;
     margin: 0px;
-    display: block;
-    border: 1px solid red;
-    position: absolute;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* position: absolute; */
     top: 80px;
-    right: 15%;
+    right: 10%;
   }
 
   nav[role="navigation"] ul {
@@ -178,11 +188,15 @@ nav[role="navigation"] li a:hover {
 
   nav[role="navigation"] li {
     display: inline-block;
-    margin: 0 0.25rem;
+    margin: 0 15px;
   }
 
   nav[role="navigation"] li a {
     border: 0;
+  }
+
+  .phone {
+    display: inline-block;
   }
 
   /* .logoCont img {
@@ -191,11 +205,29 @@ nav[role="navigation"] li a:hover {
   } */
 }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 85rem) {
+  .topBar {
+    max-width: 1380px;
+  }
+
   nav[role="navigation"] {
-    border: 1px solid green;
-    top: 10px;
-    right: 15%;
+    /* border: 1px solid green; */
+    position: absolute;
+    top: 20px;
+    right: 5%;
+  }
+
+  .logoCont {
+    /* text-align: left; */
+    /* display: flex; */
+    justify-content: left;
+  }
+}
+
+@media screen and (min-width: 95rem) {
+  nav[role="navigation"] {
+    /* border: 1px solid yellow; */
+    right: 10%;
   }
 }
 
