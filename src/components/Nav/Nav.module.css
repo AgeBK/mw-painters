@@ -126,7 +126,7 @@ nav[role="navigation"] li a {
   padding: 0.8rem;
   color: #8b8686;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 
   /* text-align: center; */
 }
@@ -158,7 +158,6 @@ nav[role="navigation"] li a:hover {
 
   .logo {
     width: auto;
-    border: 1px solid darkgreen;
   }
 }
 

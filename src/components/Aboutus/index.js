@@ -1,14 +1,10 @@
 import React from "react";
 // import { iconsX } from "../../data/data.json";
-import { about, brands } from "../../data/data.json";
+import { about, brands, aboutPro, standOutAreas } from "../../data/data.json";
 import styles from "./Aboutus.module.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faThumbsUp,
-  faPhoneVolume,
-  faGem,
-  // faCoffee,
   faMedal,
   faHome,
   faBuilding,
@@ -39,7 +35,7 @@ const Aboutus = () => {
     { title: "Best products available", icon: faTrophy },
   ];
 
-  var o = { faGem, faThumbsUp, faPhoneVolume };
+  // var o = { faGem, faThumbsUp, faPhoneVolume };
 
   const createMarkup = (val) => ({ __html: val });
 
@@ -68,16 +64,8 @@ const Aboutus = () => {
               </li>
             ))}
           </ul>
-
           <p>
-            <div>
-              <p>
-                Talk To A Professional Painter, Not A Salesperson -{" "}
-                <span>
-                  <a href="tel:0412 128 847">0412 128 847</a>
-                </span>
-              </p>
-            </div>
+            <div dangerouslySetInnerHTML={createMarkup(aboutPro)}></div>
           </p>
           <p>
             <h4>
@@ -85,48 +73,9 @@ const Aboutus = () => {
               rest
             </h4>
             <ul className={styles.list}>
-              <li>Over 25 years experience</li>
-              <li>
-                Reliable, local, established and fully insured tradespeople
-              </li>
-              <li>Industry leading workmanship using the finest products</li>
-              <li>Experienced residential, commercial, strata painters</li>
-              <li>Reputable, honest, professional and meticulous</li>
-              <li>Proactive, regular updates on how the job is progressing</li>
-              <li>No-fuss, get-the-job-done approach</li>
-              <li>
-                Over 80% of our new clientele come to us because of referrals
-                from happy customers
-              </li>
-              <li>
-                100% accountability – all projects are backed by a 5-year
-                workmanship guarantee
-              </li>
-              <li>
-                Dulux Accredited Painters who only use high-quality paint brands
-              </li>
-              <li>
-                Committed to the highest safety standards and to keeping work
-                areas clear of mess
-              </li>
-              <li>
-                Careful with belongings; always clean the home after the project
-                is finalised
-              </li>
-              <li>
-                Focus on intensive preparation work to ensure interior and
-                exterior painting work is excellent
-              </li>
-              <li>No hidden costs</li>
-              <li>
-                Free quotes, and work is started within just a few days of the
-                go-ahead being given
-              </li>
-              <li>Cost Effective, Realistic Pricing</li>
-              <li>Honest &amp; Professional Tradespeople</li>
-              <li>Only The Best In Paints And Equipment</li>
-              <li>We Take Pride In Our Work</li>
-              <li>Dedicated To Providing Work Of The Highest Standards</li>
+              {standOutAreas.map((val) => (
+                <li>{val}</li>
+              ))}
             </ul>
           </p>
         </div>

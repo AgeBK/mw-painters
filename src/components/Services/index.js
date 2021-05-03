@@ -1,123 +1,70 @@
 import React from "react";
-// import products from '../../data/products.json';
+import { servicesIntro, serviceAeas } from "../../data/data.json";
 import styles from "./Services.module.css";
 import { services } from "../../data/data.json";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaintRoller, faBrush } from "@fortawesome/free-solid-svg-icons";
 
-console.log(services);
+console.log(services.length);
+
+const createMarkup = (val) => ({ __html: val });
 
 const Services = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.services}>
-        <div>
-          <div>
-            <div>
-              <div>
-                <h1>The experienced domestic painters in Melbourne</h1>
-              </div>
-              <p>
-                <b>TODO throw some stars in</b> We were highly impressed with
-                Melbourne Painters Group from our first contact. It took them
-                only 24 hours to send us a written and a very detailed quote.
-                Their price was reasonable and they started the project and
-                finished with minimal interruptions to our business. Job was
-                completed in less than two weeks as promised. Thank you for the
-                great work done at our factory. D. White | Tullamarine
-              </p>
-              <p>
-                Melbourne Painters Group undertook painting of our house both
-                interior and exterior. Provided a quick and reasonable quote.
-                Always turned up on time they only used premium paints and
-                materials .Our house looks great! I highly recommended Shannon,
-                Frank and their team. K. Brown | Glen Waverley
-              </p>
-              <p>
-                We have been using Melbourne Painters Group for over 10 years
-                now they have carried out several painting jobs for us at our
-                home and investment properties. They have always been very
-                professional, highly reliable and trustworthy. I would highly
-                recommend Melbourne Painters Group with out any hesitation. J.
-                Kipouridis | Oakleigh
-              </p>
-              <div>
-                <p>
-                  <img
+      <div>
+        <h2>
+          The experienced domestic and commerical painters on the Northern
+          Beaches
+        </h2>
+      </div>
+      <div dangerouslySetInnerHTML={createMarkup(servicesIntro)}></div>
+      <div>
+        <p>
+          {/* <img
                     className=""
                     title="TODO: CHECK IMAGE TITLE AND SIZES"
                     src="/wp-content/uploads/2014/12/Domestic.jpg"
                     alt="Manly Warringah Painters"
                     srcset="https://mcleanpainting.com.au/wp-content/uploads/2014/12/Domestic.jpg 758w, https://mcleanpainting.com.au/wp-content/uploads/2014/12/Domestic-300x103.jpg 300w"
                     sizes="(max-width: 758px) 100vw, 758px"
-                  />
-                </p>
-                <h2>
-                  Enhance your home with our domestic painters in Melbourne
-                </h2>
-                <p>
-                  When you’re ready to change up your home with a fresh coat of
-                  paint, choose the most reliable has to offer: McLean Painting.
-                  Our team is made up of experienced and professional domestic
-                  painters who are qualified to do the job to an incredibly high
-                  quality. Each one can boast years of proudly working in the
-                  industry, giving McLean over 100 years of combined experience.
-                </p>
-                <p>
-                  All of this experience adds up to a group of very skilled
-                  painters who can take on any job in any home. Some of our
-                  previous work includes:
-                </p>
-                <h2>Services</h2>
-                <ul>
-                  {services.map((val, i) => (
-                    <li key={i}>{val}</li>
-                  ))}
-                </ul>
-                <p>
-                  If you’re after something not listed here, get in touch to
-                  find out what we can do for you.
-                </p>
-                <h2>
-                  What makes us the finest domestic painters Melbourne wide?
-                </h2>
-                <p>
-                  Our team always prefers to use quality brands such as Dulux,
-                  Haymes, Wattyl and Solver, but will happily take on board any
-                  requests you have. We want you to be able to enjoy the colour
-                  you chose and not compromise on what you want. If you’re not
-                  quite sure exactly what it is you want in your Melbourne, our
-                  domestic painters can help. We have a wealth of knowledge just
-                  waiting to be tapped into!
-                </p>
-                <p>
-                  Our focus on safety can give you peace of mind. Every domestic
-                  painter in Melbourne working for us has training on how to
-                  evaluate each site and carry out their job to the highest
-                  standards as well as a white card. They’re also covered for
-                  public liability and work cover. Should they need to use work
-                  platforms, scaffolding or harness work to complete the job to
-                  a high quality, you can rest assured they’re trained how to
-                  use it. We’re prepared for any job, even when access is
-                  tricky.
-                </p>
-                <p>
-                  While we’re confident there won’t be any problems, we offer a
-                  five year guarantee and the products we use all have extensive
-                  warranties should you need to use them.
-                </p>
-                <p>
-                  So that we can get the job done and you can start living your
-                  best life in your freshly painted home, we’re happy to work
-                  around your schedule including out of hours.
-                </p>
-                <p>
-                  For your free quote, call our domestic painters in Melbourne
-                  today on <strong>0408 676 390</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
+                  /> */}
+        </p>
+        <h3>Services</h3>
+        <ul className={styles.services}>
+          {services.map((val, i) => (
+            <li key={i}>
+              <FontAwesomeIcon icon={i % 2 ? faPaintRoller : faBrush} />
+              {val}
+            </li>
+          ))}
+        </ul>
+        <p>
+          If you’re after something that doesn't appear in the list above, don't
+          hesitate to contact us and we can probably cater to your needs, let us
+          see what we can do for you.
+        </p>
+        <h3>Service Areas</h3>
+        <div dangerouslySetInnerHTML={createMarkup(serviceAeas)}></div>
+        <div>
+          <img
+            src={require("../../img/mwpMap2.png")}
+            className={styles.brand}
+            alt="Manly Warringah Painters service areas"
+          />
         </div>
+        {/* <div className={styles.map}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106221.96597555731!2d151.18220056320723!3d-33.69765401795183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0d55f0bda11bab%3A0xa012b517158bb83d!2sNorthern%20Beaches%20Council%2C%20NSW!5e0!3m2!1sen!2sau!4v1616543725018!5m2!1sen!2sau"
+            // height="600"
+            // style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Google map"
+            className={styles.iFrame}
+          ></iframe>
+        </div> */}
       </div>
     </div>
   );

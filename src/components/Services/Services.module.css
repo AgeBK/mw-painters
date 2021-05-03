@@ -1,0 +1,32 @@
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+}
+
+.services li {
+  /* list-style-type: disc; */
+  margin: 0 15px 5px 3px;
+  color: #100b71;
+}
+
+.services li svg {
+  margin-right: 5px;
+}
+
+/* .map {
+  height: 450px;
+  width: 600px;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+}
+
+.iFrame {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+} */

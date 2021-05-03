@@ -13,7 +13,7 @@ const Home = () => {
         <div className={styles.content}>
           {/* j&e Kogan based text */}
           {/* // TODO: map of areas mwp work and that over 25 years image and error page? */}
-          {/* TODO: semantics are missing, SEO etc, check image 6 slideshow*/}
+          {/* TODO: semantics are missing, SEO etc, check image 6 slideshow, anchors should be router links?*/}
           <div dangerouslySetInnerHTML={createMarkup(homeIntro)}></div>
           <div className={styles.painting}>
             {homeSpecialise.map((val, i) => (
