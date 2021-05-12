@@ -2,6 +2,7 @@
   /* max-width: 1000px; */
   margin: auto;
   overflow: hidden; /* TODO: why is this overflowing */
+  background-color: lightgray;
 }
 
 .slideshowInner {
@@ -14,9 +15,14 @@
   border: solid 1px #000; */
   opacity: 1;
   animation-name: fadeInOpacity;
-  animation-iteration-count: 1; 
+  animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 2s;
+}
+
+.slide img {
+  /* border: 1px solid#ff0000; */
+  min-height: 200px;
 }
 
 @keyframes fadeInOpacity {
@@ -38,7 +44,7 @@
   padding: 5px 13px;
   color: #fff;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   transition: 0.6s ease;
   /* border-radius: 0 3px 3px 0; */
   border: 0; /* TODO: WHERES THIS COMING FROM */
@@ -65,7 +71,7 @@
 }
 
 .text {
-  color: red;
+  color: #ff0000;
   font-size: 15px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -84,15 +90,34 @@
   top: 0;
 }
 
+.dotCont {
+  text-align: center;
+  margin: 10px 0;
+}
+
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 4px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  position: relative;
+}
+.dotInner {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: absolute;
+  top: 5px;
+  left: 1px;
 }
 
 .active,

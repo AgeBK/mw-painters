@@ -8,7 +8,7 @@
   font-weight: bold;
   font-size: 1.2rem;
   padding: 5px;
-  border: 1px solid blue;
+  border: 1px solid #020246;
 }
 
 .contactNav .contactNo .icon {
@@ -17,7 +17,7 @@
 }
 
 .contactNav .contactNo a:first-child {
-  background-color: blue;
+  background-color: #020246;
   color: #fff;
 }
 
@@ -73,7 +73,7 @@
 
 .contactForm .contactNo a:nth-child(2) .icon {
   padding: 20px 30px;
-  /* border: 1px solid red; */
+  /* border: 1px solid#ff0000; */
 }
 
 @media screen and (min-width: 50rem) {

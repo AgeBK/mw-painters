@@ -6,17 +6,18 @@ import Nav from "../../components/Nav";
 // TODO: ADD FLOW TESTS?
 
 // const MainContainer = WrappedComponent => (props: Props) => (
-const MainContainer = (WrappedComponent) => () => (
-  <div className={styles.cont}>
-    <div className={styles.header}>
-      <Nav />
+const MainContainer = (WrappedComponent) => () =>
+  (
+    <div className={styles.main}>
+      <div className={styles.header}>
+        <Nav />
+      </div>
+      <div className={styles.content}>
+        {/* App component is passed into MainContainer as WrappedComponent */}
+        <WrappedComponent />
+      </div>
     </div>
-    <div className={styles.content}>
-      {/* App component is passed into MainContainer as WrappedComponent */}
-      <WrappedComponent />
-    </div>
-  </div>
-);
+  );
 
 export default MainContainer;
 

@@ -9,21 +9,22 @@ header {
   margin: 0 auto;
   padding: 1rem;
   font-family: cursive; */
+  background-color: #fff;
   position: relative;
 }
 
 .headerBar {
-  background: darkblue;
-  padding: 5px;
+  background: #020246;
+  padding: 3px;
 }
 
 .navBar {
-  background: red;
-  padding: 5px;
+  background: #ff0000;
+  padding: 2px;
 }
 
 .topBar {
-  /* background-color: blue; */
+  /* background-color: #020246; */
   padding: 12px;
   position: relative;
   max-width: 1080px;
@@ -56,11 +57,11 @@ header {
 }
 
 .heading a {
-  color: red;
+  color: #ff0000;
 }
 
 .heading span {
-  color: blue;
+  color: #020246;
 }
 
 .heading.open {
@@ -124,7 +125,7 @@ nav[role="navigation"] ul {
 nav[role="navigation"] li a {
   display: block;
   padding: 0.8rem;
-  color: #8b8686;
+  color: #000;
   text-decoration: none;
   font-size: 1.2rem;
 
@@ -132,7 +133,7 @@ nav[role="navigation"] li a {
 }
 
 nav[role="navigation"] li a:hover {
-  color: blue;
+  color: #020246;
   text-decoration: underline;
 }
 
@@ -159,6 +160,14 @@ nav[role="navigation"] li a:hover {
   .logo {
     width: auto;
   }
+
+  /* .headerBar {
+    padding: 5px;
+  }
+
+  .navBar {
+    padding: 5px;
+  } */
 }
 
 @media screen and (min-width: 60rem) {
@@ -173,7 +182,7 @@ nav[role="navigation"] li a:hover {
     /* display: block; */
     display: flex;
     justify-content: center;
-    /* border: 1px solid red; */
+    /* border: 1px solid#ff0000; */
     /* position: absolute; */
     top: 80px;
     right: 10%;

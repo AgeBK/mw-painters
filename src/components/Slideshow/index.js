@@ -152,7 +152,7 @@ const Slideshow = () => {
               // src={val}
               alt="Manly Warringah Painting"
             />
-            <div>image {i + 1}</div>
+            {/* <div>image {i + 1}</div> */}
           </div>
         ))}
         <button className={styles.prev} onClick={() => handleChange(-1)}>
@@ -162,16 +162,22 @@ const Slideshow = () => {
           &#10095;
         </button>
       </div>
-      <br />
-      <>
+      {/* <br /> */}
+      <div className={styles.dotCont}>
         {imgArr.map((val, i) => (
-          <span
+          <div
             key={i}
             className={`${styles.dot} dot`}
             onClick={() => currentSlide(i + 1)}
-          ></span>
+          >
+            <div
+              key={i}
+              className={styles.dotInner}
+              // onClick={() => currentSlide(i + 1)}
+            ></div>
+          </div>
         ))}
-      </>
+      </div>
     </div>
   );
 };

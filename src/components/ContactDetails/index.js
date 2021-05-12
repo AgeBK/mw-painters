@@ -24,7 +24,7 @@ const contactDetails = (props) => {
         </a>
         <a href="mailto:3colours@3colours.com.au" target="_self">
           <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
-          <span> alantaylor16@bigpond.com</span>
+          <span>TODO: alantaylor16@bigpond.com</span>
         </a>
       </div>
     </div>

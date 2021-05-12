@@ -16,12 +16,18 @@
   width: 100%;
 }
 
-.paintCont .textCont {
-  background-color: lightblue;
+.textCont,
+.intro {
+  background-color: #020246;
+  padding: 15px;
+}
+
+.paintCont:nth-child(even) .textCont {
+  background-color: #000;
 }
 
 .paintCont .textInner {
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .paintCont img {

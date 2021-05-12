@@ -1,3 +1,7 @@
+commented out "Image 1, etc the text for slideshow"
+
+min height on slideshow image, looks to small when phone size??
+
 had issue when trying to render ContactForm
 I tried this{ContactForm} which doesn't execute the function
 I needed <ContactForm/> which does

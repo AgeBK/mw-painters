@@ -1,7 +1,8 @@
-.cont {
+.main {
   /* max-width: 1112px; */
 
-  /* background-color: #f6f6f6; */
+  /* background-color: #020246; */
+  background-color: lightgray;
 }
 
 .innerCont {
@@ -16,7 +17,7 @@
   /* position: relative;
   z-index: 1020;
   margin: 0 0 60px; */
-  border: 1px solid #f3f3f3;
+  /* border: 1px solid #f3f3f3; */
 }
 
 .headerUpper {
@@ -25,7 +26,7 @@
 }
 
 .headerMiddle {
-  /* background-color: red; */
+  /* background-color:#ff0000; */
   padding: 20px 0;
   display: flex;
   max-width: 1012px;
@@ -49,9 +50,11 @@
 }
 
 .content {
-  padding: 10px;
+  /* padding: 10px; */
   max-width: 1280px;
   margin: 0 auto;
+  background-color: #020246;
+  color: #fff;
 }
 
 /* @media screen and (min-width: 576px) {
