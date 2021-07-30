@@ -1,7 +1,7 @@
 .main {
   /* max-width: 1112px; */
 
-  /* background-color: #020246; */
+  /* background-color: #171496; */
   background-color: lightgray;
 }
 
@@ -50,11 +50,12 @@
 }
 
 .content {
-  /* padding: 10px; */
+  padding: 20px;
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #020246;
+  background-color: #171496;
   color: #fff;
+  border: 1px solid red;
 }
 
 /* @media screen and (min-width: 576px) {

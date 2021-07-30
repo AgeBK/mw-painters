@@ -16,31 +16,31 @@ import styles from "./App.module.css";
 
 function App(props) {
   return (
-    <div>
+    <>
       {/* <div className={styles.appHeader}>{path !== '/' && <Nav />}</div> */}
       {/* {loading ? (
           <div className={styles.centerScreen}>
             <img src={require("./img/loader.gif")} alt="loader" />
           </div>
         ) : ( */}
-      <div className={styles.container}>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/about-us">
-            <Aboutus />
-          </Route>
-          <Route exact path="/services">
-            <Services />
-          </Route>
-          <Route exact path="/contact-us">
-            <ContactUs />
-          </Route>
-          {/* <Route exact path="/" render={() => <Home />} />
+      {/* <div className={styles.container}> */}
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/about-us">
+          <Aboutus />
+        </Route>
+        <Route exact path="/services">
+          <Services />
+        </Route>
+        <Route exact path="/contact-us">
+          <ContactUs />
+        </Route>
+        {/* <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about-us" render={() => <Aboutus />} />
           <Route exact path="/services" render={() => <Services />} /> */}
-          {/* <Route
+        {/* <Route
             exact
             path="/test"
             render={() => <Test products={["apple", "cherry", "banana"]} />}
@@ -55,9 +55,9 @@ function App(props) {
             path="/:id/:id"
             render={(props) => <Product {...props} />}
           /> */}
-        </Switch>
-      </div>
-    </div>
+      </Switch>
+      {/* </div> */}
+    </>
   );
 }
 export default MainContainer(App);

@@ -10,7 +10,8 @@ import ContactDetails from "../../components/ContactDetails";
 import styles from "./Nav.module.css";
 import LogoImg from "../../img/mwpLogo.jpg";
 import LogoNoPhne from "../../img/mwpLogoNoPhne.jpg";
-import LogoLong from "../../img/mwpLogoLong.jpg";
+import LogoLong from "../../img/mwpLogoLong4.png";
+import LogoLong2 from "../../img/mwpLogoLong.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -34,13 +35,21 @@ const Nav = () => {
                 srcSet={LogoLong}
                 alt="Manly Warringah Painters"
               />
-            </picture>
+            </picture>{" "}
+            {/* <picture>
+              <source srcSet={LogoNoPhne} media="(max-width: 45rem)" />
+              <img
+                className={styles.logo}
+                srcSet={LogoLong2}
+                alt="Manly Warringah Painters"
+              />
+            </picture> */}
             {/* <img
               src={LogoImg}
-              // src={require("../../img/mwpLogoLong.jpg")}
+              // src={require("../../img/mwpLogoLong3.jpg")}
               // src={require("../../img/mwpLogoNoPhne.jpg")}
               // src={require("../../img/mwpLogoSml.jpg")}
-              // src={require("../../img/mwpLogoPhneRght2.jpg")}
+              // src={require("../../img/test2Rght2.jpg")}
               className={styles.logo}
               alt="Manly Warringah Painters"
               usemap="#imgmap"
@@ -66,9 +75,10 @@ const Nav = () => {
           </map>
           <span className={styles.phone}>
             <img
-              src={require("../../img/mwpLogoPhne.jpg")}
-              className={styles.phoneImg}
+              src={require("../../img/test4.png")}
+              // className={styles.phoneImg} Todo: text in logo image seems to dark after resizing ??
               alt="Manly Warringah Painters"
+              className={styles.test2}
               useMap="#imgmap"
             />
           </span>

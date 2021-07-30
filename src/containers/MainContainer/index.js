@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./MainContainer.module.css";
 import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 
 // TODO: ADD FLOW TESTS?
 
@@ -16,6 +17,7 @@ const MainContainer = (WrappedComponent) => () =>
         {/* App component is passed into MainContainer as WrappedComponent */}
         <WrappedComponent />
       </div>
+      <Footer />
     </div>
   );
 

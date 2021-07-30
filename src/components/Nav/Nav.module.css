@@ -14,7 +14,7 @@ header {
 }
 
 .headerBar {
-  background: #020246;
+  background: #171496;
   padding: 3px;
 }
 
@@ -24,7 +24,7 @@ header {
 }
 
 .topBar {
-  /* background-color: #020246; */
+  /* background-color: #171496; */
   padding: 12px;
   position: relative;
   max-width: 1080px;
@@ -56,12 +56,16 @@ header {
   text-align: center;
 }
 
+/* .productLink {
+  color: #000;
+} */
+
 .heading a {
   color: #ff0000;
 }
 
 .heading span {
-  color: #020246;
+  color: #171496;
 }
 
 .heading.open {
@@ -133,8 +137,16 @@ nav[role="navigation"] li a {
 }
 
 nav[role="navigation"] li a:hover {
-  color: #020246;
+  color: #171496;
   text-decoration: underline;
+}
+
+.test2 {
+  width: 157px;
+}
+
+.mwpLogoLong2 {
+  width: 573px;
 }
 
 /* Style for larger screens. Hide the menu button, and show the normal navigation menu. */

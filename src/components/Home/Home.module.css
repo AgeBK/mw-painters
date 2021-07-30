@@ -1,6 +1,7 @@
-.content {
-  margin: 0 auto;
-}
+/* .content {
+  padding: 10px;
+  border: 1px solid yellow;
+} */
 
 .paintCont {
   display: flex;
@@ -16,18 +17,14 @@
   width: 100%;
 }
 
-.textCont,
-.intro {
-  background-color: #020246;
+/* .intro  */
+.textCont {
+  background-color: #171496;
   padding: 15px;
 }
 
 .paintCont:nth-child(even) .textCont {
   background-color: #000;
-}
-
-.paintCont .textInner {
-  /* padding: 15px; */
 }
 
 .paintCont img {

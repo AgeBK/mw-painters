@@ -1,6 +1,19 @@
+.textCont {
+  background-color: #000;
+  /* padding: 15px; */
+}
+
+.textCont:nth-child(odd) {
+  background-color: #171496;
+}
+
 .list {
   list-style-type: disc;
   padding: 0 20px;
+}
+
+.list li {
+  margin: 3px 0;
 }
 
 .services img {
@@ -14,7 +27,7 @@
 }
 
 .icon {
-  color: #100b71;
+  color: #fff;
   /* flex-grow: 1; */
   /* color: #fb0301; */
 }
@@ -29,6 +42,10 @@
   padding: 10px;
 }
 
+.iconImg {
+  width: 25px;
+}
+
 .brands {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +56,11 @@
 .brands img {
   width: auto;
   max-width: 100%;
+  margin: 10px;
+}
+
+.pro a {
+  color: #fff;
 }
 
 @media screen and (min-width: 35rem) {
@@ -57,7 +79,7 @@
   }
 
   .brands img {
-    max-width: 18%;
+    max-width: 15%;
   }
 }
 
