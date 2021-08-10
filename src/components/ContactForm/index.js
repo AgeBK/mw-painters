@@ -18,9 +18,17 @@ const ContactForm = () => {
     <div className="XXXXX">
       <ContactDetails className="contactForm" />
       <div className={styles.contactForm}>
-        <form id="contactForm" onSubmit={handleSubmit(onSubmit)} noValidate>
+        <form action="https://formspree.io/age27176@gmail.com" method="POST">
           {/* Row 1 of form */}
+          {/* <div className={styles.form}> */}
           <div className={styles.row}>
+            <h1>Email</h1>
+            {/* <form action="https://formspree.io/age24@hotmail.com" method="POST">
+              <input type="text" name="name" className={styles.text} />
+              <input type="email" name="_replyto" className={styles.text} />
+              <input type="submit" value="Send" className={styles.btn} />
+            </form> */}
+
             <div className={styles.tb}>
               <input
                 type="text"
@@ -43,7 +51,7 @@ const ContactForm = () => {
                 <span className="errorMessage">{errors.name.message}</span>
               )}
             </div>
-            <div className={styles.tb}>
+            {/* <div className={styles.tb}>
               <input
                 type="tel"
                 name="phone"
@@ -60,14 +68,15 @@ const ContactForm = () => {
                   Please enter a valid phone address
                 </span>
               )}
-            </div>
+            </div> */}
             <div className={styles.tb}>
               <input
                 type="email"
                 name="email"
                 ref={register({
                   required: true,
-                  pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                  pattern:
+                    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                 })}
                 className={styles.formInput}
                 // className="form-control formInput" // TODO is this for the control to work
@@ -102,30 +111,31 @@ const ContactForm = () => {
             <span className="errorMessage">{errors.subject.message}</span>
           )}
         </div> */}
-          </div>
-          {/* Row 3 of form */}
-          <div className={styles.row}>
-            <div className={styles.ta}>
-              <textarea
-                rows={3}
-                name="message"
-                ref={register({
-                  required: true,
-                })}
-                className={styles.formInput}
-                // className="form-control formInput" // TODO is this for the control to work
-                placeholder="Message"
-              ></textarea>
-              {errors.message && (
-                <span className="errorMessage">Please enter a message</span>
-              )}
-            </div>
-            <button className={styles.submit} type="submit">
-              Submit Message
-            </button>
-            {/* <div className={styles.test}>
+            {/* </div> */}
+            {/* Row 3 of form */}
+            <div className={styles.row}>
+              <div className={styles.ta}>
+                <textarea
+                  rows={3}
+                  name="message"
+                  ref={register({
+                    required: true,
+                  })}
+                  className={styles.formInput}
+                  // className="form-control formInput" // TODO is this for the control to work
+                  placeholder="Message"
+                ></textarea>
+                {errors.message && (
+                  <span className="errorMessage">Please enter a message</span>
+                )}
+              </div>
+              <button className={styles.submit} type="submit">
+                Submit
+              </button>
+              {/* <div className={styles.test}>
           <div className={styles.test2}>XXX</div>
         </div> */}
+            </div>
           </div>
         </form>
       </div>

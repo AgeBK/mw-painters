@@ -2,7 +2,7 @@
   /* max-width: 1000px; */
   margin: auto;
   overflow: hidden; /* TODO: why is this overflowing */
-  background-color: lightgray;
+  background-color: #171496;
 }
 
 .slideshowInner {
