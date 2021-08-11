@@ -7,7 +7,7 @@ import MainContainer from "./containers/MainContainer";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Services from "./components/Services";
-import ContactUs from "./pages/ContactUs";
+import ContactUs from "./components/ContactUs";
 // import Product from "./components/Product";
 // import Test from "./components/Test";
 import styles from "./App.module.css";

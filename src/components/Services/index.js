@@ -1,5 +1,9 @@
 import React from "react";
-import { servicesIntro, serviceAeas } from "../../data/data.json";
+import {
+  servicesIntro,
+  serviceAreas,
+  serviceAreaImage,
+} from "../../data/data.json";
 import styles from "./Services.module.css";
 import { services } from "../../data/data.json";
 // import { Link } from "react-router-dom";
@@ -46,10 +50,10 @@ const Services = () => {
           see what we can do for you.
         </p>
         <h3>Service Areas</h3>
-        <div dangerouslySetInnerHTML={createMarkup(serviceAeas)}></div>
-        <div>
+        <div dangerouslySetInnerHTML={createMarkup(serviceAreas)}></div>
+        <div className={styles.serviceAreas}>
           <img
-            src={require("../../img/mwpMap2.png")}
+            src={require("../../img/" + serviceAreaImage)}
             className={styles.brand}
             alt="Manly Warringah Painters service areas"
           />
