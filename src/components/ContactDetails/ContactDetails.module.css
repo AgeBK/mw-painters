@@ -1,3 +1,7 @@
+.contact {
+  display: flex;
+}
+
 .contactNav .contactNo {
   display: flex;
 }
@@ -12,11 +16,10 @@
 }
 
 .contactNav .contactNo .icon {
-  /* display: inline-block; */
   margin-right: 8px;
 }
 
-.contactNo a:first-child {
+.contactNav .contactNo a:first-child {
   background-color: #171496;
   color: #fff;
 }
@@ -36,6 +39,10 @@
 }
 
 /* Contact form section */
+/* .contactForm {
+  background-color: #000;
+} */
+
 .contactForm .contactNo {
   display: block;
 }
@@ -47,8 +54,8 @@
   padding: 5px;
    */
   display: flex;
-  color: gray;
-  font-size: 15px;
+  color: #171496;
+  /* font-size: 15px; */
   margin-bottom: 20px;
   align-items: center;
 
@@ -60,37 +67,31 @@
 }
 
 .contactForm .contactNo a .icon {
-  /* ;
-  text-align: center;
-  font-weight: bold;
-  padding: 5px;
-   */
-
-  color: gray;
-  /* width: 50px; */
+  color: #171496;
   border-radius: 50px;
-  border: 1px solid gray;
-  font-size: 35px;
+  /* border: 1px solid #171496; */
+  font-size: 25px;
   padding: 20px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .contactForm .contactNo a:nth-child(2) .icon {
-  padding: 20px 30px;
-  /* border: 1px solid#ff0000; */
+  padding: 20px 25px;
+  /* border: 1px solid red; */
 }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 60rem) {
   .contactForm .contactNo {
     /* border: 1px solid green; */
     display: flex;
+    flex-direction: column;
   }
 
   .contactForm .contactNo a {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
   .contactForm .contactNo a .icon {
-    font-size: 50px;
+    font-size: 2rem;
   }
 }

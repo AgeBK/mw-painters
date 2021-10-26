@@ -56,10 +56,6 @@ header {
   text-align: center;
 }
 
-/* .productLink {
-  color: #000;
-} */
-
 .heading a {
   color: #ff0000;
 }
@@ -91,7 +87,7 @@ div.menuLink {
 }
 
 /* When screen is small, center content and animate transitions. */
-nav[role="navigation"] {
+header nav {
   clear: both;
   overflow: hidden;
   max-height: 0;
@@ -105,8 +101,8 @@ nav[role="navigation"] {
   /* margin: 0px 0px 0px -50px; */
 }
 
-/* Positioning when nav does appear in small screen mode */
-nav[role="navigation"].open {
+/* Positioning when header nav does appear in small screen mode */
+nav.open {
   max-height: 100%; /*TODO: was 15rem ?? */
   margin-bottom: 10px;
   display: block;
@@ -114,19 +110,19 @@ nav[role="navigation"].open {
   /* margin-top: 50px; */
 }
 
-/* nav[role="navigation"].xx {
+/* nav.xx {
   max-height: 15rem;
   margin-bottom: 10px;
   margin-top: 50px;
 } */
 
 /* When in small screen, center the list */
-nav[role="navigation"] ul {
+header nav ul {
   margin: 0 auto;
   padding: 0;
 }
 
-nav[role="navigation"] li a {
+header nav li a {
   display: block;
   padding: 0.8rem;
   color: #000;
@@ -136,7 +132,7 @@ nav[role="navigation"] li a {
   /* text-align: center; */
 }
 
-nav[role="navigation"] li a:hover {
+header nav li a:hover {
   color: #171496;
   text-decoration: underline;
 }
@@ -188,7 +184,7 @@ nav[role="navigation"] li a:hover {
     display: none;
   }
 
-  nav[role="navigation"] {
+  header nav {
     max-height: none;
     margin: 0px;
     /* display: block; */
@@ -200,18 +196,18 @@ nav[role="navigation"] li a:hover {
     right: 10%;
   }
 
-  nav[role="navigation"] ul {
+  header nav ul {
     margin: 0 0 0 -0.25rem;
     border: 0;
     text-align: right;
   }
 
-  nav[role="navigation"] li {
+  header nav li {
     display: inline-block;
     margin: 0 15px;
   }
 
-  nav[role="navigation"] li a {
+  header nav li a {
     border: 0;
   }
 
@@ -230,7 +226,7 @@ nav[role="navigation"] li a:hover {
     max-width: 1380px;
   }
 
-  nav[role="navigation"] {
+  header nav {
     /* border: 1px solid green; */
     position: absolute;
     top: 20px;
@@ -245,7 +241,7 @@ nav[role="navigation"] li a:hover {
 }
 
 @media screen and (min-width: 95rem) {
-  nav[role="navigation"] {
+  header nav {
     /* border: 1px solid yellow; */
     right: 10%;
   }

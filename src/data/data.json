@@ -55,17 +55,16 @@
     "No-fuss, get-the-job-done approach",
     "Over 80% of our new clientele come to us because of referrals from happy customers ",
     "100% accountability – all projects are backed by a 5-year workmanship guarantee",
-    "Dulux Accredited Painters who only use high-quality paint brands ",
+    "Dulux accredited painters who only use high-quality paint brands ",
     "Committed to the highest safety standards and to keeping work areas clear of mess",
     "Careful with belongings; always clean the home after the project is finalised",
     "Focus on intensive preparation work to ensure interior and exterior painting work is excellent",
-    "No hidden costs",
+    "No hidden costs so you know what you're up for",
     "Free quotes, and work is started within just a few days of the  go-ahead being given",
-    "Cost Effective, Realistic Pricing",
-    "Honest &amp; Professional Tradespeople",
-    "Only The Best In Paints And Equipment",
-    "We Take Pride In Our Work",
-    "Dedicated To Providing Work Of The Highest Standards"
+    "Cost effective, realistic and affordable pricing",
+    "Honest & professional tradespeople  that only use the best in paints and equipment",
+    "We always take pride in all of our work from start to finish",
+    "Dedicated to providing work of the highest standards"
   ],
   "servicesIntro": "<p>Manly Warringah Painters have been painting on the Northern Beaches for over 25 years. Manly Warringah Painters is fully insured and bonded to take care of our home’s painting needs for both interior and exterior. We offer a wide range of house painting services in Toronto area with competitive pricing. Please call us for a free, no obligation written estimate at <a href='tel:0412 128 847'><span> 0412 128 847</span></a>. Our team of house painters are highly experienced and trained professionals to deliver you the high quality results for your home’s painting projects in and around the Sydney area at the lowest possible cost. We do the job and never sub-contract.</p><p>Manly Warringah Painters has strong dealer relationships that we have with our suppliers received lower material costs, and we pass those savings on to you. Our goal is to provide you with top quality work at a price that you can afford.</p><p>The devil is in the details, so we always pay attention to the details to give you the best and longest lasting results. Every home painting project begins with necessary preparations; readying the surfaces, caulking , taking care of chipping or peeling paint, removal of water damage and mold, patching of nail holes, cracks, dents, and gouges. Other types of repair may be necessary to repair or replace of drywall.</p>",
   "services": [
@@ -74,8 +73,10 @@
     "Drywall And Plaster Repairs",
     "Feature Wall Painting",
     "Wall & Ceiling Painting",
-    "New Properties, Restorations & Renovations",
-    "Repainting gutters, fascia and downpipes",
+    "New and Old Properties",
+    "Restorations & Renovations",
+    "Repainting gutters",
+    "fascia and downpipes",
     "Rendered exteriors",
     "Exposed brickwork",
     "Roofing including colorbond, iron and tiles",
@@ -94,19 +95,16 @@
     "Epoxy and Enamel Floors ",
     "Wallpaper Installation ",
     "Staining and Varnishing ",
-    "Specialty Products ",
-    "House Exterior Painting ",
     "Vinyl Siding Painting ",
     "Metal & Plastic Siding Painting ",
-    "Stucco Painting ",
+    "Stucco Painting",
     "Deck and Fence Painting ",
     "Brick and Masonry Painting ",
     "Specialty Products ",
     "Commercial Painting Services ",
     "Office Painting ",
-    "Commercial Exterior Painting ",
-    "Renovations, New Builds, and Fitups ",
-    "Apartment and Condo Painting ",
+    "Renovations, New Builds and Fitups ",
+    "Apartment Painting ",
     "Warehouse Painting ",
     "Parkade Painting ",
     "Painting and Staining of Brick and Masonry ",
@@ -118,5 +116,32 @@
     "And much more."
   ],
   "serviceAreas": "<p>At Manly Warringah Painters, we can cater to your small to large painting projects whether that may be a one-off job or an ongoing work contract that forms part of a planned maintenance program.</p><p>Manly Warringah Painters specialise at working on the Northern beaches but are happy to work in other areas in and around Sydney. We value the opportunity to assess the job and to discuss and offer the best options and solutions in paints, techniques, colour schemes and approaches for your project. We want to be sure that we translate your visions for your home or business.</p><p>We provide professional advice because we care about customer satisfaction and the final result.</p>",
-  "serviceAreaImage": "mwpMap2.png"
+  "serviceAreaImage": "mwpMap2.png",
+  "reviews": [
+    {
+      "rating": 5,
+      "customer": "Peter McKenzie",
+      "review": "Top quality job from Frank and Alan. Fast and my house looks amazing, Thanks guys."
+    },
+    {
+      "rating": 5,
+      "customer": "Trevor Brandt",
+      "review": "Manly Warringah Painters made my house look incredible in such a short time. Highly recommend!"
+    },
+    {
+      "rating": 5,
+      "customer": "Michelle Rogers",
+      "review": "Great pricing for quality work. Very clean when working. Our house feels like a show home now! Great job Manly Warringah Painters."
+    },
+    {
+      "rating": 5,
+      "customer": "Alex Peterson",
+      "review": "We used Manly Warringah Painters a number of times and have always been amazing on the job. Time managing, professional and clean. First class service. ."
+    },
+    {
+      "rating": 5,
+      "customer": "Jeniffer Byrne",
+      "review": "The guys from Manly Warringah Painters did a wonderful job and were so efficient, professional and polite. Highly recommend them."
+    }
+  ]
 }

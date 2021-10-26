@@ -1,4 +1,5 @@
 import React from "react";
+import Reviews from "../Reviews";
 import { homeIntro, homeSpecialise } from "../../data/data.json";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom"; // TODO check Link vs anchors?
@@ -34,12 +35,12 @@ const Home = () => {
           </div>
         ))}
       </>
-      <div className={styles.imgCont}>
+      {/* <div className={styles.imgCont}>
         <img
           src={require("../../img/mwpLogoOrg.jpg")}
           alt="Manly Warringah Painting"
         />
-      </div>
+      </div> */}
       <div className={styles.textCont}>
         <p>
           Although based on the Northern Beaches of Sydney, we provide our
@@ -52,6 +53,9 @@ const Home = () => {
           are ready to answer your questions about your painting needs. Please
           call us for a free, no obligation written estimate at ???
         </p>
+      </div>
+      <div>
+        <Reviews />
       </div>
     </div>
   );

@@ -5,14 +5,14 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 ReactDOM.render(
   // <React.StrictMode> TODO: CAUSES RERENDER (IN DEV MODE) ?? https://medium.com/@andreasheissenberger/react-components-render-twice-any-way-to-fix-this-91cf23961625
   <Router>
     <App />
-  </Router>
+  </Router>,
   // </React.StrictMode>,
-  ,
   document.getElementById("root")
 );
 

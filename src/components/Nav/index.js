@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { nav } from "../../data/data.json";
 
 // import Slideshow from "../../components/Slideshow";
 import Test from "../../components/Test";
 import Slideshow from "../Slideshow";
+import SiteNav from "../SiteNav";
 import ContactDetails from "../../components/ContactDetails";
 
 import styles from "./Nav.module.css";
@@ -83,11 +82,6 @@ const Nav = () => {
             />
           </span>
         </div>
-
-        {/* <FaPhoneVolume color="white" /> */}
-        {/* <a href="tel:0412 128 847" className={styles.phone}>
-          0412 128 847
-        </a> */}
         <div
           onClick={handleToggle}
           className={`${styles.menuLink}  ${open}`} // TODO, have this twice, check semantics
@@ -105,19 +99,7 @@ const Nav = () => {
         </h1> */}
       <div className={styles.navBar}></div>
       <nav id="menu" role="navigation" className={`${open}`}>
-        <ul className={styles.main}>
-          {nav.map((val, i) => (
-            <li key={i} className={styles.listItem}>
-              <Link to={val.link} className={styles.productLink}>
-                {val.name}
-              </Link>
-            </li>
-          ))}
-          {/* <li className={styles.listItem}>
-              <a href="tel:0400 000 000" className={styles.phone}>
-                0400 000 000</a>
-            </li> */}
-        </ul>
+        <SiteNav />
       </nav>
       {/* <div className={styles.container}>
         <p>A responsive hamburger menu with flexbox.</p>

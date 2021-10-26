@@ -10,19 +10,14 @@ import { services } from "../../data/data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintRoller, faBrush } from "@fortawesome/free-solid-svg-icons";
 
-console.log(services.length);
+// console.log(services.length);
 
 const createMarkup = (val) => ({ __html: val });
 
 const Services = () => {
   return (
     <div className={styles.container}>
-      <div>
-        <h2>
-          The experienced domestic and commerical painters on the Northern
-          Beaches
-        </h2>
-      </div>
+      <h1>Services</h1>
       <div dangerouslySetInnerHTML={createMarkup(servicesIntro)}></div>
       <div>
         <p>
@@ -35,7 +30,10 @@ const Services = () => {
                     sizes="(max-width: 758px) 100vw, 758px"
                   /> */}
         </p>
-        <h3>Services</h3>
+        <div>
+          The experienced domestic and commerical painters on the Northern
+          Beaches
+        </div>{" "}
         <ul className={styles.services}>
           {services.map((val, i) => (
             <li key={i}>

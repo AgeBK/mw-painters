@@ -1,12 +1,23 @@
-/* .contactForm {
-
-} */
+form {
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 70px;
+  width: 100%;
+}
 
 .row {
   width: 100%;
 }
 
-.tb {
+.contact,
+input,
+textarea {
+  font-size: 1.3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
 }
 
 .formInput {
@@ -15,7 +26,7 @@
   /* font-size: 18px; */
   margin-bottom: 20px;
   border-radius: 5px;
-  border: 1px solid lightgray;
+  /* border: 1px solid red; */
 }
 
 .submit {
@@ -24,18 +35,76 @@
   padding: 15px;
   border-radius: 20px;
   font-size: 18px;
+  width: 100%;
+
   /* border: 1px solid gray; */
 }
 
-@media screen and (min-width: 50rem) {
-  form {
-    display: flex;
-  }
+.contactForm {
+  /* display: flex; */
+  flex-grow: 1;
+}
 
+.contactForm input,
+.contactForm textarea {
+  /* border: 1px solid red; */
+  padding: 15px;
+  display: block;
+  margin: 0 20px 20px 0;
+  background-color: #f2f6f8;
+  border-radius: 2rem;
+  border: 1px solid #171496;
+  box-shadow: 0px 7px 5px #171496;
+  width: 100%;
+}
+
+/* .contactForm:focus {
+  border: 1px solid red;
+} */
+
+/* .contactForm label {
+  margin-bottom: 5px;
+  display: block;
+} */
+
+.contactForm label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.contactForm textarea {
+  min-height: 100px;
+}
+
+@media screen and (min-width: 30rem) {
   .tb {
     margin-right: 30px;
   }
 
+  /* .formInput {
+    border: 1px solid#ff0000;
+  } */
+}
+
+@media screen and (min-width: 60rem) {
+  .contact {
+    flex-direction: row;
+  }
+  .contactForm {
+    margin-right: 50px;
+  }
+  .tb {
+    margin-right: 30px;
+  }
+  /* form {
+    width: 50%;
+  } */
   /* .formInput {
     border: 1px solid#ff0000;
   } */

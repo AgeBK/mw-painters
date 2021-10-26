@@ -1,0 +1,50 @@
+.container {
+  /* position: relative; */
+  min-height: 230px;
+  max-width: 500px;
+  text-align: center;
+  margin: 20px auto 0;
+}
+.header {
+  text-align: center;
+  color: #171496;
+}
+.content {
+  display: none;
+}
+
+.customer {
+  color: 000;
+  font-weight: bold;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.stars {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  color: #ffd700;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.qLeft {
+  margin-right: 5px;
+}
+
+.qRight {
+  margin-left: 5px;
+}

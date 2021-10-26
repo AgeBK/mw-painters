@@ -1,7 +1,8 @@
 .services {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   /* padding: 10px; */
+  column-count: 2;
 }
 
 .services li {
@@ -17,6 +18,19 @@
 .serviceAreas {
   max-width: 600px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 60rem) {
+  .services {
+    column-count: 3;
+    border: 1px solid red;
+  }
+}
+
+@media screen and (min-width: 85) {
+  .services {
+    column-count: 4;
+  }
 }
 
 /* .map {

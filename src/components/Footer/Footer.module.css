@@ -1,4 +1,23 @@
 .container {
-  padding: 20px;
+  padding: 10px;
   background-color: #171496;
+  /* background-color: red; */
 }
+
+nav {
+  display: flex;
+}
+
+.test {
+  padding: 20px;
+}
+
+.top {
+  font-size: 30px;
+  color: #fff;
+  /* border-radius: 30 px;
+  padding: 3 px 6 px;
+  border: 2 px solid white; */
+}
+
+

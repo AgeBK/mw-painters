@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
 import styles from "./Slideshow.module.css";
 const iconPath = process.env.PUBLIC_URL + "/assets/img/";
-console.log(iconPath);
+// console.log(iconPath);
 // import { Link } from "react-router-dom";
 
 /* eslint-disable */
 // https://www.mojohomes.com.au/new-home-designs/harmony#home-design-galleries
 
+// TODO: the slideshow images are ripped off from https://mcleanpainting.com.au/
+
 const Slideshow = () => {
-  console.log("slideshow");
+  // console.log("slideshow");
 
   // const imgArr = [
   //   "https://northernbeachespainting.com.au/wp-content/uploads/2016/12/12quinton_09_wq.jpg",
