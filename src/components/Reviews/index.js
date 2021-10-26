@@ -48,19 +48,21 @@ const Review = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.header}>What our clients think of us</h2>
-      {reviews.map(({ customer, review, rating }, i) => (
-        <div className={`${styles.content}  cont`} key={i}>
-          {/* <div className={styles.rating}>{stars(rating)}</div> */}{" "}
-          {stars(rating)}
-          <div className={styles.review}>
-            <FontAwesomeIcon icon={faQuoteLeft} className={styles.qLeft} />
-            {review}
-            <FontAwesomeIcon icon={faQuoteRight} className={styles.qRight} />
+      <div className={styles.inner}>
+        <h2 className={styles.header}>What our clients think of us</h2>
+        {reviews.map(({ customer, review, rating }, i) => (
+          <div className={`${styles.content}  cont`} key={i}>
+            {/* <div className={styles.rating}>{stars(rating)}</div> */}{" "}
+            {stars(rating)}
+            <div className={styles.review}>
+              <FontAwesomeIcon icon={faQuoteLeft} className={styles.qLeft} />
+              {review}
+              <FontAwesomeIcon icon={faQuoteRight} className={styles.qRight} />
+            </div>
+            <div className={styles.customer}>{customer}</div>
           </div>
-          <div className={styles.customer}>{customer}</div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

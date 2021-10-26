@@ -41,11 +41,7 @@ const ContactForm = () => {
   return (
     <div className={styles.contact}>
       <div className={styles.contactForm}>
-        <h2>Get in touch with us</h2>
-        <p>
-          If you'd like to arrange an obligation free quote and expert advice,
-          please fill out the form, email or phone us
-        </p>
+        <h2 className={styles.centre}>Contact Form</h2>
         <form className="contact-form" onSubmit={sendEmail}>
           {/* <input type="hidden" name="contact_number" placeholder="" /> */}
           <label>Name</label>
@@ -59,10 +55,10 @@ const ContactForm = () => {
           <button className={styles.submit} type="submit">
             Submit
           </button>
-        </form>
-      </div>
-      <div className={styles.contactFormX}>
-        <ContactDetails class="contactForm" />
+        </form>{" "}
+        <div className={styles.contactFormX}>
+          <ContactDetails class="contactForm" />
+        </div>
       </div>
     </div>
   );

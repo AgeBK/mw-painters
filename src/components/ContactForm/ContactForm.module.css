@@ -30,7 +30,7 @@ textarea {
 }
 
 .submit {
-  background-color: #171496;
+  background-color: #0b0a4e;
   color: #fff;
   padding: 15px;
   border-radius: 20px;
@@ -53,8 +53,8 @@ textarea {
   margin: 0 20px 20px 0;
   background-color: #f2f6f8;
   border-radius: 2rem;
-  border: 1px solid #171496;
-  box-shadow: 0px 7px 5px #171496;
+  border: 1px solid #0b0a4e;
+  box-shadow: 0px 7px 5px #0b0a4e;
   width: 100%;
 }
 
@@ -79,17 +79,22 @@ textarea {
 }
 
 .contactForm textarea {
-  min-height: 100px;
+  min-height: 140px;
 }
 
-@media screen and (min-width: 30rem) {
-  .tb {
-    margin-right: 30px;
-  }
+.centre {
+  text-align: center;
+}
 
-  /* .formInput {
-    border: 1px solid#ff0000;
+@media screen and (min-width: 40rem) {
+  /* .tb {
+    margin-right: 300px;
+    border: 1px solid red;
   } */
+
+  form {
+    column-count: 2;
+  }
 }
 
 @media screen and (min-width: 60rem) {

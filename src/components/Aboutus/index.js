@@ -43,18 +43,23 @@ const Aboutus = () => {
         {/* <Link to={`/`}> */}
         <div className={styles.imgCont}>
           {/* // TODO: need headings for each page (About us ect) */}
-          <h1 className={styles.title}>ABOUT US</h1>
+          <h1 className={styles.title}>About Us</h1>
+          <strong className={styles.centre}>
+            Take the pain out of painting with Manly Warringah Painters
+          </strong>
           <div dangerouslySetInnerHTML={createMarkup(about)}></div>
-          <div className={styles.brands}>
-            <h2>We only use the best quality products on all jobs</h2>
+          <h2>We only use the best quality products on all jobs</h2>
+          <ul className={styles.brands}>
             {brands.map((val) => (
-              <img
-                src={require("../../img/" + val)}
-                className={styles.brand}
-                alt={val.substr(0, val.indexOf("."))}
-              />
+              <li>
+                <img
+                  src={require("../../img/" + val)}
+                  className={styles.brand}
+                  alt={val.substr(0, val.indexOf("."))}
+                />
+              </li>
             ))}
-          </div>
+          </ul>
           <h2>
             Manly Warringah Painters - Professional House Painters And
             Decorators
@@ -80,7 +85,7 @@ const Aboutus = () => {
                 <li>{val}</li>
               ))}
             </ul>
-            <h3>Why choose us?</h3>
+            <h4>Why choose us?</h4>
             <ul>
               <li>Upfront quotes</li>
               <li>Quality paints</li>
@@ -93,18 +98,16 @@ const Aboutus = () => {
               <li>Excellence</li>
               <li>Award winning workmanship</li>
             </ul>
-            <h3>FAQ's</h3>
+            FAQ's
             <div>
               <h1>Frequently Asked Questions</h1>
               <div>
                 <ul>
                   <li>
-                    <h3>
-                      <strong>
-                        Why should a customer hire you over another service
-                        provider?
-                      </strong>
-                    </h3>
+                    <strong>
+                      Why should a customer hire you over another service
+                      provider?
+                    </strong>
                     <p>
                       At Manly Warringah Painters we have over 25 years of
                       experience in a wide variety of painting and decorating
@@ -113,12 +116,10 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>
-                        Is there a particular aspect of your trade or industry
-                        that you specialise in?
-                      </strong>
-                    </h3>
+                    <strong>
+                      Is there a particular aspect of your trade or industry
+                      that you specialise in?
+                    </strong>
                     <p>
                       We specialise in interior and exterior house painting,
                       decorating, cladding, providing a high quality and cost
@@ -127,11 +128,9 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>
-                        How do you normally charge for your service?
-                      </strong>
-                    </h3>
+                    <strong>
+                      How do you normally charge for your service?
+                    </strong>
                     <p>
                       We provide a no obligation free quote for jobs and
                       projects that are well itemised based on an hourly rate
@@ -139,9 +138,7 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>What makes your pricing competitive?</strong>
-                    </h3>
+                    <strong>What makes your pricing competitive?</strong>
                     <p>
                       We are fast and high effectient workers so you get real
                       value for money on any work done. Our painting services
@@ -151,12 +148,10 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>
-                        How can a customer save money before you start the work?
-                        Please give 3 tips
-                      </strong>
-                    </h3>
+                    <strong>
+                      How can a customer save money before you start the work?
+                      Please give 3 tips
+                    </strong>
                     <p>
                       The job can be done more efficiently by clearing out rooms
                       and removing as much furniture as possible. We offer drop
@@ -166,12 +161,10 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>
-                        What are the typical things that you need to know before
-                        you can provide a quote to a customer?
-                      </strong>
-                    </h3>
+                    <strong>
+                      What are the typical things that you need to know before
+                      you can provide a quote to a customer?
+                    </strong>
                     <p>
                       We need to know room sizes, wall heights, current colours
                       on the walls. Dark colours being painted light will
@@ -182,12 +175,10 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>
-                        Are you an insured business and do you guarantee your
-                        work?
-                      </strong>
-                    </h3>
+                    <strong>
+                      Are you an insured business and do you guarantee your
+                      work?
+                    </strong>
                     <p>
                       Yes we are insured with 5 million in liability which
                       covers property damage such as a paint tin getting knocked
@@ -197,12 +188,10 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>
-                        What makes you the most reliable and trustworthy person
-                        for the job?
-                      </strong>
-                    </h3>
+                    <strong>
+                      What makes you the most reliable and trustworthy person
+                      for the job?
+                    </strong>
                     <p>
                       At Manly Warringah Painters, our reputation is extremely
                       important to us and our business. We've been in business
@@ -212,9 +201,7 @@ const Aboutus = () => {
                     </p>
                   </li>
                   <li>
-                    <h3>
-                      <strong>What do you like most about your job?</strong>
-                    </h3>
+                    <strong>What do you like most about your job?</strong>
                     <p>
                       I enjoy two parts of my job. Doing the work and seeing a
                       transformation in a place and the more dramatic the
@@ -227,11 +214,11 @@ const Aboutus = () => {
               </div>
             </div>
             <div>
-              <h3>Manly Warringah Painters Painting Process</h3>
+              Manly Warringah Painters Painting Process
               <p>
                 <strong>
-                  The House Painters house painting process is designed to be
-                  simple and effective for clients: CHANGE TEXT
+                  Manly Warringah Painters house painting process is designed to
+                  be simple and effective for clients: CHANGE TEXT
                   https://www.thehousepainters.com.au/about/
                 </strong>
               </p>
@@ -265,12 +252,13 @@ const Aboutus = () => {
                 work.
               </p>
               <p>
-                Call <strong>The House Painters</strong> Team Today on
+                Call <strong>Manly Warringah Painters</strong> Team Today
+                on&nbsp;
                 <span>
                   <a href="tel:0412 128 847">0412 128 847</a>
                 </span>
-                or simply contact us for free colour consultation at your home
-                today!
+                &nbsp;or simply contact us for free colour consultation at your
+                home today!
               </p>
             </div>
           </p>

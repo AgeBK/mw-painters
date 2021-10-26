@@ -1,13 +1,19 @@
 .container {
   /* position: relative; */
+  background-color: #000;
+  color: #fff;
+}
+
+.inner {
   min-height: 230px;
   max-width: 500px;
   text-align: center;
-  margin: 20px auto 0;
+  margin: 0 auto;
+  padding: 20px;
 }
+
 .header {
   text-align: center;
-  color: #171496;
 }
 .content {
   display: none;
@@ -42,9 +48,9 @@
 }
 
 .qLeft {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .qRight {
-  margin-left: 5px;
+  margin-left: 10px;
 }

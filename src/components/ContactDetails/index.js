@@ -16,6 +16,7 @@ const contactDetails = (props) => {
 
   return (
     <div className={styles[component]}>
+      <h2 className={styles.centre}>Contact Details</h2>
       <div className={styles.contactNo}>
         <a href="tel:9972 0398" className={styles.land}>
           <FontAwesomeIcon icon={faPhoneAlt} className={styles.icon} />

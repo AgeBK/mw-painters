@@ -12,7 +12,7 @@
   font-weight: bold;
   font-size: 1.2rem;
   padding: 5px;
-  border: 1px solid #171496;
+  border: 1px solid #0b0a4e;
 }
 
 .contactNav .contactNo .icon {
@@ -20,12 +20,12 @@
 }
 
 .contactNav .contactNo a:first-child {
-  background-color: #171496;
+  background-color: #0b0a4e;
   color: #fff;
 }
 
 .contactNav .mob {
-  color: #171496;
+  color: #0b0a4e;
 }
 
 .contactNav .contactNo a:nth-of-type(3) {
@@ -54,9 +54,9 @@
   padding: 5px;
    */
   display: flex;
-  color: #171496;
+  color: #0b0a4e;
   /* font-size: 15px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   align-items: center;
 
   /* width: 50px; */
@@ -67,24 +67,28 @@
 }
 
 .contactForm .contactNo a .icon {
-  color: #171496;
+  color: #0b0a4e;
   border-radius: 50px;
-  /* border: 1px solid #171496; */
+  /* border: 1px solid #0b0a4e; */
   font-size: 25px;
-  padding: 20px;
+  padding: 15px;
   /* margin-right: 20px; */
 }
 
 .contactForm .contactNo a:nth-child(2) .icon {
-  padding: 20px 25px;
+  padding: 20px;
   /* border: 1px solid red; */
+}
+
+.centre {
+  text-align: center;
 }
 
 @media screen and (min-width: 60rem) {
   .contactForm .contactNo {
     /* border: 1px solid green; */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
 
   .contactForm .contactNo a {

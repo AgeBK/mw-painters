@@ -9,11 +9,12 @@ import styles from "./ContactUs.module.css";
 const ContactUs = () => {
   return (
     <div className={styles.container}>
-      <h1>Contact Us</h1>
-      <h2 className={styles.header}>Contact form</h2>
-      <div className={styles.text}>
-        For expert advice or to get a free quote
-      </div>
+      <h1>Contact Us</h1>{" "}
+      <strong className={styles.centre}>
+        For expert advice or to get a free quote please fill out the form, email
+        or phone us.
+      </strong>
+      {/* <h2 className={styles.header}>Contact form</h2> */}
       <div className={styles.contactCont}>
         <ContactForm />
       </div>

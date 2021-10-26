@@ -18,6 +18,10 @@ const Services = () => {
   return (
     <div className={styles.container}>
       <h1>Services</h1>
+      <strong className={styles.centre}>
+        Manly Warringah Painter have over 25 years painting experience,
+        delivering first class workmanship and competitive pricing.
+      </strong>
       <div dangerouslySetInnerHTML={createMarkup(servicesIntro)}></div>
       <div>
         <p>
@@ -33,7 +37,7 @@ const Services = () => {
         <div>
           The experienced domestic and commerical painters on the Northern
           Beaches
-        </div>{" "}
+        </div>
         <ul className={styles.services}>
           {services.map((val, i) => (
             <li key={i}>

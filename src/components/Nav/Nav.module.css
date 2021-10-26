@@ -14,7 +14,7 @@ header {
 }
 
 .headerBar {
-  background: #171496;
+  background: #0b0a4e;
   padding: 3px;
 }
 
@@ -24,7 +24,7 @@ header {
 }
 
 .topBar {
-  /* background-color: #171496; */
+  /* background-color: #0b0a4e; */
   padding: 12px;
   position: relative;
   max-width: 1080px;
@@ -61,7 +61,7 @@ header {
 }
 
 .heading span {
-  color: #171496;
+  color: #0b0a4e;
 }
 
 .heading.open {
@@ -133,7 +133,7 @@ header nav li a {
 }
 
 header nav li a:hover {
-  color: #171496;
+  color: #0b0a4e;
   text-decoration: underline;
 }
 

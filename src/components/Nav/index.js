@@ -34,25 +34,7 @@ const Nav = () => {
                 srcSet={LogoLong}
                 alt="Manly Warringah Painters"
               />
-            </picture>{" "}
-            {/* <picture>
-              <source srcSet={LogoNoPhne} media="(max-width: 45rem)" />
-              <img
-                className={styles.logo}
-                srcSet={LogoLong2}
-                alt="Manly Warringah Painters"
-              />
-            </picture> */}
-            {/* <img
-              src={LogoImg}
-              // src={require("../../img/mwpLogoLong3.jpg")}
-              // src={require("../../img/mwpLogoNoPhne.jpg")}
-              // src={require("../../img/mwpLogoSml.jpg")}
-              // src={require("../../img/test2Rght2.jpg")}
-              className={styles.logo}
-              alt="Manly Warringah Painters"
-              usemap="#imgmap"
-            /> */}
+            </picture>
           </a>
           <map name="imgmap">
             <area
@@ -92,11 +74,6 @@ const Nav = () => {
         </div>
       </div>
       <ContactDetails class="contactNav" />
-      {/* <h1 className={`${styles.heading}  ${open}`}>
-          <Link to="/">
-            <span>MANLY WARRINGAH</span> PAINTERS
-          </Link>
-        </h1> */}
       <div className={styles.navBar}></div>
       <nav id="menu" role="navigation" className={`${open}`}>
         <SiteNav />

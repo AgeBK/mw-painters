@@ -3,6 +3,12 @@
   border: 1px solid yellow;
 } */
 
+/* ORIGINAL BLUE 171496 */
+
+.container {
+  padding: 20px;
+}
+
 .paintCont {
   display: flex;
   flex-wrap: wrap;
@@ -19,9 +25,13 @@
 
 /* .intro  */
 .textCont {
-  background-color: #171496;
+  background-color: #0b0a4e;
   color: #fff;
   padding: 20px;
+}
+
+.textInner {
+  padding: 10px;
 }
 
 .paintCont:nth-child(even) .textCont {
@@ -30,6 +40,21 @@
 
 .paintCont img {
   height: 100%;
+}
+
+.standOutList li {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.tick {
+  color: #0b0a4e;
+  margin-right: 10px;
+}
+
+.centre {
+  text-align: center;
+  display: block;
 }
 
 @media screen and (min-width: 50rem) {
