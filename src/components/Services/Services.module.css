@@ -2,6 +2,12 @@
   padding: 20px;
 }
 
+.intro {
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+
 .services {
   /* display: flex;
   flex-wrap: wrap; */
@@ -22,11 +28,6 @@
 .serviceAreas {
   max-width: 600px;
   margin: 0 auto;
-}
-
-.centre {
-  text-align: center;
-  display: block;
 }
 
 @media screen and (min-width: 60rem) {

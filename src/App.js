@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import products from './data/products.json';
 // import Nav from "./components/Nav";
@@ -8,13 +8,21 @@ import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
+import ScrollToTop from "./components/ScrollToTop";
+
 // import Product from "./components/Product";
 // import Test from "./components/Test";
-import styles from "./App.module.css";
+// import styles from "./App.module.css";
+
+// TODO: check logo link, different from home in nav???
 
 // let categories = {};
 
 function App(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       {/* <div className={styles.appHeader}>{path !== '/' && <Nav />}</div> */}
@@ -24,6 +32,7 @@ function App(props) {
           </div>
         ) : ( */}
       {/* <div className={styles.container}> */}
+      <ScrollToTop />
       <Switch>
         <Route exact path="/">
           <Home />

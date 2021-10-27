@@ -18,7 +18,7 @@ const Services = () => {
   return (
     <div className={styles.container}>
       <h1>Services</h1>
-      <strong className={styles.centre}>
+      <strong className={styles.intro}>
         Manly Warringah Painter have over 25 years painting experience,
         delivering first class workmanship and competitive pricing.
       </strong>

@@ -1,3 +1,5 @@
+/* TODO: Styling not using CSS modules?? */
+
 header {
   /* TODO: CHECK THIS */
   /* display: -webkit-box;
@@ -24,7 +26,6 @@ header {
 }
 
 .topBar {
-  /* background-color: #0b0a4e; */
   padding: 12px;
   position: relative;
   max-width: 1080px;
@@ -106,8 +107,6 @@ nav.open {
   max-height: 100%; /*TODO: was 15rem ?? */
   margin-bottom: 10px;
   display: block;
-
-  /* margin-top: 50px; */
 }
 
 /* nav.xx {
@@ -168,17 +167,14 @@ header nav li a:hover {
   .logo {
     width: auto;
   }
-
-  /* .headerBar {
-    padding: 5px;
-  }
-
-  .navBar {
-    padding: 5px;
-  } */
 }
 
 @media screen and (min-width: 60rem) {
+  nav.open {
+    display: flex;
+    margin-bottom: 0px;
+  }
+
   div.menuLink,
   .contactNo {
     display: none;
@@ -187,11 +183,8 @@ header nav li a:hover {
   header nav {
     max-height: none;
     margin: 0px;
-    /* display: block; */
     display: flex;
     justify-content: center;
-    /* border: 1px solid#ff0000; */
-    /* position: absolute; */
     top: 80px;
     right: 10%;
   }

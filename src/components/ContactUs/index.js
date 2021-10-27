@@ -9,8 +9,8 @@ import styles from "./ContactUs.module.css";
 const ContactUs = () => {
   return (
     <div className={styles.container}>
-      <h1>Contact Us</h1>{" "}
-      <strong className={styles.centre}>
+      <h1>Contact Us</h1>
+      <strong className={styles.intro}>
         For expert advice or to get a free quote please fill out the form, email
         or phone us.
       </strong>

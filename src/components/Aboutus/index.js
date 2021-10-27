@@ -44,7 +44,7 @@ const Aboutus = () => {
         <div className={styles.imgCont}>
           {/* // TODO: need headings for each page (About us ect) */}
           <h1 className={styles.title}>About Us</h1>
-          <strong className={styles.centre}>
+          <strong className={styles.intro}>
             Take the pain out of painting with Manly Warringah Painters
           </strong>
           <div dangerouslySetInnerHTML={createMarkup(about)}></div>

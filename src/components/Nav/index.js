@@ -76,7 +76,7 @@ const Nav = () => {
       <ContactDetails class="contactNav" />
       <div className={styles.navBar}></div>
       <nav id="menu" role="navigation" className={`${open}`}>
-        <SiteNav />
+        <SiteNav class="header" click={handleToggle} />
       </nav>
       {/* <div className={styles.container}>
         <p>A responsive hamburger menu with flexbox.</p>

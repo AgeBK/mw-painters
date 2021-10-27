@@ -17,7 +17,7 @@ const Home = () => {
         {/* TODO: semantics are missing, SEO etc, check image 6 slideshow, anchors should be router links?*/}
         {/* // TODO: should cont Home be functionn home?? */}
         <h1>Manly Warringah Painters</h1>
-        <strong className={styles.centre}>
+        <strong className={styles.intro}>
           Delivering Strata, Commercial and Residential Painting Services for
           over 25 years
         </strong>

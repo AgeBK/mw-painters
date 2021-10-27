@@ -56,9 +56,11 @@ const ContactForm = () => {
             Submit
           </button>
         </form>{" "}
-        <div className={styles.contactFormX}>
+        {/* <div className={styles.contactFormX}> */}
+        <>
+          <h2 className={styles.centre}>Contact Details</h2>
           <ContactDetails class="contactForm" />
-        </div>
+        </>
       </div>
     </div>
   );
