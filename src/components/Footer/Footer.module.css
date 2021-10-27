@@ -13,8 +13,10 @@ nav {
 }
 
 .top {
-  font-size: 30px;
+  font-size: 25px;
   color: #fff;
+  margin-right: 10px;
+
   /* border-radius: 30 px;
   padding: 3 px 6 px;
   border: 2 px solid white; */

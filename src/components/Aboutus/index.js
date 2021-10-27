@@ -122,9 +122,8 @@ const Aboutus = () => {
                     </strong>
                     <p>
                       We specialise in interior and exterior house painting,
-                      decorating, cladding, providing a high quality and cost
-                      effective result for the client. We have over 25 years
-                      experience
+                      decorating, providing a high quality and cost effective
+                      result for the client. We have over 25 years experience
                     </p>
                   </li>
                   <li>
@@ -252,8 +251,7 @@ const Aboutus = () => {
                 work.
               </p>
               <p>
-                Call <strong>Manly Warringah Painters</strong> Team Today
-                on&nbsp;
+                Call <strong>Manly Warringah Painters</strong> Today on&nbsp;
                 <span>
                   <a href="tel:0412 128 847">0412 128 847</a>
                 </span>

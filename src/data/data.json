@@ -3,6 +3,7 @@
     { "name": "HOME", "link": "/" },
     { "name": "ABOUT US", "link": "about-us" },
     { "name": "SERVICES", "link": "services" },
+    { "name": "FAQs", "link": "faqs" },
     { "name": "CONTACT US", "link": "contact-us" }
   ],
   "iconsX": [
@@ -13,7 +14,7 @@
   "brands": [
     "dulux.png",
     "britishPaints2.jpg",
-    "cabots.jpg", 
+    "cabots.jpg",
     "taubmans.jpg",
     "wattyl.png"
   ],
