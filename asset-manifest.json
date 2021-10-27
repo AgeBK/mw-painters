@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mw-painters/static/css/main.2ea7777e.chunk.css",
-    "main.js": "/mw-painters/static/js/main.e93c04b8.chunk.js",
-    "main.js.map": "/mw-painters/static/js/main.e93c04b8.chunk.js.map",
+    "main.css": "/mw-painters/static/css/main.6f0696a0.chunk.css",
+    "main.js": "/mw-painters/static/js/main.78395b6c.chunk.js",
+    "main.js.map": "/mw-painters/static/js/main.78395b6c.chunk.js.map",
     "runtime-main.js": "/mw-painters/static/js/runtime-main.ccb76fbf.js",
     "runtime-main.js.map": "/mw-painters/static/js/runtime-main.ccb76fbf.js.map",
     "static/css/2.fe62fa80.chunk.css": "/mw-painters/static/css/2.fe62fa80.chunk.css",
-    "static/js/2.7fd5e710.chunk.js": "/mw-painters/static/js/2.7fd5e710.chunk.js",
-    "static/js/2.7fd5e710.chunk.js.map": "/mw-painters/static/js/2.7fd5e710.chunk.js.map",
+    "static/js/2.6eb3d278.chunk.js": "/mw-painters/static/js/2.6eb3d278.chunk.js",
+    "static/js/2.6eb3d278.chunk.js.map": "/mw-painters/static/js/2.6eb3d278.chunk.js.map",
     "index.html": "/mw-painters/index.html",
-    "precache-manifest.b2f26a45af9f1e1f08a82aa7b2c63ae4.js": "/mw-painters/precache-manifest.b2f26a45af9f1e1f08a82aa7b2c63ae4.js",
+    "precache-manifest.4159dfb983304a23018d5161fe5550ac.js": "/mw-painters/precache-manifest.4159dfb983304a23018d5161fe5550ac.js",
     "service-worker.js": "/mw-painters/service-worker.js",
     "static/css/2.fe62fa80.chunk.css.map": "/mw-painters/static/css/2.fe62fa80.chunk.css.map",
-    "static/css/main.2ea7777e.chunk.css.map": "/mw-painters/static/css/main.2ea7777e.chunk.css.map",
-    "static/js/2.7fd5e710.chunk.js.LICENSE.txt": "/mw-painters/static/js/2.7fd5e710.chunk.js.LICENSE.txt",
+    "static/css/main.6f0696a0.chunk.css.map": "/mw-painters/static/css/main.6f0696a0.chunk.css.map",
+    "static/js/2.6eb3d278.chunk.js.LICENSE.txt": "/mw-painters/static/js/2.6eb3d278.chunk.js.LICENSE.txt",
     "static/media/25yrs.png": "/mw-painters/static/media/25yrs.1d9f85e6.png",
     "static/media/index.css": "/mw-painters/static/media/Courgette-Regular.59c3685a.ttf",
     "static/media/IMG_5847.jpg": "/mw-painters/static/media/IMG_5847.f6dee292.jpg",
@@ -75,8 +75,8 @@
   "entrypoints": [
     "static/js/runtime-main.ccb76fbf.js",
     "static/css/2.fe62fa80.chunk.css",
-    "static/js/2.7fd5e710.chunk.js",
-    "static/css/main.2ea7777e.chunk.css",
-    "static/js/main.e93c04b8.chunk.js"
+    "static/js/2.6eb3d278.chunk.js",
+    "static/css/main.6f0696a0.chunk.css",
+    "static/js/main.78395b6c.chunk.js"
   ]
 }
