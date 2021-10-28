@@ -9,8 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // TODO: Error page, semantics, check variables that can be restructured, maybe consistancy with container names across components?? px or rem?
-
-const Review = () => {
+// Review or Reviews
+const Reviews = () => {
   const slideInterval = 4000; // 4 seconds
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Review = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div className={styles.inner}>
         <h2 className={styles.header}>What our clients think of us</h2>
         {reviews.map(({ customer, review, rating }, i) => (
@@ -63,8 +63,8 @@ const Review = () => {
           </div>
         ))}
       </div>
-    </div>
+    </article>
   );
 };
 
-export default Review;
+export default Reviews;

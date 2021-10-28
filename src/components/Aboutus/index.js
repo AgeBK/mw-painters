@@ -1,4 +1,5 @@
 import React from "react";
+import PageIntro from "../PageIntro";
 // import { iconsX } from "../../data/data.json";
 import { about, brands, aboutPro, standOutAreas } from "../../data/data.json";
 import styles from "./Aboutus.module.css";
@@ -38,15 +39,18 @@ const Aboutus = () => {
   const createMarkup = (val) => ({ __html: val });
 
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <div className={styles.Aboutus}>
         {/* <Link to={`/`}> */}
         <div className={styles.imgCont}>
-          {/* // TODO: need headings for each page (About us ect) */}
-          <h1 className={styles.title}>About Us</h1>
-          <strong className={styles.intro}>
-            Take the pain out of painting with Manly Warringah Painters
-          </strong>
+          {/* // TODO: need headings for each page (About us ect) */}{" "}
+          <PageIntro page="About us" />
+          <heading>
+            <h1 className={styles.title}>About Us</h1>
+            <strong className={styles.intro}>
+              Take the pain out of painting with Manly Warringah Painters
+            </strong>
+          </heading>
           <div dangerouslySetInnerHTML={createMarkup(about)}></div>
           <h2>We only use the best quality products on all jobs</h2>
           <ul className={styles.brands}>
@@ -262,7 +266,7 @@ const Aboutus = () => {
           </p>
         </div>
       </div>
-    </div>
+    </article>
 
     // const test = (val) => {
     //   debugger;

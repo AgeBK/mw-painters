@@ -16,7 +16,7 @@ const createMarkup = (val) => ({ __html: val });
 
 const Services = () => {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h1>Services</h1>
       <strong className={styles.intro}>
         Manly Warringah Painter have over 25 years painting experience,
@@ -72,7 +72,7 @@ const Services = () => {
           ></iframe>
         </div> */}
       </div>
-    </div>
+    </article>
   );
 };
 

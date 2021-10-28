@@ -43,26 +43,22 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer>
-      <div className={styles.container}>
-        <nav>
-          {/* <img
+    <footer className={styles.container}>
+      <nav>
+        {/* <img
             src={LogoSml}
             className={styles.logo}
             alt="Manly Warringah Painters"
           /> */}
-          <SiteNav class="footer" />
-          <a href="#top" className={styles.top}>
-            <FontAwesomeIcon icon={faArrowCircleUp}>
-              Back to top
-            </FontAwesomeIcon>
-          </a>
-        </nav>
-        {/* <div id="test" className={styles.test}>
+        <SiteNav class="footer" />
+        <a href="#top" className={styles.top}>
+          <FontAwesomeIcon icon={faArrowCircleUp}>Back to top</FontAwesomeIcon>
+        </a>
+      </nav>
+      {/* <div id="test" className={styles.test}>
           <br />
           <br />
         </div> */}
-      </div>
     </footer>
   );
 };

@@ -8,7 +8,7 @@ import styles from "./ContactUs.module.css";
 
 const ContactUs = () => {
   return (
-    <div className={styles.container}>
+    <article className={styles.container}>
       <h1>Contact Us</h1>
       <strong className={styles.intro}>
         For expert advice or to get a free quote please fill out the form, email
@@ -18,7 +18,7 @@ const ContactUs = () => {
       <div className={styles.contactCont}>
         <ContactForm />
       </div>
-    </div>
+    </article>
   );
 };
 

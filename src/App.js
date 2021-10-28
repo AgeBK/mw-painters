@@ -49,6 +49,9 @@ function App(props) {
         <Route exact path="/contact-us">
           <ContactUs />
         </Route>
+        <Route path="*">
+          <Home />
+        </Route>
         {/* <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about-us" render={() => <Aboutus />} />
           <Route exact path="/services" render={() => <Services />} /> */}

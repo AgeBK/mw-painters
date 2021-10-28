@@ -6,6 +6,28 @@
     { "name": "FAQs", "link": "faqs" },
     { "name": "CONTACT US", "link": "contact-us" }
   ],
+  "pageIntro": {
+    "/": {
+      "heading": "Manly Warringah Painters",
+      "text": "Delivering Strata, Commercial and Residential Painting Services for over 25 years."
+    },
+    "/about-us": {
+      "heading": "About us",
+      "text": "Delivering Strata, Commercial and Residential Painting Services for over 25 years."
+    },
+    "/services": {
+      "heading": "Services",
+      "text": "Manly Warringah Painter have over 25 years painting experience, delivering first class workmanship and competitive pricing."
+    },
+    "/faqs": {
+      "heading": "FAQs",
+      "text": "Q and A of some of the common questions our customers ask us"
+    },
+    "/contact-us": {
+      "heading": "Contact Us",
+      "text": "For expert advice or to get a free quote please fill out the form, email or phone us."
+    }
+  },
   "iconsX": [
     { "title": "Experience", "icon": "faGem" },
     { "title": "Courteous", "icon": "faThumbsUp" },

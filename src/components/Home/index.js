@@ -1,5 +1,6 @@
 import React from "react";
 import Reviews from "../Reviews";
+import PageIntro from "../PageIntro";
 import { homeIntro, homeSpecialise, standOutAreas } from "../../data/data.json";
 import styles from "./Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,14 +9,17 @@ import { Link } from "react-router-dom"; // TODO check Link vs anchors?
 
 const Home = () => {
   const createMarkup = (val) => ({ __html: val });
+  const o = { "/": "home paeg stuff", "about us": "asdfadsf" };
+  console.log(o);
 
   return (
-    <div>
-      <div className={styles.container}>
+    <>
+      <article className={styles.container}>
         {/* j&e Kogan based text */}
         {/* // TODO: map of areas mwp work and that over 25 years image and error page? */}
         {/* TODO: semantics are missing, SEO etc, check image 6 slideshow, anchors should be router links?*/}
         {/* // TODO: should cont Home be functionn home?? */}
+        <PageIntro page="Home" />
         <h1>Manly Warringah Painters</h1>
         <strong className={styles.intro}>
           Delivering Strata, Commercial and Residential Painting Services for
@@ -71,9 +75,9 @@ const Home = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </article>
       <Reviews />
-    </div>
+    </>
   );
 };
 

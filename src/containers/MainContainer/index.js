@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 // const MainContainer = WrappedComponent => (props: Props) => (
 const MainContainer = (WrappedComponent) => () =>
   (
-    <div className={styles.main}>
+    <main className={styles.main}>
       <div className={styles.header}>
         <Nav />
       </div>
@@ -18,7 +18,7 @@ const MainContainer = (WrappedComponent) => () =>
         <WrappedComponent />
       </div>
       <Footer />
-    </div>
+    </main>
   );
 
 export default MainContainer;
