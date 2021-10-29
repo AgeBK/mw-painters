@@ -7,19 +7,17 @@ const PageIntro = (props) => {
   console.log(props);
 
   const location = useLocation();
-  console.log(location.pathname);
   const loc = location.pathname;
-  console.log(pageIntro[loc]);
+  const { heading, subHeading, text } = pageIntro[loc];
+  const createMarkup = (val) => ({ __html: text });
 
   return (
     <section>
-      {/* <ul className={styles[component]}>
-        {nav.map((val, i) => (
-          <li key={i} className={styles.listItem} onClick={handleToggle}>
-            <Link to={val.link}>{val.name}</Link>
-          </li>
-        ))} 
-      </ul>*/}
+      <header>
+        <h1>{heading}</h1>
+        <h2>{subHeading}</h2>
+      </header>
+      <section dangerouslySetInnerHTML={createMarkup()}></section>
     </section>
   );
 };

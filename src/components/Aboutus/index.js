@@ -1,7 +1,7 @@
 import React from "react";
 import PageIntro from "../PageIntro";
 // import { iconsX } from "../../data/data.json";
-import { about, brands, aboutPro, standOutAreas } from "../../data/data.json";
+import { brands, aboutPro, standOutAreas } from "../../data/data.json";
 import styles from "./Aboutus.module.css";
 // import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -44,14 +44,14 @@ const Aboutus = () => {
         {/* <Link to={`/`}> */}
         <div className={styles.imgCont}>
           {/* // TODO: need headings for each page (About us ect) */}{" "}
-          <PageIntro page="About us" />
-          <heading>
+          <PageIntro />
+          {/* <heading>
             <h1 className={styles.title}>About Us</h1>
             <strong className={styles.intro}>
               Take the pain out of painting with Manly Warringah Painters
             </strong>
-          </heading>
-          <div dangerouslySetInnerHTML={createMarkup(about)}></div>
+          </heading> */}
+          {/* <div dangerouslySetInnerHTML={createMarkup(about)}></div> */} 
           <h2>We only use the best quality products on all jobs</h2>
           <ul className={styles.brands}>
             {brands.map((val) => (
@@ -105,116 +105,7 @@ const Aboutus = () => {
             FAQ's
             <div>
               <h1>Frequently Asked Questions</h1>
-              <div>
-                <ul>
-                  <li>
-                    <strong>
-                      Why should a customer hire you over another service
-                      provider?
-                    </strong>
-                    <p>
-                      At Manly Warringah Painters we have over 25 years of
-                      experience in a wide variety of painting and decorating
-                      services. This means we can provide quality solutions to
-                      problems easier, faster and cost effectively.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>
-                      Is there a particular aspect of your trade or industry
-                      that you specialise in?
-                    </strong>
-                    <p>
-                      We specialise in interior and exterior house painting,
-                      decorating, providing a high quality and cost effective
-                      result for the client. We have over 25 years experience
-                    </p>
-                  </li>
-                  <li>
-                    <strong>
-                      How do you normally charge for your service?
-                    </strong>
-                    <p>
-                      We provide a no obligation free quote for jobs and
-                      projects that are well itemised based on an hourly rate
-                      and materials required for the work required
-                    </p>
-                  </li>
-                  <li>
-                    <strong>What makes your pricing competitive?</strong>
-                    <p>
-                      We are fast and high effectient workers so you get real
-                      value for money on any work done. Our painting services
-                      are always done to a very high standard meaning no re-work
-                      is needed and it will last for years to come. We have been
-                      in the game a long time and have seen it all
-                    </p>
-                  </li>
-                  <li>
-                    <strong>
-                      How can a customer save money before you start the work?
-                      Please give 3 tips
-                    </strong>
-                    <p>
-                      The job can be done more efficiently by clearing out rooms
-                      and removing as much furniture as possible. We offer drop
-                      sheets and furniture protection but making it easy to move
-                      around means the job can be done faster and with less
-                      aches and pains.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>
-                      What are the typical things that you need to know before
-                      you can provide a quote to a customer?
-                    </strong>
-                    <p>
-                      We need to know room sizes, wall heights, current colours
-                      on the walls. Dark colours being painted light will
-                      generally need extra coats to come up perfect. An idea of
-                      filling, repairing. Ceilings, skirtings, door frames,
-                      doors, cornices. picture rails, outside areas. We Quote On
-                      Site.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>
-                      Are you an insured business and do you guarantee your
-                      work?
-                    </strong>
-                    <p>
-                      Yes we are insured with 5 million in liability which
-                      covers property damage such as a paint tin getting knocked
-                      onto carpet, or a TV being knocked over and smashed. We
-                      Guarantee our work with 100% satisfaction and do a walk
-                      through prior to payment. Any issues we will come back.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>
-                      What makes you the most reliable and trustworthy person
-                      for the job?
-                    </strong>
-                    <p>
-                      At Manly Warringah Painters, our reputation is extremely
-                      important to us and our business. We've been in business
-                      for 25 years. Trust is something that is built up over a
-                      long period of time. We can provide references and phone
-                      numbers of past clients to get reviews.
-                    </p>
-                  </li>
-                  <li>
-                    <strong>What do you like most about your job?</strong>
-                    <p>
-                      I enjoy two parts of my job. Doing the work and seeing a
-                      transformation in a place and the more dramatic the
-                      transformation, the more enjoyable. I also enjoy the
-                      pleasure that owners get from a job well done through my
-                      efforts.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+        
             </div>
             <div>
               Manly Warringah Painters Painting Process

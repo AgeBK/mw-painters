@@ -12,6 +12,7 @@ import MainContainer from "./containers/MainContainer";
 import Home from "./components/Home";
 import Aboutus from "./components/Aboutus";
 import Services from "./components/Services";
+import FAQs from "./components/FAQs";
 import ContactUs from "./components/ContactUs";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -48,9 +49,9 @@ function App(props) {
         <Route exact path="/services">
           <Services />
         </Route>
-        {/* <Route exact path="/faqs">
-          <Faqs />
-        </Route> */}
+        <Route exact path="/faqs">
+          <FAQs />
+        </Route>
         <Route exact path="/contact-us">
           <ContactUs />
         </Route>

@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  servicesIntro,
-  serviceAreas,
-  serviceAreaImage,
-} from "../../data/data.json";
+import PageIntro from "../PageIntro";
+import { serviceAreas, serviceAreaImage } from "../../data/data.json";
 import styles from "./Services.module.css";
 import { services } from "../../data/data.json";
 // import { Link } from "react-router-dom";
@@ -17,12 +14,8 @@ const createMarkup = (val) => ({ __html: val });
 const Services = () => {
   return (
     <article className={styles.container}>
-      <h1>Services</h1>
-      <strong className={styles.intro}>
-        Manly Warringah Painter have over 25 years painting experience,
-        delivering first class workmanship and competitive pricing.
-      </strong>
-      <div dangerouslySetInnerHTML={createMarkup(servicesIntro)}></div>
+      <PageIntro />
+
       <div>
         <p>
           {/* <img

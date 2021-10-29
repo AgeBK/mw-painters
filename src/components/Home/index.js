@@ -1,7 +1,7 @@
 import React from "react";
 import Reviews from "../Reviews";
 import PageIntro from "../PageIntro";
-import { homeIntro, homeSpecialise, standOutAreas } from "../../data/data.json";
+import { homeSpecialise, standOutAreas } from "../../data/data.json";
 import styles from "./Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
@@ -20,15 +20,15 @@ const Home = () => {
         {/* TODO: semantics are missing, SEO etc, check image 6 slideshow, anchors should be router links?*/}
         {/* // TODO: should cont Home be functionn home?? */}
         <PageIntro page="Home" />
-        <h1>Manly Warringah Painters</h1>
+        {/* <h1>Manly Warringah Painters</h1>
         <strong className={styles.intro}>
           Delivering Strata, Commercial and Residential Painting Services for
           over 25 years
-        </strong>
-        <div
+        </strong> */}
+        {/* <div
           className={styles.intro}
           dangerouslySetInnerHTML={createMarkup(homeIntro)}
-        ></div>
+        ></div> */}
         <>
           {homeSpecialise.map((val, i) => (
             <div key={i} className={styles.paintCont}>
@@ -52,8 +52,9 @@ const Home = () => {
             Although based on the Northern Beaches of Sydney, we provide our
             services to other areas in Sydney. Whether the job is small or
             large, Manly Warringah Painters have a range of options to cater for
-            your needs. If you’re interested in a quote, just give us a call of
-            fill out your details on our quote page.
+            your needs. If you’re interested in a{" "}
+            <a href="/contact-us">quote</a>, just give us a call of fill out
+            your details on our quote page.
           </p>
           <p>
             So for quality painting services, you can’t beat the experience,
