@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0930cb1970d9838fad4d92b6ae4588be",
+    "revision": "8c3f00e27e68b42987c5e1b25ef8b6d8",
     "url": "/mw-painters/index.html"
   },
   {
-    "revision": "f41614a50a39e25c8c40",
+    "revision": "0f04b4b2e80f47dee12f",
     "url": "/mw-painters/static/css/2.fe62fa80.chunk.css"
   },
   {
-    "revision": "d11f404cf537445202aa",
-    "url": "/mw-painters/static/css/main.9acd5773.chunk.css"
+    "revision": "02a93f970c3ccdef7515",
+    "url": "/mw-painters/static/css/main.d4651335.chunk.css"
   },
   {
-    "revision": "f41614a50a39e25c8c40",
-    "url": "/mw-painters/static/js/2.ef7bf6e5.chunk.js"
+    "revision": "0f04b4b2e80f47dee12f",
+    "url": "/mw-painters/static/js/2.539fbea2.chunk.js"
   },
   {
     "revision": "61e07005d7bba5fa939d4165c96a217c",
-    "url": "/mw-painters/static/js/2.ef7bf6e5.chunk.js.LICENSE.txt"
+    "url": "/mw-painters/static/js/2.539fbea2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d11f404cf537445202aa",
-    "url": "/mw-painters/static/js/main.44113251.chunk.js"
+    "revision": "02a93f970c3ccdef7515",
+    "url": "/mw-painters/static/js/main.f97e85f2.chunk.js"
   },
   {
     "revision": "fb226c65649596a03e00",
