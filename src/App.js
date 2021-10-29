@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 // import products from './data/products.json';
 // import Nav from "./components/Nav";
 import MainContainer from "./containers/MainContainer";
@@ -49,9 +54,10 @@ function App(props) {
         <Route exact path="/contact-us">
           <ContactUs />
         </Route>
-        <Route path="*">
+        <Redirect to="/" />
+        {/* <Route path="*">
           <Home />
-        </Route>
+        </Route> */}
         {/* <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about-us" render={() => <Aboutus />} />
           <Route exact path="/services" render={() => <Services />} /> */}
