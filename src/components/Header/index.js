@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 // import Slideshow from "../../components/Slideshow";
-import Test from "../../components/Test";
+import Test from "../Test";
 import Slideshow from "../Slideshow";
 import SiteNav from "../SiteNav";
-import ContactDetails from "../../components/ContactDetails";
+import ContactDetails from "../ContactDetails";
 
-import styles from "./Nav.module.css";
+import styles from "./Header.module.css";
 import LogoImg from "../../img/mwpLogo.jpg";
 import LogoNoPhne from "../../img/mwpLogoNoPhne.jpg";
 import LogoLong from "../../img/mwpLogoLong4.png";
@@ -14,14 +14,14 @@ import LogoLong2 from "../../img/mwpLogoLong.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Nav = () => {
+const Header = () => {
   // const [isActive, setActive] = useState(false);
   const [open, setOpen] = useState("");
 
   const handleToggle = (val) => setOpen(open.length ? "" : styles.open);
 
   return (
-    <header>
+    <header className={styles.container}>
       <div className={styles.headerBar}></div>
       <div className={styles.topBar}>
         <div className={styles.logoCont}>
@@ -57,7 +57,6 @@ const Nav = () => {
           <span className={styles.phone}>
             <img
               src={require("../../img/test4.png")}
-              // className={styles.phoneImg} Todo: text in logo image seems to dark after resizing ??
               alt="Manly Warringah Painters"
               className={styles.test2}
               useMap="#imgmap"
@@ -97,4 +96,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Header;

@@ -13,10 +13,10 @@ const PageIntro = (props) => {
 
   return (
     <section>
-      <header>
+      <hgroup>
         <h1>{heading}</h1>
         <h2>{subHeading}</h2>
-      </header>
+      </hgroup>
       <section dangerouslySetInnerHTML={createMarkup()}></section>
     </section>
   );

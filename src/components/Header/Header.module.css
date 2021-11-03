@@ -1,6 +1,6 @@
 /* TODO: Styling not using CSS modules?? */
 
-header {
+.container {
   /* TODO: CHECK THIS */
   /* display: -webkit-box;
   display: -moz-box;
@@ -69,11 +69,11 @@ header {
   display: none;
 }
 
-.container {
+/* .container {
   margin: 10px auto;
   max-width: 1200px;
   padding: 10px;
-}
+} */
 
 /* --- Hamburger Functionality --- */
 div.menuLink {

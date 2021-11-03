@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import styles from "./MainContainer.module.css";
-import Nav from "../../components/Nav";
+import Nav from "../../components/Header";
 import Footer from "../../components/Footer";
 
 // TODO: ADD FLOW TESTS?
@@ -9,16 +9,16 @@ import Footer from "../../components/Footer";
 // const MainContainer = WrappedComponent => (props: Props) => (
 const MainContainer = (WrappedComponent) => () =>
   (
-    <main className={styles.main}>
-      <div className={styles.header}>
-        <Nav />
-      </div>
-      <div className={styles.content}>
+    <>
+      <Nav />
+      <main className={styles.container}>
         {/* App component is passed into MainContainer as WrappedComponent */}
-        <WrappedComponent />
-      </div>
+        <div className={styles.contInner}>
+          <WrappedComponent />
+        </div>
+      </main>
       <Footer />
-    </main>
+    </>
   );
 
 export default MainContainer;

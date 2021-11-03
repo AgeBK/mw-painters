@@ -20,6 +20,7 @@ import {
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 
+//TODO: JSON.parse(Aboutus);
 const Aboutus = () => {
   var arr = [
     { title: "Over 25 years experience", icon: faMedal },
@@ -51,7 +52,7 @@ const Aboutus = () => {
               Take the pain out of painting with Manly Warringah Painters
             </strong>
           </heading> */}
-          {/* <div dangerouslySetInnerHTML={createMarkup(about)}></div> */} 
+          {/* <div dangerouslySetInnerHTML={createMarkup(about)}></div> */}
           <h2>We only use the best quality products on all jobs</h2>
           <ul className={styles.brands}>
             {brands.map((val) => (
@@ -105,7 +106,6 @@ const Aboutus = () => {
             FAQ's
             <div>
               <h1>Frequently Asked Questions</h1>
-        
             </div>
             <div>
               Manly Warringah Painters Painting Process

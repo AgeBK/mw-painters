@@ -55,10 +55,24 @@ const Footer = () => {
           <FontAwesomeIcon icon={faArrowCircleUp}>Back to top</FontAwesomeIcon>
         </a>
       </nav>
+      <small className={styles.small}>
+        © Copyright 2021 Manly Warringah Painters. All rights reserved
+      </small>
+      <small className={styles.small}>
+        Website by{" "}
+        <a
+          href="mailto:age24@hotmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Adrian Kinross
+        </a>
+      </small>
+
       {/* <div id="test" className={styles.test}>
-          <br />
-          <br />
-        </div> */}
+        <br />
+        <br />
+      </div> */}
     </footer>
   );
 };

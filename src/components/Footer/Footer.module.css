@@ -1,7 +1,9 @@
 .container {
-  /* padding: 10px; */
-  background-color: #000;
-  /* background-color: red; */
+  padding: 10px;
+  background-color: #0b0a4e;
+  color: #777;
+  font-size: 14px;
+  text-align: center;
 }
 
 nav {
@@ -16,8 +18,12 @@ nav {
   font-size: 25px;
   color: #fff;
   margin-right: 10px;
+}
 
-  /* border-radius: 30 px;
-  padding: 3 px 6 px;
-  border: 2 px solid white; */
+a {
+  color: #777;
+}
+
+.small {
+  display: block;
 }

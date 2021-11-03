@@ -18,17 +18,7 @@ const Home = () => {
         {/* j&e Kogan based text */}
         {/* // TODO: map of areas mwp work and that over 25 years image and error page? */}
         {/* TODO: semantics are missing, SEO etc, check image 6 slideshow, anchors should be router links?*/}
-        {/* // TODO: should cont Home be functionn home?? */}
         <PageIntro page="Home" />
-        {/* <h1>Manly Warringah Painters</h1>
-        <strong className={styles.intro}>
-          Delivering Strata, Commercial and Residential Painting Services for
-          over 25 years
-        </strong> */}
-        {/* <div
-          className={styles.intro}
-          dangerouslySetInnerHTML={createMarkup(homeIntro)}
-        ></div> */}
         <>
           {homeSpecialise.map((val, i) => (
             <div key={i} className={styles.paintCont}>
@@ -40,14 +30,14 @@ const Home = () => {
               </div>
               <div className={styles.textCont}>
                 <div className={styles.textInner}>
-                  <h2 dangerouslySetInnerHTML={createMarkup(val.title)}></h2>
+                  <h3 dangerouslySetInnerHTML={createMarkup(val.title)}></h3>
                   <div dangerouslySetInnerHTML={createMarkup(val.text)}></div>
                 </div>
               </div>
             </div>
           ))}
         </>
-        <div className={styles.textContX}>
+        <div>
           <p>
             Although based on the Northern Beaches of Sydney, we provide our
             services to other areas in Sydney. Whether the job is small or
