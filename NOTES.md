@@ -1,4 +1,5 @@
 commented out "Image 1, etc the text for slideshow"
+XX
 
 min height on slideshow image, looks to small when phone size??
 
