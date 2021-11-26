@@ -88,11 +88,12 @@ div.menuLink {
 }
 
 /* When screen is small, center content and animate transitions. */
-header nav {
+header .mainNav {
   clear: both;
   overflow: hidden;
   max-height: 0;
   display: none;
+  /* border: 1px solid red; */
   /* -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
@@ -102,38 +103,56 @@ header nav {
   /* margin: 0px 0px 0px -50px; */
 }
 
-/* Positioning when header nav does appear in small screen mode */
-nav.open {
+/* Positioning when header .mainNav does appear in small screen mode */
+.mainNav.open {
   max-height: 100%; /*TODO: was 15rem ?? */
   margin-bottom: 10px;
   display: block;
 }
 
-/* nav.xx {
+/* .mainNav.xx {
   max-height: 15rem;
   margin-bottom: 10px;
   margin-top: 50px;
 } */
 
 /* When in small screen, center the list */
-header nav ul {
+header .mainNav ul {
   margin: 0 auto;
   padding: 0;
 }
 
-header nav li a {
-  display: block;
-  padding: 0.8rem;
-  color: #000;
-  text-decoration: none;
-  font-size: 1.2rem;
-
-  /* text-align: center; */
+header .mainNav li {
+  padding: 12px 0;
 }
 
-header nav li a:hover {
-  color: #0b0a4e;
-  text-decoration: underline;
+header .mainNav li a {
+  /* display: block; */
+  color: #000;
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+header .mainNav li a:hover {
+  color: #f00;
+}
+
+header .mainNav li:last-child a {
+  background-color: blue;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+header .mainNav li:last-child a:hover {
+  background-color: #f00;
+  color: #fff;
 }
 
 .test2 {
@@ -152,6 +171,7 @@ header nav li a:hover {
 @media screen and (min-width: 28rem) {
   .logo {
     width: auto;
+    margin-right: 25px;
   }
 }
 
@@ -164,13 +184,14 @@ header nav li a:hover {
     justify-content: center;
   }
 
-  .logo {
+  /* .logo {
     width: auto;
-  }
+  } */
 }
 
 @media screen and (min-width: 60rem) {
-  nav.open {
+  /* TDOD: CHECK THIS OPEN */
+  .mainNav.open {
     display: flex;
     margin-bottom: 0px;
   }
@@ -180,7 +201,7 @@ header nav li a:hover {
     display: none;
   }
 
-  header nav {
+  header .mainNav {
     max-height: none;
     margin: 0px;
     display: flex;
@@ -189,18 +210,18 @@ header nav li a:hover {
     right: 10%;
   }
 
-  header nav ul {
+  header .mainNav ul {
     margin: 0 0 0 -0.25rem;
     border: 0;
     text-align: right;
   }
 
-  header nav li {
+  header .mainNav li {
     display: inline-block;
     margin: 0 15px;
   }
 
-  header nav li a {
+  header .mainNav li a {
     border: 0;
   }
 
@@ -219,22 +240,20 @@ header nav li a:hover {
     max-width: 1380px;
   }
 
-  header nav {
-    /* border: 1px solid green; */
+  /* TODO: Code below moved the nav next to logo on Wide screen */
+  /* header .mainNav {
     position: absolute;
     top: 20px;
     right: 5%;
   }
 
   .logoCont {
-    /* text-align: left; */
-    /* display: flex; */
     justify-content: left;
-  }
+  } */
 }
 
 @media screen and (min-width: 95rem) {
-  header nav {
+  header .mainNav {
     /* border: 1px solid yellow; */
     right: 10%;
   }

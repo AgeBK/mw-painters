@@ -6,6 +6,10 @@
   display: flex;
 }
 
+.contactNav h2 {
+  display: none;
+}
+
 .contactNav .contactNo a {
   flex-grow: 1;
   text-align: center;
@@ -48,18 +52,13 @@
 }
 
 .contactForm .contactNo a {
-  /* ;
-  text-align: center;
-  font-weight: bold;
-  padding: 5px;
-   */
   display: flex;
   color: #0b0a4e;
-  /* font-size: 15px; */
-  /* margin-bottom: 20px; */
   align-items: center;
+}
 
-  /* width: 50px; */
+.contactForm .contactNo a:hover {
+  color: #f00;
 }
 
 .contactForm .contactNo span {
@@ -92,7 +91,7 @@
   }
 
   .contactForm .contactNo a {
-    font-size: 1.2rem;
+    margin-right: 20px;
   }
 
   .contactForm .contactNo a .icon {

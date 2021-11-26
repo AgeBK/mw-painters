@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
 // import products from '../../data/products.json';
@@ -8,6 +8,8 @@ import ContactDetails from "../../components/ContactDetails";
 
 const ContactForm = () => {
   // const { register, errors, handleSubmit, reset } = useForm();
+  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState("");
 
   function sendEmail(e) {
     e.preventDefault();
@@ -24,11 +26,19 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setSuccess(true);
+          setMessage(
+            "Thank you for getting in touch! We appreciate you contacting us and will get back to you soon"
+          );
         },
         (error) => {
           console.log(error.text);
+          setMessage(
+            "Sorry, there was an error submitting the form. Please try the contact details below"
+          );
         }
       );
+    // .then(e.target.reset());
   }
 
   // const onSubmit = async (data) => {
@@ -42,6 +52,11 @@ const ContactForm = () => {
     <div className={styles.contact}>
       <div className={styles.contactForm}>
         <h2 className={styles.centre}>Contact Form</h2>
+        <div
+          className={`${success ? styles.success : styles.fail} ${styles.msg}`}
+        >
+          {message}
+        </div>
         <form className="contact-form" onSubmit={sendEmail}>
           {/* <input type="hidden" name="contact_number" placeholder="" /> */}
           <label>Name</label>
@@ -55,12 +70,10 @@ const ContactForm = () => {
           <button className={styles.submit} type="submit">
             Submit
           </button>
-        </form>{" "}
+        </form>
         {/* <div className={styles.contactFormX}> */}
-        <>
-          <h2 className={styles.centre}>Contact Details</h2>
-          <ContactDetails class="contactForm" />
-        </>
+        {/* <h2 className={styles.centre}>Contact Details</h2> */}
+        <ContactDetails class="contactForm" />
       </div>
     </div>
   );

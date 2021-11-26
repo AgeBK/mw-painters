@@ -9,7 +9,7 @@ import ContactDetails from "../ContactDetails";
 import styles from "./Header.module.css";
 import LogoImg from "../../img/mwpLogo.jpg";
 import LogoNoPhne from "../../img/mwpLogoNoPhne.jpg";
-import LogoLong from "../../img/mwpLogoLong4.png";
+import LogoLong from "../../img/mwpLogoLong6.jpg";
 import LogoLong2 from "../../img/mwpLogoLong.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
@@ -56,7 +56,7 @@ const Header = () => {
           </map>
           <span className={styles.phone}>
             <img
-              src={require("../../img/test4.png")}
+              src={require("../../img/test6.jpg")}
               alt="Manly Warringah Painters"
               className={styles.test2}
               useMap="#imgmap"
@@ -74,7 +74,7 @@ const Header = () => {
       </div>
       <ContactDetails class="contactNav" />
       <div className={styles.navBar}></div>
-      <nav id="menu" role="navigation" className={`${open}`}>
+      <nav className={`${open} ${styles.mainNav}`}>
         <SiteNav class="header" click={handleToggle} />
       </nav>
       {/* <div className={styles.container}>

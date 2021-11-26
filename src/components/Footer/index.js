@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
 import LogoSml from "../../img/mwpLogoSml.jpg";
 import styles from "./Footer.module.css";
-// TODO: Error page, semantics
+// TODO: Error page, semantics, SEO, index.html meta etc
 
 const Footer = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const Footer = () => {
         fXXXXXX: "fucking",
         fXXXXX: "fucker",
         wXXXX: "whore",
-        fuk: "fuck",
+        fxxx: "fuck",
         // comma: ",",
       };
 

@@ -1,6 +1,8 @@
 .container {
   padding: 10px;
   background-color: #0b0a4e;
+  border-top: 2px solid #f00;
+
   color: #777;
   font-size: 14px;
   text-align: center;

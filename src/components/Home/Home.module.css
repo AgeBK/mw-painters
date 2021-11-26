@@ -6,12 +6,19 @@
 /* ORIGINAL BLUE 171496 */
 
 .container {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .paintCont {
   display: flex;
   flex-wrap: wrap;
+}
+
+.textBlock {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 .paintCont:nth-child(even) {
@@ -47,17 +54,13 @@
 
 .paintCont img {
   height: 100%;
+  object-fit: cover;
 }
 
-.standOutList li {
-  margin-bottom: 5px;
-  display: block;
-}
-
-.tick {
+/* .tick {
   color: #0b0a4e;
   margin-right: 10px;
-}
+} */
 
 @media screen and (min-width: 50rem) {
   .paintCont {
@@ -66,5 +69,13 @@
 
   .paintCont > div {
     width: 50%;
+  }
+
+  .textCont {
+    padding: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
   }
 }

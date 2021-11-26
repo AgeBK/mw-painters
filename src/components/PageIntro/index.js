@@ -12,7 +12,7 @@ const PageIntro = (props) => {
   const createMarkup = (val) => ({ __html: text });
 
   return (
-    <section>
+    <section className={styles.pageIntro}>
       <hgroup>
         <h1>{heading}</h1>
         <h2>{subHeading}</h2>

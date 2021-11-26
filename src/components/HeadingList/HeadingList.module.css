@@ -1,0 +1,121 @@
+.hl {
+  margin-bottom: 40px;
+}
+
+.hl ul {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* padding: 10px; */
+  column-count: 2;
+}
+
+.hl li {
+  /* list-style-type: disc; */
+  margin: 0 15px 5px 3px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.hl li svg {
+  margin-right: 5px;
+  color: #100b71;
+  width: 28px !important;
+  font-size: 24px;
+}
+
+.serviceAreas {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 60rem) {
+  .hl ul {
+    column-count: 3;
+  }
+}
+
+@media screen and (min-width: 85rem) {
+  .hl ul {
+    column-count: 4;
+    /* border: 1px solid red; */
+  }
+}
+
+/* .hl li {
+  margin-bottom: 5px;
+  display: block;
+  border: 1px solid red;
+}
+
+.hl li svg {
+  color: blue;
+}
+
+.hl li span {
+  padding: 10px;
+}
+
+@media screen and (max-width: 25rem) {
+  .hl {
+    display: inline-block;
+    text-align: center;
+    border: 0;
+  }
+
+  .hl .listItem {
+    margin-bottom: 10px;
+  }
+} */
+
+/* TODO: DO I NEED TO TARGET .STANDOUT ECT?? or just be generic + looks different home page and aboutus ??*/
+
+/* .standOut li {
+  margin-bottom: 5px;
+  display: block;
+  border: 1px solid red;
+}
+
+.standOut li svg {
+  color: blue;
+}
+
+.standOut li span {
+  margin-left: 5px;
+} */
+
+/* .co.ntainer {
+  padding: 20px;
+  background-color: #0b0a4e;
+}
+
+.test {
+  padding: 20px;
+} */
+
+/* FOOTER */
+/* .headingList {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.headingList .listItem a {
+  color: #fff;
+}
+
+.headingList a {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 25rem) {
+  .headingList {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .headingList .listItem {
+    margin-bottom: 10px;
+  }
+} */

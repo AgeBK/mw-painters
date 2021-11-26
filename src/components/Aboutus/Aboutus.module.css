@@ -1,5 +1,7 @@
 .container {
   padding: 20px;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .intro {
@@ -61,6 +63,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  max-width: 1260px;
 }
 
 .brands img {
@@ -73,9 +76,29 @@
   color: #fff;
 }
 
+.dblImg {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 30px; */
+}
+
+.dblImg img {
+  /* max-width: 50%; */
+  padding: 10px;
+}
+
 @media screen and (min-width: 35rem) {
   .icons li {
     max-width: 50%;
+  }
+
+  .dblImg {
+    flex-direction: row;
+  }
+
+  .dblImg img {
+    max-width: 50%;
+    padding: 20px 10px;
   }
 
   .brands img {

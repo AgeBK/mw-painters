@@ -11,7 +11,7 @@ import {
 // TODO: Error page, semantics, check variables that can be restructured, maybe consistancy with container names across components?? px or rem?
 // Review or Reviews
 const Reviews = () => {
-  const slideInterval = 4000; // 4 seconds
+  const slideInterval = 5000; // 5 seconds
 
   useEffect(() => {
     let count = 0;
@@ -49,7 +49,7 @@ const Reviews = () => {
   return (
     <article className={styles.container}>
       <div className={styles.inner}>
-        <h2 className={styles.header}>What our clients think of us</h2>
+        <h4 className={styles.header}>What our clients think of us</h4>
         {reviews.map(({ customer, review, rating }, i) => (
           <div className={`${styles.content}  cont`} key={i}>
             {/* <div className={styles.rating}>{stars(rating)}</div> */}{" "}

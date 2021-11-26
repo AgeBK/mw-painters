@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { nav } from "../../data/data.json";
 import styles from "./SiteNav.module.css";
 
@@ -15,7 +15,9 @@ const SiteNav = (props) => {
     <ul className={styles[component]}>
       {nav.map((val, i) => (
         <li key={i} className={styles.listItem} onClick={handleToggle}>
-          <Link to={val.link}>{val.name}</Link>
+          <NavLink exact to={val.link} activeClassName={styles.active}>
+            {val.name}
+          </NavLink>
         </li>
       ))}
     </ul>

@@ -90,16 +90,18 @@
   top: 0;
 }
 
+/* Displays dots beneath images 
 .dotCont {
   text-align: center;
   margin: 10px 0;
+  display: none; 
 }
 
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 4px;
+  margin: 0 8px;
   background-color: #717171;
   border-radius: 50%;
   display: inline-block;
@@ -123,4 +125,4 @@
 .active,
 .dot:hover {
   background-color: #000;
-}
+} */

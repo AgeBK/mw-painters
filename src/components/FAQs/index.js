@@ -1,5 +1,6 @@
 import React from "react";
 import PageIntro from "../PageIntro";
+
 import styles from "./FAQs.module.css";
 
 const FAQs = () => {

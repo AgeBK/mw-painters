@@ -1,5 +1,7 @@
 .container {
   padding: 20px;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .intro {
@@ -30,10 +32,16 @@
   margin: 0 auto;
 }
 
+.servicesInfo {
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 800px;
+}
+
 @media screen and (min-width: 60rem) {
   .services {
     column-count: 3;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 }
 
