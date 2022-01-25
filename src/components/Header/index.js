@@ -1,21 +1,12 @@
 import React, { useState } from "react";
-
-// import Slideshow from "../../components/Slideshow";
-import Test from "../Test";
 import Slideshow from "../Slideshow";
 import SiteNav from "../SiteNav";
 import ContactDetails from "../ContactDetails";
-
 import styles from "./Header.module.css";
-import LogoImg from "../../img/mwpLogo.jpg";
 import LogoNoPhne from "../../img/mwpLogoNoPhne.jpg";
-import LogoLong from "../../img/mwpLogoLong6.jpg";
-import LogoLong2 from "../../img/mwpLogoLong.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneAlt, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import LogoLong from "../../img/mwpLogoLong.jpg";
 
 const Header = () => {
-  // const [isActive, setActive] = useState(false);
   const [open, setOpen] = useState("");
 
   const handleToggle = (val) => setOpen(open.length ? "" : styles.open);
@@ -26,7 +17,6 @@ const Header = () => {
       <div className={styles.topBar}>
         <div className={styles.logoCont}>
           <a href="/">
-            {/* // TODO look up picture/source */}
             <picture>
               <source srcSet={LogoNoPhne} media="(max-width: 45rem)" />
               <img
@@ -56,17 +46,14 @@ const Header = () => {
           </map>
           <span className={styles.phone}>
             <img
-              src={require("../../img/test6.jpg")}
+              src={require("../../img/mwpNumbers.jpg")}
               alt="Manly Warringah Painters"
               className={styles.test2}
               useMap="#imgmap"
             />
           </span>
         </div>
-        <div
-          onClick={handleToggle}
-          className={`${styles.menuLink}  ${open}`} // TODO, have this twice, check semantics
-        >
+        <div onClick={handleToggle} className={`${styles.menuLink}  ${open}`}>
           <div className={styles.iconCont}>
             <div className={styles.icon}></div>
           </div>
@@ -77,21 +64,7 @@ const Header = () => {
       <nav className={`${open} ${styles.mainNav}`}>
         <SiteNav class="header" click={handleToggle} />
       </nav>
-      {/* <div className={styles.container}>
-        <p>A responsive hamburger menu with flexbox.</p>
-        <div>https://react-slideshow.herokuapp.com/</div>
-        <p>
-          Works well. Only known issue is that the list is centered within it's
-          flexbox. So, if "NAME" is 200px wide and the hamburger menu is 100px
-          wide, the list will be off center when it expands. Quickest fix is to
-          manually adjust the margin. This takes place on lines 53, 59, 60 and
-          86. The same problem applies to the vertical margin as well. This hard
-          codes a 50px offset, but if you had a large header then it would need
-          adjusting.
-        </p>
-      </div> */}
       <Slideshow />
-      {/* </div> */}
     </header>
   );
 };

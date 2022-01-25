@@ -9,18 +9,12 @@
 }
 
 .services img {
-  /* min-width: 426px; */
   max-width: 600px;
 }
 
 @media screen and (min-width: 70rem) {
-  .services {
-    /* display: flex; */
-  }
-
   .services img {
     min-width: 426px;
-    /* border: 1px solid red; */
     margin-left: 25px;
   }
 }

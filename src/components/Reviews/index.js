@@ -8,8 +8,6 @@ import {
   faQuoteRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-// TODO: Error page, semantics, check variables that can be restructured, maybe consistancy with container names across components?? px or rem?
-// Review or Reviews
 const Reviews = () => {
   const slideInterval = 5000; // 5 seconds
 
@@ -52,7 +50,6 @@ const Reviews = () => {
         <h4 className={styles.header}>What our clients think of us</h4>
         {reviews.map(({ customer, review, rating }, i) => (
           <div className={`${styles.content}  cont`} key={i}>
-            {/* <div className={styles.rating}>{stars(rating)}</div> */}{" "}
             {stars(rating)}
             <div className={styles.review}>
               <FontAwesomeIcon icon={faQuoteLeft} className={styles.qLeft} />

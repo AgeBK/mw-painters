@@ -42,11 +42,6 @@
   }
 }
 
-/* Contact form section */
-/* .contactForm {
-  background-color: #000;
-} */
-
 .contactForm .contactNo {
   display: block;
 }
@@ -61,22 +56,15 @@
   color: #f00;
 }
 
-.contactForm .contactNo span {
-  /* width: 50px; */
-}
-
 .contactForm .contactNo a .icon {
   color: #0b0a4e;
   border-radius: 50px;
-  /* border: 1px solid #0b0a4e; */
   font-size: 25px;
   padding: 15px;
-  /* margin-right: 20px; */
 }
 
 .contactForm .contactNo a:nth-child(2) .icon {
   padding: 20px;
-  /* border: 1px solid red; */
 }
 
 .centre {
@@ -85,7 +73,6 @@
 
 @media screen and (min-width: 60rem) {
   .contactForm .contactNo {
-    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
   }

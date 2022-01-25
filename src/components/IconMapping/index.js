@@ -1,8 +1,6 @@
 import React from "react";
 import {
   faCheckCircle,
-  // faChevronDown,
-  // faWrench,
   faMedal,
   faHome,
   faBuilding,
@@ -19,40 +17,6 @@ import {
   faBrush,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./IconMapping.module.css";
-
-var arr = [
-  { title: "Over 25 years experience", icon: faMedal },
-  { title: "Interior and exterior", icon: faHome },
-  { title: "Commercial, residential", icon: faBuilding },
-  { title: "Reliable and honest", icon: faUserFriends },
-  { title: "Licensed and insured", icon: faCertificate },
-  { title: "Timely completion", icon: faClock },
-  { title: "Expert colour advice", icon: faAward },
-  { title: "Satisfaction gaurantee", icon: faStar },
-  { title: "Personalised service", icon: faPeopleArrows },
-  { title: "Value for money", icon: faCommentDollar },
-  { title: "Fixed price", icon: faDollarSign },
-  { title: "Best products available", icon: faTrophy },
-];
-
-arr.map((val) => console.log(val.icon + ", "));
-
-// const Aboutus = () => {
-//   var arr = [
-//     { title: "Over 25 years experience", icon: faMedal },
-//     { title: "Interior and exterior", icon: faHome },
-//     { title: "Commercial, residential", icon: faBuilding },
-//     { title: "Reliable and honest", icon: faUserFriends },
-//     { title: "Licensed and insured", icon: faCertificate },
-//     { title: "Timely completion", icon: faClock },
-//     { title: "Expert colour advice", icon: faAward },
-//     { title: "Satisfaction gaurantee", icon: faStar },
-//     { title: "Personalised service", icon: faPeopleArrows },
-//     { title: "Value for money", icon: faCommentDollar },
-//     { title: "Fixed price", icon: faDollarSign },
-//     { title: "Best products available", icon: faTrophy },
-//   ];
 
 export default {
   faCheckCircle: <FontAwesomeIcon icon={faCheckCircle} />,

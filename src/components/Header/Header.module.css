@@ -1,16 +1,4 @@
-/* TODO: Styling not using CSS modules?? */
-
 .container {
-  /* TODO: CHECK THIS */
-  /* display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-  font-family: cursive; */
   background-color: #fff;
   position: relative;
 }
@@ -50,7 +38,6 @@
 }
 
 .heading {
-  /* width: 100%; */
   flex-grow: 1;
   line-height: 2.3rem;
   margin: 0;
@@ -58,7 +45,7 @@
 }
 
 .heading a {
-  color: #ff0000;
+  color: #f00;
 }
 
 .heading span {
@@ -69,12 +56,6 @@
   display: none;
 }
 
-/* .container {
-  margin: 10px auto;
-  max-width: 1200px;
-  padding: 10px;
-} */
-
 /* --- Hamburger Functionality --- */
 div.menuLink {
   padding: 1rem;
@@ -82,41 +63,23 @@ div.menuLink {
   width: 30px;
   position: absolute;
   transition-duration: 0.5s;
-  /* left: 0; */
   top: 0;
   cursor: pointer;
 }
 
-/* When screen is small, center content and animate transitions. */
 header .mainNav {
   clear: both;
   overflow: hidden;
   max-height: 0;
   display: none;
-  /* border: 1px solid red; */
-  /* -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; */
-  /* width: 100%; */
-  /* margin: 0px 0px 0px -50px; */
 }
 
-/* Positioning when header .mainNav does appear in small screen mode */
 .mainNav.open {
-  max-height: 100%; /*TODO: was 15rem ?? */
+  max-height: 100%;
   margin-bottom: 10px;
   display: block;
 }
 
-/* .mainNav.xx {
-  max-height: 15rem;
-  margin-bottom: 10px;
-  margin-top: 50px;
-} */
-
-/* When in small screen, center the list */
 header .mainNav ul {
   margin: 0 auto;
   padding: 0;
@@ -127,10 +90,8 @@ header .mainNav li {
 }
 
 header .mainNav li a {
-  /* display: block; */
   color: #000;
   text-decoration: none;
-  /* font-size: 1.2rem; */
   text-decoration: none;
   margin-left: 20px;
 }
@@ -163,11 +124,6 @@ header .mainNav li:last-child a:hover {
   width: 573px;
 }
 
-/* Style for larger screens. Hide the menu button, and show the normal navigation menu. */
-/* Credit: https://codepen.io/bradfrost/pen/sHvaz */
-
-/* TODO: DevTools started crashing a lot when i added a lot of media queries?? */
-
 @media screen and (min-width: 28rem) {
   .logo {
     width: auto;
@@ -183,14 +139,9 @@ header .mainNav li:last-child a:hover {
   .logoCont {
     justify-content: center;
   }
-
-  /* .logo {
-    width: auto;
-  } */
 }
 
 @media screen and (min-width: 60rem) {
-  /* TDOD: CHECK THIS OPEN */
   .mainNav.open {
     display: flex;
     margin-bottom: 0px;
@@ -228,33 +179,16 @@ header .mainNav li:last-child a:hover {
   .phone {
     display: inline-block;
   }
-
-  /* .logoCont img {
-    width: auto;
-    border: 1px solid purple;
-  } */
 }
 
 @media screen and (min-width: 85rem) {
   .topBar {
     max-width: 1380px;
   }
-
-  /* TODO: Code below moved the nav next to logo on Wide screen */
-  /* header .mainNav {
-    position: absolute;
-    top: 20px;
-    right: 5%;
-  }
-
-  .logoCont {
-    justify-content: left;
-  } */
 }
 
 @media screen and (min-width: 95rem) {
   header .mainNav {
-    /* border: 1px solid yellow; */
     right: 10%;
   }
 }
@@ -263,8 +197,6 @@ header .mainNav li:last-child a:hover {
 /* Credit: https://codepen.io/mblode/pen/evjfn */
 div.menuLink {
   width: 30px;
-  /* top: 100px;
-  left: 120px; */
   transition-duration: 0.5s;
 }
 div.menuLink .icon {
@@ -273,7 +205,7 @@ div.menuLink .icon {
   height: 4px;
   width: 2rem;
   top: 1.3rem;
-  right: 2rem; /* TODO: THIS MIGHT BE CAUSING ISSUE WITH HAMBURGER */
+  right: 2rem;
   background-color: #100b71;
 }
 div.menuLink .icon:before {
@@ -308,10 +240,4 @@ div.menuLink.open .icon:after {
 }
 div.icon:hover {
   cursor: pointer;
-}
-
-/* TODO: MUCKING AROUND  */
-
-img {
-  width: 100%;
 }

@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import SiteNav from "../SiteNav";
+import { copyRight, webSiteBy } from "../../data/data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
-import LogoSml from "../../img/mwpLogoSml.jpg";
 import styles from "./Footer.module.css";
-// TODO: Error page, semantics, SEO, index.html meta etc
 
 const Footer = () => {
+  const createMarkup = (val) => ({ __html: val });
+
   useEffect(() => {
     var re2 = /comma|,/gi;
     const text = document.getElementById("test");
@@ -14,7 +15,6 @@ const Footer = () => {
       let str = text.innerText
         .replaceAll("*", "X")
         .replaceAll(re2, "<br /><br />");
-      // console.log(str);
 
       var mapObj = {
         sXXX: "shit",
@@ -45,34 +45,21 @@ const Footer = () => {
   return (
     <footer className={styles.container}>
       <nav>
-        {/* <img
-            src={LogoSml}
-            className={styles.logo}
-            alt="Manly Warringah Painters"
-          /> */}
         <SiteNav class="footer" />
         <a href="#top" className={styles.top}>
           <FontAwesomeIcon icon={faArrowCircleUp}>Back to top</FontAwesomeIcon>
         </a>
       </nav>
-      <small className={styles.small}>
-        © Copyright 2021 Manly Warringah Painters. All rights reserved
-      </small>
-      <small className={styles.small}>
-        Website by{" "}
-        <a
-          href="mailto:age24@hotmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Adrian Kinross
-        </a>
-      </small>
+      <small className={styles.small}>{copyRight}</small>
+      <small
+        className={styles.small}
+        dangerouslySetInnerHTML={createMarkup(webSiteBy)}
+      ></small>
 
-      {/* <div id="test" className={styles.test}>
+      <div id="test" className={styles.test}>
         <br />
         <br />
-      </div> */}
+      </div>
     </footer>
   );
 };

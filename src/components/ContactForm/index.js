@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-
-// import products from '../../data/products.json';
+import { successMsg, errorMsg } from "../../data/data.json";
 import styles from "./ContactForm.module.css";
-// import { useForm } from "react-hook-form";
 import ContactDetails from "../../components/ContactDetails";
 
 const ContactForm = () => {
-  // const { register, errors, handleSubmit, reset } = useForm();
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -16,6 +13,7 @@ const ContactForm = () => {
 
     //emailjs
     // .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "user_LYMrkD2CRVAnRb1wdTtPk")
+
     emailjs
       .sendForm(
         "contact_service",
@@ -27,26 +25,15 @@ const ContactForm = () => {
         (result) => {
           console.log(result.text);
           setSuccess(true);
-          setMessage(
-            "Thank you for getting in touch! We appreciate you contacting us and will get back to you soon"
-          );
+          setMessage(successMsg);
         },
         (error) => {
           console.log(error.text);
-          setMessage(
-            "Sorry, there was an error submitting the form. Please try the contact details below"
-          );
+          setMessage(errorMsg);
         }
       );
     // .then(e.target.reset());
   }
-
-  // const onSubmit = async (data) => {
-  //   console.log("Name: ", data.name);
-  //   console.log("Email: ", data.email);
-  //   console.log("Subject: ", data.subject);
-  //   console.log("Message: ", data.message);
-  // };
 
   return (
     <div className={styles.contact}>
@@ -58,7 +45,6 @@ const ContactForm = () => {
           {message}
         </div>
         <form className="contact-form" onSubmit={sendEmail}>
-          {/* <input type="hidden" name="contact_number" placeholder="" /> */}
           <label>Name</label>
           <input type="text" name="user_name" placeholder="Name" required />
           <label>Email</label>
@@ -71,8 +57,6 @@ const ContactForm = () => {
             Submit
           </button>
         </form>
-        {/* <div className={styles.contactFormX}> */}
-        {/* <h2 className={styles.centre}>Contact Details</h2> */}
         <ContactDetails class="contactForm" />
       </div>
     </div>

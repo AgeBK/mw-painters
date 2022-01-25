@@ -1,18 +1,17 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 ReactDOM.render(
-  // <React.StrictMode> TODO: CAUSES RERENDER (IN DEV MODE) ?? https://medium.com/@andreasheissenberger/react-components-render-twice-any-way-to-fix-this-91cf23961625
-  <Router>
-    <App />
-  </Router>,
-  // </React.StrictMode>,
+  <StrictMode>
+    <Router>
+      <App />
+    </Router>
+    ,
+  </StrictMode>,
   document.getElementById("root")
 );
 

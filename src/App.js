@@ -1,12 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
-// import products from './data/products.json';
-// import Nav from "./components/Nav";
+import { Route, Switch, Redirect } from "react-router-dom";
 import MainContainer from "./containers/MainContainer";
 
 import Home from "./components/Home";

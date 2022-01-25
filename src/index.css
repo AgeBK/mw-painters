@@ -1,4 +1,4 @@
-@import-normalize; /*  TODO - Global styles?? here or App.css or are globals bad form?? + look for colour red */
+@import-normalize;
 
 body {
   margin: 0;
@@ -22,7 +22,6 @@ h1 {
   color: #0b0a4e;
   font-size: 60px;
   line-height: 70px;
-  /* text-align: center; */
   text-shadow: 1px 1px #f00;
   margin: 40px 0 30px;
 }
@@ -51,14 +50,9 @@ p a {
 }
 
 a:hover {
-  /* color: #f00 !important; */
   color: #f00;
   text-decoration: none;
 }
-
-/* button:hover {
-  background-color: #f00 !important;
-} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -93,14 +87,6 @@ button {
 
 a {
   text-decoration: none;
-  /* transition: 0.5s; */
-}
-
-@media screen and (max-width: 35rem) {
-  /* h1 {
-    line-height: 70px;
-    border: 1px solid red;
-  } */
 }
 
 @media screen and (min-width: 60rem) {

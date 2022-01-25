@@ -4,8 +4,6 @@ import styles from "./MainContainer.module.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-// TODO: ADD FLOW TESTS?
-
 const MainContainer = (WrappedComponent) => () =>
   (
     <>

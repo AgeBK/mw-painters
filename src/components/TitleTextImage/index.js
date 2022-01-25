@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
 import styles from "./TitleTextImage.module.css";
 
 const TitleTextImage = (props) => {

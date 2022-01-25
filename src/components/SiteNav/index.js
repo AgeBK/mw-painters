@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { nav } from "../../data/data.json";
 import styles from "./SiteNav.module.css";
 

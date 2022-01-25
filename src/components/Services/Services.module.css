@@ -11,14 +11,10 @@
 }
 
 .services {
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* padding: 10px; */
   column-count: 2;
 }
 
 .services li {
-  /* list-style-type: disc; */
   margin: 0 15px 5px 3px;
   color: #100b71;
 }
@@ -41,7 +37,6 @@
 @media screen and (min-width: 60rem) {
   .services {
     column-count: 3;
-    /* border: 1px solid red; */
   }
 }
 
@@ -50,20 +45,3 @@
     column-count: 4;
   }
 }
-
-/* .map {
-  height: 450px;
-  width: 600px;
-  overflow: hidden;
-  padding-bottom: 100%;
-  position: relative;
-  height: 0;
-}
-
-.iFrame {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-} */

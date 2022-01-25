@@ -48,15 +48,23 @@
     },
     "/contact-us": {
       "heading": "Contact Us",
-      "subHeading": "For expert advice or to get a free <a href='/contact-us'>quote</a> please fill out the form, email or phone us."
+      "subHeading": "For expert advice or to get a free quote please fill out the form, email or phone us."
     }
   },
   "brands": [
     "dulux.png",
-    "britishPaints2.jpg",
+    "britishPaints.jpg",
     "cabots.jpg",
     "taubmans.jpg",
     "wattyl.png"
+  ],
+  "slides": [
+    "slide_1.jpg",
+    "slide_2.jpg",
+    "slide_3.jpg",
+    "slide_4.jpg",
+    "slide_5.jpg",
+    "slide_6.jpg"
   ],
   "homeSpecialise": [
     {
@@ -80,7 +88,12 @@
       "text": "<p>Manly Warringah Painters can cater to all your exterior painting needs. Whether you need to touch up a small area of your exterior paint job or repaint your project or home an entirely new colour, then Manly Warringah Painters are here to serve you.<p> We use only the best quality paints, brushes and rollers, and attention to detail is what we specialise in. We provide the best painting services through processes we have mastered over a 25-year period, we expertly clean and prepare all surfaces to ensure the finish coat will properly adhere and we are experts in covering all unpaintable areas.</p><p> Whether you want to remove marks and stains, protection against bad weather or increase home value, Manly Warringah Painters are the best in the business. </p></p>"
     }
   ],
+  "copyRight": "© Copyright 2021 Manly Warringah Painters. All rights reserved",
+  "webSiteBy": "Website by <a href='mailto:age24@hotmail.com' target='_blank' rel='noopener noreferrer'>Adrian Kinross</a>",
+  "successMsg": "Thank you for getting in touch! We appreciate you contacting us and will get back to you soon",
+  "errorMsg": "Sorry, there was an error submitting the form. Please try the contact details below",
   "aboutPro": " <h4>Talk to a professional painter, not a salesperson - <a href='/contact-us'>Get a quote</a></h4>",
+
   "standOutAreas": {
     "heading": "A few of the areas Manly Warringah Painters stand out from the rest",
     "style": "standOut",
@@ -141,59 +154,6 @@
   },
   "accolades": {
     "heading": "Manly Warringah Painters - Professional House Painters And Decorators",
-    "listItems": [
-      {
-        "text": "Over 25 years' experience",
-        "icon": "faMedal"
-      },
-      {
-        "text": "Interior and exterior",
-        "icon": "faHome"
-      },
-      {
-        "text": "Commercial, residential",
-        "icon": "faBuilding"
-      },
-      {
-        "text": "Reliable and honest",
-        "icon": "faUserFriends"
-      },
-      {
-        "text": "Licensed and insured",
-        "icon": "faCertificate"
-      },
-      {
-        "text": "Timely completion",
-        "icon": "faClock"
-      },
-      {
-        "text": "Expert colour advice",
-        "icon": "faAward"
-      },
-      {
-        "text": "Satisfaction guarantee",
-        "icon": "faStar"
-      },
-      {
-        "text": "Personalised service",
-        "icon": "faPeopleArrows"
-      },
-      {
-        "text": "Value for money",
-        "icon": "faCommentDollar"
-      },
-      {
-        "text": "Fixed price",
-        "icon": "faDollarSign"
-      },
-      {
-        "text": "Best products available",
-        "icon": "faTrophy"
-      }
-    ]
-  },
-  "servicesXXXTODO": {
-    "heading": "The experienced domestic and commercial painters on the Northern Beaches",
     "listItems": [
       {
         "text": "Over 25 years' experience",
@@ -487,7 +447,7 @@
 
     "page": "services",
     "text": "<p>Manly Warringah Painters specialise at working on the Northern beaches but are happy to work in other areas in and around Sydney. We value the opportunity to assess the job and to discuss and offer the best options and solutions in paints, techniques, colour schemes and approaches for your project. We want to be sure that we translate your visions for your home or business.</p><p>We provide professional advice because we care about customer satisfaction and the final result. So for quality painting services, you can’t beat the experience, professionalism and personal attention of Manly Warringah Painters. We are ready to answer your questions about your painting needs. Please call us for a free, no obligation written estimate If you’re interested in a <a href='/contact-us'>quote</a></p>",
-    "image": "mwpMap2.png",
+    "image": "mwpMap.png",
     "alt": "We provide professional advice"
   },
   "reviews": [
