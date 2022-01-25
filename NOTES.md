@@ -1,3 +1,5 @@
+TODO: Error page, look at next.js, flow tests etc, test and unused components, images, remove unnecassary comments
+
 commented out "Image 1, etc the text for slideshow"
 
 min height on slideshow image, looks to small when phone size??
